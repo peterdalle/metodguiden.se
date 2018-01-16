@@ -1,0 +1,22 @@
+book_filename: "metodguiden"
+delete_merged_file: yes
+output_dir: _book
+rmd_files: ["index.Rmd", "studieteknik.Rmd", "kreativitet.Rmd", "surveys.Rmd", "statistik.Rmd", "missforstand-statistik.Rmd", "spss.Rmd", "grafik.Rmd", "checklista.Rmd", "lathund-journalister.Rmd", "forskningsetik.Rmd", "vilseledande-statistik.Rmd", "vilseledande-grafik.Rmd", "faq.Rmd", "resurser.Rmd"]
+language:
+  label:
+    fig: 'Figur '
+    tab: 'Tabell '
+    eq: 'Ekvation '
+    thm: 'Teorem '
+    lem: 'Lemma '
+    def: 'Definition '
+    cor: 'Corollary '
+    prp: 'Proposition '
+    exm: 'Exempel '
+    exr: 'Övning '
+    proof: 'Bevis. '
+    remark: 'Anmärkning. '
+    solution: 'Lösning. '
+    chapter_name: ""
+  ui:
+    chapter_name: ""

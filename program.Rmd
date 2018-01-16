@@ -1,0 +1,80 @@
+# Program {#program}
+
+Här hittar du:
+
+- Program för att samla in data från nätet
+- Program för att analysera data
+- Gratisprogram
+
+## Allmänt
+
+- [Tools for media and communication research](https://github.com/peterdalle/mediacommtools)
+
+## Analysera sociala medier
+
+- [EchoSec](https://www.echosec.net/) - sökmotor utifrån geografisk plats (Facebook, Twitter, Pinterest m.fl.).
+- [Gephi](https://gephi.org/) - Gephi is the leading visualization and exploration software for all kinds of graphs and networks.
+- [NetVizz](https://apps.facebook.com/netvizz/) - grupper eller sidor på Facebook
+- [Tweetbeaver](https://tweetbeaver.com/) - många små funktioner för att samla in data från Twitter (convert @name to ID, check if two accounts follow each other, download a user's favorites, search within a user's favorites, download a user's timeline etc.)
+
+Videor:
+
+- [NetVizz - instruktion på svenska (13 min)](https://www.youtube.com/watch?v=S7ZIIe5AqcE)
+- [Gephi - instruktion på svenska (9 min)](https://www.youtube.com/watch?v=4_XL_ZXpMgw)
+
+Länktips:
+
+- [Digital Methods Iniative (DMI): Tool database](https://wiki.digitalmethods.net/Dmi/ToolDatabase) har en bra lista över verktyg.
+- [Using Twitter as a data source: an overview of social media research tools (updated for 2017)](http://blogs.lse.ac.uk/impactofsocialsciences/2017/05/08/using-twitter-as-a-data-source-an-overview-of-social-media-research-tools-updated-for-2017/)
+- [Using Google Trends data for research? Here are 6 questions to ask](https://medium.com/@pewresearch/using-google-trends-data-for-research-here-are-6-questions-to-ask-a7097f5fb526)
+
+## Kartor
+
+- [QGIS](http://www.qgis.org/) - free and open source geographic information system.
+
+## Konvertera data
+
+- [Mr. Data Converter](https://shancarter.github.io/mr-data-converter/) - I will convert your Excel data into one of several web-friendly formats, including HTML, JSON and XML.
+
+## Grafer och diagram
+
+Program för att rita boxar och pilar. Användbart för att rita modeller av olika slag, som statistiska modeller och [SEM](https://en.wikipedia.org/wiki/Structural_equation_modeling).
+
+- [Dia](http://dia-installer.de/) is a program to draw structured diagrams.
+
+## Statistik och dataanalys {#statsprogram}
+
+- [Data Explorer](http://www.data-explorer.com/)
+- [Tableau](http://www.tableau.com/) - notera att Tableau har en akademisk licens som innebär att du kan använda fullversionen som student. Annars har de en gratisversion.
+
+Kostar pengar:
+
+- [SPSS](https://www.ibm.com/analytics/se/sv/technology/spss/)
+- [Stata](http://www.stata.com/)
+- [SAS](http://www.sas.com/)
+
+Gratis:
+
+- [GNU PSPP](http://www.gnu.org/software/pspp/) ser ut och fungerar ungefär som SPSS, men är gratis. Kan också läsa SPSS-filer.
+- [R](https://www.r-project.org/) är ett programmeringsspråk för statistik.
+- [JASP](https://jasp-stats.org/download/) är byggt ovanpå R med de flesta vanliga funktioner inklusive bayesiansk statistik.
+- [Jamovi](https://www.jamovi.org/) är en vidareutveckling av JASP med lite annat fokus.
+
+Avancerad statistik:
+
+- [G*Power](http://www.gpower.hhu.de/) beräknar statistisk power och sampelstorlek för experiment.
+- [ESCI (Exploratory Software for Confidence Intervals)](http://www.latrobe.edu.au/psychology/research/research-areas/cognitive-and-developmental-psychology/esci/2001-to-2010) simulerar konfidensintervall, Cohens d, statistisk power m.m. Användbart för planering av studier. Kräver Microsoft Excel.
+- [Comprehensive Meta analysis](https://www.meta-analysis.com/) underlättar metaanalyser. Betalprogram, men finns i testversion.
+- [Process macro for SPSS and SAS](http://processmacro.org/download.html) är en plugin som underlättar moderator- och medieringsanalys i SPSS och SAS.
+
+## Referenshantering {#refprograms}
+
+Ett program för referenshantering hjälper dig att hålla reda på artiklar, nyhetsartiklar och andra typer av dokument du samlar på dig.
+
+Jag rekommenderar [Zotero](https://www.zotero.org/). Det är gratis, fungerar tillsammans med Word och har smarta funktioner för import av artiklar.
+
+- [EndNote](http://endnote.com/)
+- [JabRef](http://www.jabref.org/)
+- [Mendeley](https://www.mendeley.com/)
+- [ReadCube Papers](https://www.readcube.com/)
+- [Zotero](https://www.zotero.org/)

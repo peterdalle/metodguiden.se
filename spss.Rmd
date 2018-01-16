@@ -1,0 +1,53 @@
+# SPSS {#spss}
+
+Här hittar du:
+
+- Hjälp med att installera och komma igång med SPSS
+- Alternativ till SPSS
+
+Statistikprogrammet vi använder heter [SPSS](https://www-01.ibm.com/software/se/analytics/spss/m) (Statistical Package for the Social Science). SPSS finns på universitetets datorer, men du kan också ladda ned det till din privata dator (rekommenderas).
+
+![SPSS användargränssnitt efter att du väntat en halvtimme på det att starta.](images/spss.png "SPSS")
+
+## Installera SPSS på din egen dator
+
+1. Gå till [studentportalen.gu.se/it/programvaror](http://studentportalen.gu.se/it/programvaror/).
+2. Ladda ned senaste SPSS för Windows eller Mac.
+3. Kopiera licenskoden för SPSS.
+4. Starta installationsfilen (Windows) eller dra appen till din programkatalog (Mac).
+
+## SPSS-Akuten hjälper dig
+
+För att få hjälp med vanliga saker i SPSS rekommenderas [SPSS-Akuten](https://spssakuten.wordpress.com/). Där kan du exempelvis få hjälp med:
+
+- [Guide: Omkodning av variabler](https://spssakuten.wordpress.com/2010/01/10/omkodning-av-variabler/)
+- [Guide: Korstabeller](https://spssakuten.wordpress.com/2012/02/14/guide-korstabeller/)
+- [Guide: Korrelation](https://spssakuten.wordpress.com/2010/01/08/korrelation-1/)
+
+Missa inte heller [videoklippet om statistisk signifikans](#signifikans-sundell) med Anders Sundell, som gjort SPSS-Akuten.
+
+## Videoguider från Lunds universitet
+
+Lunds universitets har svenska SPSS-videor på deras YouTube-kanal:
+
+<iframe class="videoplayer" width="630" height="472" src="https://www.youtube.com/embed/zvYNscF-BEM" frameborder="0" allowfullscreen></iframe>
+
+Samtliga videor från Lunds universitet:
+
+1. [Introduktion till SPSS (8:46)](https://www.youtube.com/watch?v=zvYNscF-BEM)
+2. [Lägga in variabler i SPSS (9:21)](https://www.youtube.com/watch?v=_92FIngd6xk)
+3. [Lägga in data i SPSS (2:41)](https://www.youtube.com/watch?v=Ju4qvX63osI)
+4. [Omkodning kvalitativ variabel i SPSS (6:15)](https://www.youtube.com/watch?v=_-PPVDJ1y8w)
+5. [Omkodning kvantitativ variabel i SPSS (6:00)](https://www.youtube.com/watch?v=r0B7QVXtD4w)
+6. [Konstruktion av variabler i SPSS (5:01)](https://www.youtube.com/watch?v=_976xGWSdj8)
+7. [Konstruktion av index i SPSS (7:46)](https://www.youtube.com/watch?v=OqTTZvb7F-0)
+8. [Frekvenstabell i SPSS (2:26)](https://www.youtube.com/watch?v=f3YerngTadg)
+9. [Diagram i SPSS (4:35)](https://www.youtube.com/watch?v=MOMngHACaKE)
+10. [Central- och spridningsmått i SPSS (1:59)](https://www.youtube.com/watch?v=lPN-2CKofhk)
+11. [Konfidensintervall i SPSS (2:02)](https://www.youtube.com/watch?v=D7QRWv3twdM)
+12. [Korstabell och chi^2^ i SPSS (2:31)](https://www.youtube.com/watch?v=Dz3wUhQqOPc)
+13. [Spridningsdiagram i SPSS (2:18)](https://www.youtube.com/watch?v=oMKOZd2PmaI)
+14. [Regressionsanalys i SPSS (1:51)](https://www.youtube.com/watch?v=lhQWn5T_tpY)
+15. [Medelvärdesanalys, två kategorier i SPSS (3:18)](https://www.youtube.com/watch?v=2XLUDmTsHtw)
+16. [Medelvärdesanalys, flera kategorier i SPSS (3:39)](https://www.youtube.com/watch?v=eoKj8x4AgHI)
+17. [Slå samman data i SPSS (3:07)](https://www.youtube.com/watch?v=vxDnoOnLaEU)

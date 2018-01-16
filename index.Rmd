@@ -1,0 +1,79 @@
+--- 
+title: "Metodguiden"
+description: "Metod speciellt för medie- och kommunikationsvetenskap och journalistik."
+author: "Peter M. Dahlgren"
+institute: "Institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet"
+date: "`r Sys.Date()`"
+bibliography: ["ref.bib"]
+biblio-style: "apalike"
+link-citations: true
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
+library(ggplot2)
+theme_set(theme_minimal())
+```
+
+![](images/cover.png)
+
+# Om Metodguiden {-}
+
+Metodguiden har skapats för att
+
+- ge svar på [vanliga frågor](#faq) från studenter
+- förbättra studenternas kunskaper i [statistik](#stats) och [datavisualisering](#dataviz)
+- samla bra [program](#program), [dataset](#dataset) och [länkar](#links) som finns på nätet
+- ta upp ämnen som saknas i metodböcker: [tveksamma forskningspraktiker](#misleading-stats), [missförstånd om statistik](#misconceptions-stats), och hur människor psykologiskt bearbetar information
+- skapa förståelse för [replikeringskrisen](https://en.wikipedia.org/wiki/Replication_crisis)
+
+Guiden är inriktad mot samhällsvetenskap, och framför allt medie- och kommunikationsvetenskap samt journalistik. Det finns också en bias mot enkäter och experimentell metod.
+
+Detta är inte en ersättning till kurslitteratur, utan ett komplement. Texterna är inte färdiga utan byggs på efterhand.
+
+## Varför metod är viktigt {-}
+
+Varför är det viktigt att lära sig metod egentligen? Titta på videoklippet [Frontline: Prisoners of Silence](https://www.youtube.com/watch?v=CzCGux7qD1c) nedan.
+
+Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden. Men med hjälp av en ny metod, där en person håller i handen när det autistiska barnet skriver, har gjort att barnet plötsligt kan skriva ned alla sina innersta tankar. Metoden kallas faciliterad kommunikation. Men det finns de som hävdar att det är personen som håller handen som egentligen styr vad barnen skriver. Så hur tar man reda på vem som har rätt? Det är där metoderna kommer in i bilden.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/CzCGux7qD1c?rel=0" frameborder="0" allowfullscreen></iframe>
+
+## Kontakta {-}
+
+Har du synpunkter, idéer eller hittat något fel, hör av dig till [Peter M. Dahlgren](http://peterdahlgren.com/contact/), institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet. Jag är doktorand i medie- och kommunikationsvetenskap och undervisar i bland annat statistik och programmering.
+
+## Källkod {-}
+
+Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>.
+
+Hemsidan är gjord i [bookdown](https://bookdown.org/).
+
+## Upphovsrätt {-}
+
+Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavsett medium eller format på följande villkor:
+
+- ge erkännande till Peter M. Dahlgren
+- distribuera inte modifierat material
+- använd inte kommersiellt
+
+Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+
+Notera dock att inbäddat material (som videoklipp från YouTube) inte faller under denna licens.
+
+## Större ändringar {-}
+
+Senaste versionen skapades automatiskt `r Sys.Date()`.
+
+| När        | Vad |
+| :---------- | :------------------------------------------------------------ |
+| 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till egen domän metodguiden.se. |
+| 2017-11-29 | Lagt till [forskningsetik](#ethics). |
+| 2017-08-22 | Byggt om till bookdown. |
+| 2017-08-17 | Lagt till [vilseledande statistik](#misleading-stats) och [checklista med kritiska frågor](#checklist). |
+| 2017-05-31 | Lagt till frågebatterier och onlineenkäter på [enkätundersökningar](#surveys). |
+| 2017-05-08 | Lagt till [program](#program). |
+| 2017-03-15 | Lagt till [lathund för journalister](#journalist) samt [p-värden](#p-values). |
+| 2016-11-24 | Utökat många texter. Lagt till [FAQ](#faq) och [enkätundersökningar](#surveys). |
+| 2016-08-26 | Lade till länktips på [statistik](#stats). Skapade sidan [kreativitet](#creativity). |
+| 2016-08-17 | Första release. |

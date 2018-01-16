@@ -1,0 +1,19 @@
+# Sannolikhetsteori {#prob}
+
+Här hittar du:
+
+- Vad sannolikhet är
+- Att det finns olika perspektiv på sannolikhet
+- Viktiga koncept inom statistiken
+
+## Olika typer av sannolikhetsteorier
+
+### Frekventistisk statistik
+
+### Bayesiansk statistik {#bayesian}
+
+### Likelihood-statistik
+
+## Centrala gränsvärdessatsen
+
+## Stora talens lag

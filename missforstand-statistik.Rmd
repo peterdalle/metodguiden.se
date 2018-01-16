@@ -1,0 +1,219 @@
+# Missförstånd om statistik {#misconceptions-stats}
+
+Här hittar du:
+
+- Vanliga missförstånd om sannolikhetsteori
+- Vanliga missförstånd om konfidensintervall
+- Vanliga missförstånd om p-värden
+
+<!--
+## Missförstånd: "Det finns bara en statistik"
+
+Nej, det finns faktiskt flera olika typer av sannolikhetsteorier som ligger till grund för statstiken, nämligen frekventism, bayesiansk statistik och likelihood-statistik.
+
+- Frekventism är den absolut vanligaste statistiken som.
+- Bayesiansk statistik.
+- Likelihood-statistik.
+-->
+
+## Missförstånd: "Konfidensintervall visar med 95 % sannolikhet att värdet ligger inom 23–25 %"
+
+Ibland ligger ett värde inom ett konfidensintervall. Syftet med detta intervall är att säga någonting om osäkerheten.
+
+Låt oss ta ett exempel. En opinionsundersökning säger att 25 % av svenskarna sympatiserar med Socialdemokraterna, med ett 95 % konfidensintervall på 23–27 (%-enheter).
+
+En vanlig tolkning är detta:
+
+> Det är 95 % sannolikhet att värdet ligger inom intervallet 23 till 25 (%-enheter).
+
+Eller detta:
+
+> Vi kan vara 95 % säkra att värdet ligger inom intervallet 23 till 25 (%-enheter).
+
+Men båda är helt fel.
+
+Konfidensintervall säger ingenting om de *enskilda värden* man får fram, utan om *proceduren* för hur dessa värden har räknats fram [@neyman_outline_1937]. Därför kan man inte tillskriva sannolikheter till enskilda värden med hjälp av konfidensintervall.
+
+Konfidensintervall har sitt ursprung i frekventistisk statistik, vilket är en filosofisk inriktning inom sannolikhetsteori och innebär att man räknar hur många gånger någonting förekommer (frekvenser) och drar slutsatser om sannolikheter utifrån *alla* frekvenser över tid. Det går alltså inte tillskriva en sannolikhet till ett specifikt värde över huvud taget.^[Ironiskt nog kan man vara 100 % säker på att konfidensintervallet kommer att innehålla rätt värde 95 % av gångerna. Den första procenten "100 %" syftar nämligen på individens kunskapsteoretiska övertygelse, medan den andra procenten "95 %" syftar på hur många gånger det sker. Det speglar med andra ord de olika filosofiska sannolikhetsteorierna, nämligen bayesianism och frekventism.]
+
+En tärning kan illustrera detta. Om du får en trea på en sex-sidig tärning så är sannolikheten att få en trea $\frac{1}{6}$. Men du kan ju omöjligt förutse om tärningen kommer att visa en trea om du bara slår den en gång. Det blir en trea eller inte, punkt slut. Men om du slår tärningen hundra gånger kan du räkna ut sannolikheten för en trea *över tid* genom att jämföra med alla tärningskast tillsammans. Faktum är att ju fler gånger du slår tärningen, desto större sannolikhet att alla kast tillsammans närmar sig $\frac{1}{6}$, vilket är anledningen till att konfidensintervallet krymper när observationerna ökar.^[Konfidensintervallet minskar med ökad sampelstorlek eftersom $n$ är inkluderat i ekvationerna för konfidensintervall, exempelvis i ekvationen för konfidensintervallet för proportioner, det vill säga $p\pm{z}\sqrt{\frac{p\left( 1-p \right)}{n}}$.]
+
+Många tolkar däremot konfidensintervallet som sannolikheten för det enskilda värdet, eller för en specifik hypotes. Men den tolkningen är inte möjlig att göra under frekventistisk sannolikhetsteori. Och varje gång du ser ett konfidensintervall är det alltid frekventism.^[Vill man prata om sannolikheten för ett enskilt värde får man också byta till bayesiansk statistik. Det är dock värt att notera att om man använder bayesiansk statistik med uniforma priors (det vill säga, man har ingen uppfattning om sakernas tillstånd), så får man exakt samma intervall (så kallade [credible intervals](https://en.wikipedia.org/wiki/Credible_interval)) som konfidensintervallet. Men tolkningen är dock annorlunda!]
+
+Konfidensintervall tolkas så här:
+
+> Över tid kommer 95 % av värdena att ligga inom intervallet 23 till 25 (%-enheter).
+
+Det innebär:
+
+- Om man gör om samplingen 100 gånger, så kommer (i genomsnitt) 95 värden att ligga inom intervallet 23 till 27 (%-enheter). De övriga värdena kommer att ligga utanför intervallet.^[Väljer man ett konfidensintervall på 99 % så kommer 99 av 100 värden att ligga inom intervallet. De övriga värdena kommer därmed ligga utanför intervallet. Ju högre konfidensnivå, såsom 99 %, desto längre ifrån varandra blir också övre och undre gränsen för konfidensintervallet.]
+- Med andra ord så så finns ett enskilt värde inom intervallet, eller så är det utanför. Det är antingen eller.
+- Det finns ingen sannolikhet kopplad till ett enskilt värde över huvud taget, utan sannolikheten räknas ut genom att titta på andelen av samtliga värden *över tid*.
+
+Eftersom man normalt sett endast gör en (1) undersökning så får man ju fram ett enskilt värde tillsammans med ett konfidensintervall. Men konfidensintervall handlar ju om samplingar över tid! Så man har med andra ord ingen som helst aning om värdet 25 % i praktiken ligger innanför eller utanför konfidensintervallet 23 till 25 (%-enheter). Det kan man bara veta om man gör upprepade mätningar. Och upprepade mätningar på människor är svårt med tanke på att de också kan förändra sina partisympatier. Med andra ord, även om teorin bakom konfidensintervall skulle vara fullständigt felfri, så beror resultaten i en opinionsundersökning också på hur frågor formuleras, i vilket sammanhang de frågas med mera.
+
+- På [Interpreting Confidence Intervals: an interactive visualization](http://rpsychologist.com/d3/CI/) kan du se hur konfidensintervall uppför sig i praktiken. Antingen så är ett enskilt värde inom konfidensintervallet, eller så är det utanför. Men 95 % av gångerna kommer värdena att vara inom intervallet.
+- <https://en.wikipedia.org/wiki/Confidence_interval>
+
+## Missförstånd: "P-värdet visar sannolikheten att nollhypotesen är sann"
+
+Nej, p-värdet visar sannolikheten för resultatet man fått, givet antagandet att nollhypotesen *är* sann.
+
+Man utgår med andra ord från att nollhypotesen är sann, och givet denna utgångspunkt får man reda på hur sannolikt resultatet är (det vill säga, resultatet av det statistiska testet).
+
+Man kan aldrig få fram sannolikheten för nollhypotesen med hjälp av p-värdet. Man kan endast ta reda på om man kan *förkasta* nollhypotesen eller ej.
+
+Låt säga att vi antar en gräns på 0,05. Om resultatet då är p < 0,05 så kan man förkasta nollhypotesen. Om p är högre, så kan man inte förkasta nollhypotesen.
+
+## Missförstånd: "P-värdet visar sannolikheten att resultatet beror på slumpen"
+
+Nej, precis som missförståndet ovan så är nollhypotesen antagandet som utgör *utgångspunkten*. Det vill säga, man *antar* att slumpen råder och jämför sedan hur mycket resultatet skiljer sig från detta antagande. Om resultatet skiljer sig tillräckligt mycket från antagandet, så förkastar man antagandet att slumpen råder (man förkastar nollhypotesen).
+
+Man antar med andra ord att nollhypotesen är sann, och givet detta antagande får man reda på hur sannolikt resultatet är.
+
+Om man får fram sannolikheten för resultatet givet nollhypotesen (exempelvis p = 0,01 eller 1 % på ren svenska) så betyder det alltså inte att 1 % av resultatet beror på slumpen. Den tolkningen är inte bara fel, den är till och med meningslös eftersom slumpen är själva antagandet.
+
+## Missförstånd: "Om två konfidensintervall överlappar är skillnaden inte statistiskt signifikant"
+
+Nej, två konfidensintervall kan faktiskt överlappa ganska mycket även om de är statistiskt signifikanta på 0,05-nivån.
+
+Nedan visas några exempel med simulerad data med 95 % konfidensintervall. Notera särskilt att vid p = 0,049 så överlappar de två konfidensintervallen relativt mycket. De överlappar till och med något vid p = 0,01.
+
+```{r, overlapping-confidence-intervals}
+library(ggplot2)
+library(gridExtra)
+
+# Function to create a bar plot with 95 % confindence intervals.
+overlapping_ci <- function(n.per.group = 100, alpha = 0.05) {
+  # Generate some random data.
+  df <- data.frame(treatment = rep(c("A", "B"), each=n.per.group),
+                   value = c(rnorm(n.per.group, 50, 1), rnorm(n.per.group, 51, 1)))
+  
+  # Calculate summary statistics.
+  df.summary <- data.frame(treatment = levels(df$treatment),
+                           mean = tapply(df$value, df$treatment, mean),
+                           n = tapply(df$value, df$treatment, length),
+                           sd = tapply(df$value, df$treatment, sd))
+  
+  # Calculate standard error of the mean.
+  df.summary$sem <- df.summary$sd / sqrt(df.summary$n)
+  
+  # Calculate margin of error.
+  df.summary$moe <- qt(1 - alpha / 2, df = df.summary$n) * df.summary$sem
+  df.summary$ci_lower <- df.summary$mean - df.summary$moe
+  df.summary$ci_upper <- df.summary$mean + df.summary$moe
+  
+  # Get p-value from t-test.
+  p <- t.test(df$value ~ df$treatment)$p.value
+  
+  # Return bar plot.
+  return(ggplot(df.summary, aes(treatment, mean, fill=treatment)) +  
+    geom_bar(position="dodge", stat="identity") + 
+    scale_y_continuous(breaks=seq(0, 100, 1)) +
+    geom_errorbar(position ="dodge", aes(ymin = ci_lower, ymax = ci_upper)) +
+    theme_minimal() +
+    theme(legend.position="none") +
+    labs(title = paste0("p = ", round(p, 3)),
+         x = NULL,
+         y = NULL) +
+    coord_cartesian(ylim = c(48, 52)))
+}
+
+set.seed(12341)
+gg1 <- overlapping_ci(14) # p = 0.538
+
+set.seed(676567556)
+gg2 <- overlapping_ci(14) # p = 0.119
+
+set.seed(5172515)
+gg3 <- overlapping_ci(14) # p = 0.049
+
+set.seed(1245151)
+gg4 <- overlapping_ci(14) # p = 0.026
+
+set.seed(6785596)
+gg5 <- overlapping_ci(14) # p = 0.01
+
+set.seed(67556)
+gg6 <- overlapping_ci(14) # p = 0.001
+
+# Combine all six bar plots into a single graph.
+grid.arrange(gg1, gg2, gg3,
+             gg4, gg5, gg6,
+             ncol = 3)
+```
+
+## Missförstånd: "P-värdet 0,049 är bättre än p-värdet 0,051"
+
+P-värdet bör inte betraktas svartvit. Ett p-värde på 0,049 är inte bättre än ett p-värde på 0,051. Det är snarare en skala, där lägre p-värde kan göra oss mer säkra på att ett samband finns, *givet vissa antaganden* (till exempel att [p-hacking](#p-hacking) inte ägt rum).
+
+Här kommer ett klassiskt citat om att Gud minsann älskar 0,06 lika mycket som 0,05:
+
+> We are not interested in the logic itself, nor will we argue for replacing the .05 alpha with another level of alpha, but at this point in our discussion we only wish to emphasize that dichotomous significance testing has no ontological basis. That is, we want to underscore that, surely, God loves the .06 nearly as much as the .05. Can there be any doubt that God views the strength of evidence for or against the null as a fairly continuous function of the magnitude of p? [@rosnow_statistical_1989, 1277]
+
+## Missförstånd: "Om resultatet inte är statistiskt signifikant, hittades ingen skillnad (eller samband)"
+
+Det är delvis felaktigt eftersom man själv kan välja när resultatet ska vara signifikant, se missförståndet ovan. Traditionellt sett har signifikansnivån satts på 5 % (det vill säga när p < 0,05). Men denna gräns är fullständigt godtycklig.
+
+Däremot måste man sätta gränsen *före* man gör analysen. Det är ingen idé att sätta gränsen efter man har analyserat datan, för då kan man få vad som helst att vara signifikant. I vissa artiklar kan man läsa att resultatet ibland är p < 0,05 för att i nästa stycke se att ett annat resultat är p < 0,01. Men i stället för att blanda signifikansnivåer bör man skriva ut det fullständiga p-värdet.
+
+<!--
+
+## Missförstånd: "P-värdet är en betingad sannolikhet"
+
+Detta är filosofiskt snårigt.
+
+P-värdet är formellt sett är P(z > Z|H~0~), där *z* är teststatistikan och *Z* är det kritiska värdet, samt *H~0~* är nollhypotesen. Här betyder *z > Z* ett ensidigt test.^[För ett tvåsidigt test måste man använda de absoluta värdena för teststatistikan och det kritiska värdet i stället, det vill säga *|z| > |Z|*.]
+
+På ren svenska säger man att p-värdet visar sannolikheten att få teststatistikan, eller mer extremt, givet att nollhypotesen är sann. Men då H~0~ inte kan variera, är det ingen betingad sannolikhet. Man bör kanske säga att p-värdet är en kontingent sannolikhet i stället. Filosofen Deborah Mayo.
+-->
+
+## Missförstånd: "Kvantitativ metod är positivism"
+
+Slår du upp en metodbok i samhällsvetenskap förekommer många gånger en indelning i olika vetenskaper, och att statistik eller kvantitativ metod bygger på logisk positivsm eftersom man framför allt arbetar med teorier, hypotestestning och falsifikation av kausalsamband. De kvalitativa metoderna, å andra sidan, sägs vara inriktade på förklaring, helhetsförståelse (holism) och att generera teorier.
+
+Allt detta är dock missuppfattningar om vad positivism är. Logiska positivister var *emot* teori, kausalitet och falsifikation [@yu_misconceived_2006]. 
+
+Men varför är så många emot positivism? Eftersom positivister motsatte sig kausalitet hindrades utvecklingen av statistik. Allt skulle nämligen beskrivas som korrelationer mellan två ting, och alla antaganden om att det ena tinget påverkade det andra tinget sågs som metafysiskt nonsens. Därför var [David Humes skeptiska syn på kausalitet](https://plato.stanford.edu/entries/hume/#Cau) en viktig inspirationskälla för positivisterna.
+
+Inte ens fysik bygger på positivsm. Tvärtom, det är snarare så att positivism *hindrade* utvecklingen även av fysik eftersom positivister inte accepterade förklaringar om neutroner eller andra entiteter som inte kunde observeras direkt, utan bara härledas teoretiskt [@meehl_theory-testing_1967]. Positivister motsatte sig alltså många av de idéer som är helt centrala för modern forskning. Det är också en viktig anledning till att positivismen är dödförklarad sedan över 50 år tillbaka.
+
+Skillnader och likheter mellan logisk positivism och statistik [@yu_misconceived_2006]:
+
+| Logisk positivism | Dagens statistiska metoder |
+| :--------------------------- | :----------------------------------------------------------- |
+| Verifikation | Falsifikation och verifikation |
+| För observation | För observation |
+| Mot kausalitet | För kausalitet |
+| Nedtonar förklaring | För (kausal) förklaring |
+| Mot teori och latenta faktorer | För teori och latenta faktorer | 
+| Mot metafysik | För metafysik (t ex [distributioner](https://en.wikipedia.org/wiki/Probability_distribution)) |
+| Logisk analys | Logisk analys och empirisk observation | 
+| Frekventistisk sannolikhet | Frekventistisk sannolikhet, epistemisk sannolikhet (bayesiansk statistik), m.fl. |
+| Objektiv | Objektiv och subjektiv (frekventism respektive bayesiansk statistik) |
+
+Med andra ord, modern statistisk metod accepterar flera former av filosofier och sannolikhetsteorier, inklusive sådan statistik som bygger på subjektiva uppfattningar (även om det finns inomvetenskapliga diskussioner om vilken som är "bäst"). Det finns alltså ingen enhetlig filosofisk skola för statistiska metoder, även om frekventism är överlägset vanligast.
+
+## Missförstånd: "Kvantitativa och kvalitativa metoder är fundamentalt olika"
+
+Indelningen av olika metoder i kvantitativ respektive kvalitativ är mer av en praktisk indelning på metodkurser snarare än någon kunskapsteoretisk indelning.
+
+Likheterna är ofta större än skillnaderna, och det är dessutom omöjligt att bedriva forskning som *inte* är kvalitativ i något avseende [@allwood_distinction_2012]. Även om man gör den mest triviala undersökningen där man bara räknar något måste man fortfarande definiera vad det är man räknar. Och definitioner är alltid kvalitativa.
+
+Därför är många "listor" på vad som utmärker kvantitativ respektive kvalitativ metod inte speciellt meningsfulla, och speglar inte någon inneboende skillnad mellan de två ansatserna utan snarare vad olika forskare själva tillskriver dessa metoder [@allwood_distinction_2012].
+
+<!--
+
+## Vad P-värdet faktiskt visar
+
+Notera:
+
+- P-värdet visar *inte* sannolikheten att nollhypotesen är sann. (Utgångspunkten är alltid att nollhypoten är sann.)
+- P-värdet visar *inte* vad som är relevant, viktigt eller vetenskapligt intressant. (P-värdet har enbart med datan att göra.)
+- P-värdet visar *inte* sannolikheten att resultatet beror på slumpen. (Slumpen är utgångspunkten, se första punkten.)
+- P-värdet visar *inte* sannolikheten att få samma resultat om gör analysen en gång till.
+- P-värdet visar *inte* storleken på sambandet. (Eftersom sampelstorleken skiljer sig åt kommer p-värdet skilja sig åt.)
+
+Bli inte vemodig om du har svårt att förstå p-värden. Till och med forskare brottas med frågan: [Not Even Scientists Can Easily Explain P-values](http://fivethirtyeight.com/features/not-even-scientists-can-easily-explain-p-values/). Det är ett krångligt koncept som är lätt att få om bakfoten. P-värden har kritiserats i nästan hundra år, kanske starkast av psykologen Paul Meehl som sa att det är "one of the worst things that ever happened in the history of psychology" [@meehl_theoretical_1978, 817].
+
+-->

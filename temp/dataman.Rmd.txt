@@ -1,0 +1,9 @@
+# Hantera data {#dataman}
+
+Här hittar du:
+
+- Hur du kan hantera och organisera datamängder
+
+## Läs mer
+
+- [data organization organizing data in spreadsheets](http://kbroman.org/dataorg/)

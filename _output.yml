@@ -1,0 +1,47 @@
+bookdown::gitbook:
+  lot: yes
+  lof: yes
+  highlight: default
+  split_by: rmd
+  split_bib: yes
+  css: ["style.css", "toc.css"]
+  config:
+    theme: united
+    toc:
+      collapse: section
+      scroll_highlight: yes
+      before: |
+        <li><a href="./">Metodguiden</a></li>
+      #after: |
+      #  <li><a href="http://peterdahlgren.com/" target="blank">Peter M. Dahlgren</a></li>
+    #edit: https://github.com/rstudio/bookdown-demo/edit/master/%s
+    toolbar:
+      position: fixed
+    download: ["epub"]
+    sharing: no
+    edit: null
+    search: yes
+    fontsettings:
+      theme: white
+      family: sans
+      size: 2
+bookdown::pdf_book:
+  includes:
+    in_header: preamble.tex
+  latex_engine: xelatex
+  citation_package: natbib
+  keep_tex: no
+bookdown::epub_book: default
+#  bookdown::gitbook:
+#    toc_depth: 1
+#    fig_caption: yes
+documentclass: book
+#url: "http://metodguiden.se/"
+cover-image: "images/cover.png"
+#apple-touch-icon: "touch-icon.png"
+#apple-touch-icon-size: 120
+site: bookdown::bookdown_site
+csl: apa6.csl
+header-includes:
+  - \usepackage[swedish]{babel}
+colorlinks: yes

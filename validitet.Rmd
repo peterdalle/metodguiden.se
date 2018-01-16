@@ -1,0 +1,128 @@
+# Validitet {#validity}
+
+Här hittar du:
+
+- Vad validitet och reliabilitet är
+- Operationalisering
+- Typer av validitet och kritiska frågor
+
+Validitet handlar om tillförlitlighet och sanning.
+
+Validitet är ett av de viktigaste begreppen när det till kommer till samhällsvetenskaplig forskning som är intresserad av orsakssamband. 
+
+Fyra typer av validitet beskrivs här: begreppsvaliditet, intern validitet, resultatvaliditet och extern validtet.
+
+## Operationalisering
+
+Operationalisering innebär att man översätter ett teoretiskt begrepp till något konkret mätbart. Det kan låta komplicerat, men i grund och botten ligger en enkel idé bakom: Att kunna mäta det man faktiskt vill veta någonting om. Då måste man först bestämma vad det är man vill veta någonting om (teoretisk begrepp), beskriva vad det är (teoretisk definition), och därefter översätta det teoretiska begreppet till något slags mätinstrument (operationell definition).
+
+![Man kan tänka sig att operationalisering handlar om två nivåer. Dels den teoretiska nivån där de teoretiska begreppen beskrivs, definieras och deras inbördes relationer visas (vilket pilen indikerar). Och dels den operationella nivån där de teoretiska begreppen har "översatts" till konkreta mätbara frågeinstrument i en surveyundersökning, till exempel.](images/operationalisering.png)
+
+Det finns alltså ingen operationalisering som är korrekt, utan man måste argumentera varför en operationalisering är bättre än en annan. Operationaliseringen ser också olika ut beroende på vilken metod man väljer.
+
+Låt säga att "nyhetsanvändning" är det teoretiska begreppet. Om man gör en surveyundersökning så är det naturligt att operationaliseringen görs till enkätfrågor, exempelvis "Hur länge brukar du läsa nyheterna?". Men om man gör observationsstudier så blir det i stället forskaren som får sitta med tidtagarur och mäta hur länge personen läser nyheterna. Det är med andra ord två olika operationaliseringar av samma teoretiska begrepp. Det är sedan upp till dig att argumentera varför man ska välja enkätfrågan eller tidtagaruret.
+
+### Exempel på operationalisering
+
+Låt säga att vi har en teori som säger att människors politiska intresse påverkar deras nyhetsanvändning. De som är mycket politiskt intresserade tenderar att läsa mer nyheter.
+
+| Begrepp | Beskrivning | Exempel |
+| --------------- | ------------------------------------ | --------------------------------------- |
+| Teoretiskt begrepp | Det fenomen man är intresserad av | Nyhetsanvändning |
+| Teoretisk definition | Beskrivning av det teoretiska begreppet | Alla de nyheter som en individ tar del av under en normal dag |
+| Operationell definition | Hur det teoretiska begreppet konkret ska mätas | Hur många minuter brukar du läsa Aftonbladet per dag? |
+
+Då har vi två teoretiska begrepp: politiskt intresse och nyhetsanvändning. Men vad menar vi egentligen med politiskt intresse och nyhetsanvändning? Politiskt intresse är ett stabilt karaktärsdrag som gör att människor har en predisposition för information i deras närmiljö. Det är detta som är våra teoretisk definition av politiskt intresse. Nyhetsanvändning är alla de nyheter som en individ tar del av under en normal dag. Det är detta som är den teoretiska definitionen av nyhetsanvändning.
+
+Hur ska dessa två begrepp operationaliseras? Låt säga att gör en surveyundersökning. Då skulle vi kunna operationalisera politiskt intresse som frågan "På en skala 1-3, hur politiskt intresserad är du?" följt av svarsalternativen 1=Inte alls, 2=Lite, 3=Mycket. Det är vår operationella definition av politiskt intresse.
+
+Nyhetsanvändning kan operationaliserass som "Hur många minuter brukar du läsa Aftonbladet per dag?". Det är vår operationella definition av nyhetsanvändning. Redan här kan vi börja kritisera operationaliseringen. Om du jämför med vårt teoretiska definition av nyhetsanvändning ("alla de nyheter som en individ tar del") så är detta ingen bra operationalisering eftersom det endast täcker in Aftonbladet. Operationaliseringen är alltså för snäv och täcker in för lite av begreppet nyhetsanvändning (se 1 i bilden nedan). Vi vill att den operationella definitionen ska täcka in så mycket som möjligt av det teoretiska begreppet, utan att täcka in något irrelevant (idealet är alltså 4 i bilden nedan).
+
+![Hur operationalisering kan gå till samt problem som kan uppstå. 1. Operationaliseringen täcker inte in det teoretiska begreppet tillräckligt mycket. 2. Operationaliseringen täcker begreppet delvis men också delvis irrelevanta saker som ligger utanför begreppet. 3. Operationaliseringen missar helt att täcka in någon del av begreppet, värsta tänkbara situation. 4. Bra operationalisering som varken täcker in för lite eller något irrelevant utanför begreppet.](images/operationalisering_venn.png)
+
+## Validitet
+
+Validitet handlar om tillförlitlighet och sanning. Validitet är en egenskap hos argument, och det är en kvalitativ fråga. Validitet handlar alltså inte om statistik.
+
+Det går med andra ord bra att göra en fallstudie och ändå prata om validitet. Men frågor om validitet är kanske vanligast när man pratar om experimentella studier.
+
+Validitet är en skala. Man kan därför ha olika grader av validitet, från låg till hög validitet.
+
+### Begreppsvaliditet
+
+*Construct validity* på engelska.
+
+Begreppsvaliditet handlar om en enskild operationalisering och hur väl operationaliseringen "fångar" det teoretiska begreppet (se 4 i figuren ovan). 
+
+Kritiska frågor för att bedöma begreppsvaliditet:
+
+- Överrepresenterar begreppet fenomenet?
+- Underrepresenterar begreppet fenomenet?
+- Går det att generalisera operationaliseringen till andra personer?
+- Går det att generalisera operationaliseringen till en annan plats/geografi?
+- Går det att generalisera operationaliseringen till en annan oberoende variabel?
+- Går det att generalisera operationaliseringen till en annan beroende variabel?
+
+### Intern validitet
+
+*Internal validity*.
+
+Intern validitet handlar om kausalsambandet, om X verkligen påverkar Y.
+
+Kritiska frågor för att bedöma intern validitet:
+
+- Kommer X före Y i tid?
+- Är det verkligen så att X orsakar en förändring i Y?
+- Har andra förklaringar uteslutitits?
+- Finns det någon tredje variabel som påverkar sambandet X och Y?
+- Kan sambandet vara spuriöst, alltså uppstått av en slump?
+
+### Resultatvaliditet
+
+Även kallat statistisk inferensvaliditet (*statistical conclusion validity*).
+
+För att få hög resultatvaliditet behöver man ha både hög begreppsvaliditet och hög intern validitet först.
+
+Kritiska frågor för att bedöma resultatvaliditet:
+
+- Finns det ett samband mellan X och Y? (Kolla på p-värden)
+- Hur stort är sambandet mellan X och Y? (Kolla på Pearsons r, Cramérs V, eller annan effektstorlek)
+
+### Extern validitet
+
+*External validity*.
+
+Extern validitet handlar om hur pass väl kausalsambandet kan generaliseras.
+
+Man kan generalisera kausalsambandet på fyra sätt: till andra personer, till andra platser, till andra oberoende variabler och till andra beroende variabler.
+
+Man måste alltså ha hög intern validitet innan man kan tala om extern validitet. Om det inte finns intern validitet, finns det heller inte något att generalisera.
+
+Kritiska frågor för att bedöma extern validitet:
+
+- Går det att generalisera kausalsambandet till andra personer? (Eller andra analysenheter, exempelvis nyhetsartiklar?)
+- Går det att generalisera kausalsambandet till ett annat sammanhang? (Annan plats/rum/geografi?)
+- Går det att generalisera kausalsambandet till en annan oberoende variabel?
+- Går det att generalisera kausalsambandet till en annan beroende variabel?
+
+## Reliabilitet
+
+Reliabilitet handlar om tillförlitligheten hos ett mätinstrument över tid. Ett mätinstrument kan exempelvis vara en fråga i en enkät.
+
+Hög reliabilitet innebär att om man frågar samma fråga två gånger bör man få samma svar vid båda tillfällena (allt annat lika).
+
+Hög reliabilitet kan också innebära att om man ställer flera frågor, och alla frågor mäter samma sak, bör också alla frågor generera ungefär samma resultat. Till exempel "Känner du dig nere?", "Känner du dig som ett misslyckade?" och "Gråter du mer än vanligt"? är tre olika frågor men som alla kan mäta något gemensamt, nämligen depression.
+
+Kanske enklast är att föreställa sig en våg. Om du ställer dig på vågen två gånger bör du få samma vikt vid första och andra mätningen. Då har vågen hög reliabilitet. Men om du ena gången väger dig före lunch, och en annan gång efter lunch, kommer du få olika vikt eftersom magen är tom respektive full. Då är det låg reliabilitet. Så reliabilitet handlar både om mätinstrumentet som sådant, och hur (och när) själva mätningen äger rum.
+
+Låg reliabilitet innebär att svaret antingen blir olika vid varje mättillfälle. Låg reliabilitet när man ställer flera frågor innebär att varje fråga ger olika riktning i svaren.
+
+Kritiska frågor för att bedöma reliabilitet:
+
+- Om samma sak mäts en gång till, blir resultatet samma?
+- Om samma sak mäts av en annan person, blir resultatet samma?
+- Om samma sak mäts på flera olika sätt, pekar resultaten i samma riktning?
+
+## Referenser
+
+- Shadish, W. R., Cook, T. D., & Campbell, D. T. (2001). *Experimental and quasi-experimental designs for generalized causal inference*. Boston: Houghton Mifflin.

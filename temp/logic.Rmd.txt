@@ -1,0 +1,25 @@
+# Logik {#logic}
+
+Här hittar du:
+
+- Vad logik är
+- Tre typer av logik: deduktion, induktion och abduktion
+- Varför forskning bygger på induktiv logik
+
+Varför ska man läsa om logik om man ska hålla på med forskning? Faktum är att logik inte har specifikt med forskning att göra, utan logik handlar om att dra slutsatser från påståenden. Det handlar alltså om argumentering, snarare än forskning. Vi använder därför logik hela tiden. Som forskare bör man därför vara mer formellt tränad i logik, eftersom forskning bygger på argumentering. 
+
+Forskare använder genomför förstås experiment och samlar in data, men det datan i sig säger ingenting. Man måste dra slutsatser från datan, och då är vi tillbaks till argumentering igen. Därför är argumentering också viktigare än statistiska kunskaper, och argumentering är också mer generellt.
+
+## Vad logik är
+
+## Deduktion
+
+## Induktion
+
+### Induktionsproblemet
+
+## Abduktion
+
+## Vanliga misstag vid resonerande
+
+## Referenser

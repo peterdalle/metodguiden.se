@@ -1,0 +1,209 @@
+# Vilseledande statistik {#misleading-stats}
+
+Här hittar du:
+
+- Hur statistik kan användas vilseledande
+- Tveksamma forskningspraktiker
+- Råd för hur du undviker misstagen
+
+## Förväxla korrelation och kausalitet
+
+## Confounding
+
+- <https://en.wikipedia.org/wiki/Confounding>
+
+## Regression mot medelvärdet
+
+- <https://en.wikipedia.org/wiki/Regression_toward_the_mean>
+
+## Selection bias, cherry picking
+
+- <https://en.wikipedia.org/wiki/Selection_bias>
+- <https://en.wikipedia.org/wiki/Cherry_picking>
+
+## Concept creep
+
+## Relativa och absoluta förändringar
+
+- <https://en.wikipedia.org/wiki/Relative_change_and_difference>
+
+## Texas sharpshooter fallacy
+
+- <https://en.wikipedia.org/wiki/Texas_sharpshooter_fallacy>
+
+## Goodharts law
+
+- <https://en.wikipedia.org/wiki/Goodhart%27s_law>
+
+## Förväxla sannolikheter {#transposed-conditional}
+
+Sannolikhetsteori är inte det lättaste. Därför utgår vi från ett vardagligt exempel:
+
+1. Om du träffar en kvinna, vad är sannolikheten att hon är gravid? Du tycker förmodligen sannolikheten är låg. Bara för att någon är kvinna vet vi inte huruvida hon är gravid. Några kvinnor är gravida, men de flesta är det inte.
+
+2. Om du träffar en gravid person, vad är sannolikheten att personen är en kvinna? Du tycker förmodligen sannolikheten är hög. Det är bara kvinnor som blir gravida, och därför kan vi vara väldigt säkra på att en gravid person är kvinna.
+
+Detta säger oss att det är två olika sannolikheter, trots att vi utgår från samma händelser (kvinna respektive gravid) i båda exemplen. Vi kan skriva denna skillnad i formella termer på följande sätt:
+
+1. $P(gravid\mid kvinna)$
+
+1. $P(kvinna\mid gravid)$
+
+Man läser $P(gravid\mid kvinna)$ som "sannolikheten att vara gravid, givet kvinna". Symbolen $P$ betyder sannolikhet eller mer precist probabilitet (från franskans probabilité, eller engelskans probability). På samma sätt läser man $P(kvinna\mid gravid)$ som om "sannolikheten att vara kvinna, givet graviditet". 
+
+Vad är poängen med att känna till detta? Dessa två sannolikheter är olika saker, men förväxlas regelbundet. Att förväxla sannolikheter kan man ofta göra i DNA-undersökningar, vilket har gett namn åt [Prosecutor's fallacy](https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy).
+
+Att förväxla sannolikheter sker också vid hypotesstestning, vilket jag ska beskriva nu. Exemplet med gravid kvinna var bara uppvärmning. I formella termer säger man så här:
+
+Givet två händelser, A och B, förväxlas sannolikheten att A händer givet att B har hänt med sannolikheten att B händer givet att B har hänt. Detta kan göras ännu mer abstrakt genom attt skriva $P(A\mid B)$ samt $P(B\mid A)$.
+
+Att förväxla dessa sannolikheter är särskilt vanligt när man håller på med signifikanstest. Signifikanstest visar sannolikheten att erhålla datan givet nollhypotesen, eller $P(data\mid nollhypotes)$. Det innebär att man får fram sannolikheten för resultatet under antagandet att nollhypotesen är sann.
+
+Men en vanlig missuppfattningn är att man får reda på om nollhypotesen är sann med hjälp av signifikanstest, alltså $P(nollhypotes\mid data)$. Men det får man inte! Det är en annan sannolikhet.
+
+Återigen, det man får fram med signifikanstest är hur osannolikt resultatet är (uttryckt som p-värde), under antagandet att nollhypotesen är sann. Ett lågt p-värde visar att resultatet är osannolikt givet nollhypotesen. Ett högt p-värde visar att resultatet är sannolikt givet nollhypotesen.
+
+Kallas också att *förväxla betingade sannolikheter*, *prosecutor's fallacy*, *fallacy of the transposed conditional*, *confusion of the inverse*, *conditional probability fallacy* eller bara *inverse fallacy*. 
+
+- <https://en.wikipedia.org/wiki/Confusion_of_the_inverse>
+- <https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy>
+
+## Upprepade statistiska tester (p-hacking) {#p-hacking}
+
+Ju fler statistiska tester man gör, desto lättare är det att hitta samband som inte finns (falska alarm).
+
+Faktum är att det är så enkelt att begå fel att man är *garanterad* att hitta åtminstone ett (1) samband som inte finns om man gör ett 60-tal statistiska tester. Och det är inte ovanligt att man gör många statistiska tester för att se vad man kan hitta.
+
+Figuren nedan visar sannolikheten att hitta samband som inte finns. Om man gör 15 statistiska tester så är det alltså över 50 % sannolikhet att hitta ett samband som egentligen inte finns. Då kan man lika väl singla slant.  Med andra ord, ju mer frihet man har i sin dataanalys, desto lättare är det att råka ut för falska alarm.
+
+```{r type-one-error, echo=FALSE, warning=FALSE}
+N <- 100
+type1error <- list(N)
+for(numtests in 1:N)
+{
+  type1error[numtests] <- (1 - (0.95 ^ numtests)) * 100
+}
+plot(1:N, type1error, type="line", main="Sannolikhet att hitta samband som inte finns", xlab="Antal statistiska tester", ylab="Sannolikhet (%)")
+```
+
+Det som händer, rent statistiskt, är att man kommer att hitta ett lågt p-värde 5 % av gångerna.
+
+Hur ska man göra för att undvika problemet med multipla jämförelser? Det finns flera förslag:
+
+- Rapportera alla tester du gör. Men då måste man komma ihåg att skriva ned det, vilket inte alltid är det lättaste.
+- Korrigera p-värdena. Det kan man göra med *Holm/Bonferroni-metoden*. Men då måste man också komma ihåg hur många tester man faktiskt har gjort.
+- Skilj på hypotesgenererande undersökningar och hypotestestande undersökningar. När man genererar hypoteser får man utforska som man vill. När man testar hypoteser så måste man vara mer strikt. Det viktiga är att man är ärlig och skriver vad man har gjort.
+- Gör om studien en gång till, fast med ny data.
+- Använd så kallad *random cross-validation*. Det innebär att man endast analyserar 70 % av datan. Därefter kontrollerar man att de samband man hittat också hittas på resterande 30 % av datan.
+
+Kallas också *garden of forking paths*, *multiple comparison problem* eller *p-hacking*. Läs mer:
+
+- <https://en.wikipedia.org/wiki/Multiple_comparisons_problem>
+- <https://en.wikipedia.org/wiki/Data_dredging>
+- <https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy>
+- <https://en.wikipedia.org/wiki/False_positive_paradox>
+- [This cartoon explains why predicting a mass shooting is impossible](https://www.vox.com/2016/6/15/11934794/cartoon-predicting-a-mass-shooting-mathematically-impossible)
+
+## HARKing {#harking}
+
+HARKing betyder Hypothesizing after the results are known.
+
+- <https://en.wikipedia.org/wiki/Testing_hypotheses_suggested_by_the_data>
+
+## Låg power
+
+- <https://en.wikipedia.org/wiki/Statistical_power>
+
+## Publication bias
+
+- <https://en.wikipedia.org/wiki/Publication_bias>
+
+## Felaktig generalisering
+
+- <https://en.wikipedia.org/wiki/Faulty_generalization>
+- <https://en.wikipedia.org/wiki/Overwhelming_exception>
+- <https://en.wikipedia.org/wiki/Generalization>
+- <https://plato.stanford.edu/entries/generics/> - Generic Generalizations
+
+## "Statistiskt säkerställd"
+
+Ett vanligt uttryck i massmedierna, och i viss mån vetenskapliga rapporter, är uttrycket att resultatet är *statistiskt säkerställt*. Ofta betyder det samma sak som statistiskt signifikant.
+
+Men det är bättre att använda uttrycket statistiskt signifikant i stället, av två skäl:
+
+1. Statistik handlar om hur man hanterar *osäkerhet*, och utgångspunkten är att all inferentiell statistik är osäker (eftersom den bygger på induktiv logik). Därför är det missvisande att säga att man nått en slags säkerhet.
+
+2. Statistisk signifikans handlar om sannolikheten att erhålla resultatet. Det innebär att det går att manipulera fram ett statistiskt signifikant resultat genom att [göra många statistiska tester](#p-hacking). Men trots att statistisk signifikans handlar om sannolikheten att erhålla resultatet, förväxlas det ofta som styrkan på bevisningen. Det är dock två olika saker [@dienes_understanding_2008, 122; @royall_statistical_1997]. Att kalla resultatet statistiskt säkerställt under sådana omständigheter är därför gravt missvisande.
+
+## Base rate fallacy
+
+- <https://en.wikipedia.org/wiki/Base_rate_fallacy>
+
+## Ecological fallacy
+
+Den ekologiska fallasin innebär att man analyserar data på gruppnivå och sedan felaktigt drar slutsatser om individer.
+
+Fallasin uppstår därför att man förväxlar analysnivåer. Om man analyserar könsskillnader, länder eller företag så gäller också slutsatserna könsskillnader, länder eller företag - inte de enskilda personerna.
+
+Det finns fyra olika typer av ekologiska fallasier, och en av dem är [Simpsons paradox](#simpsons-paradox) so beskrivs närmre nedan.
+
+- <https://en.wikipedia.org/wiki/Ecological_fallacy>
+
+## Simpsons paradox {#simpsons-paradox}
+
+Låt säga att universitetet ska anställa nya forskare. De anställer 54 % av männen som söker, men bara 46 % av kvinnorna som söker. Alla sökande är dock lika kvalificerade. Är det belägg för könsdiskriminering?
+
+Du kanske svarar ja, siffrorna visar tydligt att män anställs i högre utsträckning än kvinnor. Men låt oss gräva djupare än den ytliga presentationen av procent.
+
+|           |  Män   |  Kvinnor  |
+|-----------|:------:|:---------:|
+|Historia   | 1 / 5  |   2 / 8   |
+|Geografi   | 6 / 8  |   4 / 5   |
+|Universitet| 7 / 13 |   6 / 13  |
+
+Läs tabellen ovan som att 1 man har anställts till historia, av totalt 5 manliga sökanden. Likaså har 2 kvinnor anställts av totalt 8 kvinnliga sökanden, och så vidare.
+
+Totalt har alltså 7 manliga av totalt 13 manliga sökanden anställts på universitet som helhet (54 %), och 6 kvinnliga av totalt 13 kvinnliga sökanden (46 %). För enkelhetens skull kan vi göra om tabellen ovan med fraktioner till tabellen nedan med procent i stället.
+
+|           |  Män   |  Kvinnor  |
+|-----------|:------:|:---------:|
+|Historia   | 20 %   |   25 %    |
+|Geografi   | 75 %   |   80 %    |
+|Universitet| 54 %   |   46 %    |
+
+Med andra ord kan vi se att en högre andel kvinnor har anställts i både historia och geografi, men det är ändå en högre andel män som anställts på universitet som helhet. Om både historia och geografi anställer fler kvinnor än män, hur kan det ändå vara fler män än kvinnor som anställs totalt?
+
+Det finns flera förklaringar vi kan avfärda direkt:
+
+- Det beror inte på att fler män eller kvinnor har sökt. Det är lika många sökanden totalt (13 kvinnor och 13 män).
+- Det beror inte på att detta exempel handlar om få personer (26 stycken). Om vi multiplicerar alla siffror med 1 000 förblir resultatet detsamma.
+
+Vad som däremot kan förklara denna paradox är att *fler kvinnor sökte tjänster som är svårare att få*.
+
+Historia anställde 3 av 13 sökanden, medan geografi anställde 10 av 13 sökanden. Det är med andra ord lättare att komma in på geografi, som också hade fler manliga sökanden.
+
+Vi får därför olika resultat beroende på om vi väljer att analysera datan på aggregerad nivå (universitetet som helhet) jämfört med om vi väljer att analysera varje institution (historia eller geografi) för sig.
+
+Det är detta som kallas Simpsons paradox. Det är *hierarkin* i datan som påverkar slutsatsen, och slutsatsen påverkas av vilken nivå i denna hierarki man väljer att analysera. I det här fallet har hierarkin två nivåer: institutioner respektive universitet. Ett annat exempel på hierarki är elever inom klasser inom en skola inom en kommun (fyra nivåer). 
+
+![Animation av Simpsons paradox där datan antingen analyseras tillsammans eller gruppvis. När all data analyseras tillsammans är korrelationen negativ (linjen pekar nedåt). När datan analyseras gruppvis är varje korrelation positiv (alla linjer pekar uppåt).](images/simpsons-paradox.gif)
+
+
+Vad ska du göra för att undvika Simpsons paradox? 
+
+1. Kontrollera om din data innehåller hierarkier eller grupper av något slag.
+2. Fråga dig på om hierarkierna eller grupperna har analyserats var för sig eller tillsammans.
+3. Kontrollera om du får olika resultat när du analyserar varje grupp för sig, jämfört med om du analyserar alla grupper tillsammans.
+
+- [Interaktiv visualisering av Simpsons paradox](http://vudlab.com/simpsons/)
+- <https://en.wikipedia.org/wiki/Simpson%27s_paradox>
+- <https://plato.stanford.edu/entries/paradox-simpson/>
+
+## Se även
+
+- [Missförstånd om statistik](#misconceptions-stats)
+- [Checklista för statistika undersökningar](#checklist)
+- Statistiska metoder för att upptäcka inkonsistenser i data
+	- GRIM Test [@brown_grim_2016]
+	- GRIMMER test [@anaya_grimmer_2016]
+	- [Introducing SPRITE (and the Case of the Carthorse Child)](https://hackernoon.com/introducing-sprite-and-the-case-of-the-carthorse-child-58683c2bfeb)

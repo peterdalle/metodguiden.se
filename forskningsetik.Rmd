@@ -1,0 +1,57 @@
+# Forskningsetik {#ethics}
+
+Här hittar du:
+
+- Dokumentärer om etik vid forskningsstudier
+- Vidare läsning om forskningsetik
+
+## Dokumentärer
+
+### SVT Dokument inifrån: Experimenten - Stjärnkirurgen
+
+> Del 1 av 3. Stjärnkirurgen. Året 2015 blev inte som stjärnkirurgen Paolo Macchiarini hade tänkt sig. Han har hunnit bli anklagad, nästan fälld – och friad – för forskningsfusk. Han har anklagats för att använda dödligt sjuka personer som försökskaniner, och hans operationer utreds av polis och åklagare, med misstanke om vållande till annans död. Allt detta på Karolinska – en av Sveriges viktigaste forskningsinstitutioner.
+
+- <https://www.svt.se/dokument-inifran/experimenten-stjarnkirurgen/>
+- <https://sv.wikipedia.org/wiki/Paolo_Macchiarini>
+
+### P3 Dokumentär: Vipeholmsexperimenten
+
+Ljudklipp:
+
+<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/65245" frameborder="0"></iframe>
+
+> 1942 har 99,9 procent av Sveriges mönstrande värnpliktiga hål i tänderna. Stora hål. Ända in till pulpan. En lagning innebär två månaders sjukskrivning i värsta fall. Svenskarnas tandhälsa är usel. Och det kostar pengar att laga. Regeringen ber därför medicinalstyrelsen att utreda orsaken till karies och hur man bäst förebygger hål i tänderna. Det kommer att bli det största människoexperimentet i Sverige. Och svaret på frågorna kommer att innebära en kränkning av de mänskliga rättigheterna.
+
+- <http://sverigesradio.se/sida/avsnitt/65245?programid=2519>
+- <https://sv.wikipedia.org/wiki/Vipeholmsexperimenten>
+
+### P3 Dokumentär: Projekt Metropolit
+
+Ljudklipp:
+
+<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/627369" frameborder="0"></iframe>
+
+> 15 000 svenskar fick under 20 år sina liv registrerade i hemlighet. När Projekt Metropolit avslöjades på 80-talet uppkom en våldsam debatt om övervakning: Var det viktig samhällsforskning eller ett hot mot demokratin?
+
+- <http://sverigesradio.se/sida/avsnitt/627369?programid=2519>
+- <https://sv.wikipedia.org/wiki/Metropolit-projektet>
+
+## Data i en digital värld
+
+Videoklipp (42 min): Christopher Kullenberg vid Göteborgs universitet i [Föreläsning om found data, made data, informerat samtycke och dataminimering](https://www.youtube.com/watch?v=GRoKpNfX-7A).
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/GRoKpNfX-7A?rel=0" frameborder="0" allowfullscreen></iframe>
+
+Videoklipp (10 min): [The Anonymisation Problem - Computerphile](https://www.youtube.com/watch?v=puQvpyf0W-M). Keeping data anonymous seems easy, but keeping identities separate is a big problem. Professor Derek McAuley explains.
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/puQvpyf0W-M?rel=0" frameborder="0" allowfullscreen></iframe>
+
+## Se även
+
+- [Vilseledande statistik](#misleading-stats)
+- [Vilseledande diagram](#misleading-dataviz)
+
+## Läs mer
+
+- [Vetenskapsrådet: Etik](https://www.vr.se/etik.4.3840dc7d108b8d5ad5280004294.html)
+- [Codex: regler och riktlinjer för forskning](http://www.codex.vr.se/forskningsetik.shtml)

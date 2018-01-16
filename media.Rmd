@@ -1,0 +1,37 @@
+# Varför vetenskap blir fel i massmedierna {#media}
+
+Här hittar du:
+
+- Exempel på vetenskap som återges missvisande i massmedierna
+- Varför vetenskap i massmedier ofta blir fel
+- Hur journalister och forskare kan förbättra vetenskapen i medierna
+
+## Från forskningsresultat till nyhet - så går det till
+
+Eftersom vetenskap ofta återges felaktigt i massmedierna är det inte konstigt om läsarna drar slutsatsen att det är journalisterna som har återgett vetenskapen felaktigt. Men så behöver det inte alltid vara.
+
+Det finns studier som jämfört pressmeddelandena från universiteten med nyheterna i massmedierna. Det visar sig många gånger att det är universiteten själva, ibland med forskarnas goda minne, som skriver felaktiga pressmeddelanden. Det är därför både pressmeddelandet och nyheten ibland innehåller slutsatser som inte har stöd i forskningsresultaten.
+
+Problemet är därför tvåfalt: forskare och universitet som skriver vilseledande pressmeddelanden samt journalister som kopierar och klistrar in pressmeddelandet i nyheten utan att källkritiskt granska originalartikeln.
+
+Det hänger också ihop med antalet vetenskapsjournalister. När allt fler journalister blir allmänreportrar i stället för specalistreportrar finns det en risk att vetenskapsnyheter i högre utsträckning skrivs av allmänreportrar utan forskarutbildning eller annan relevant erfarenhet.
+
+## Exempel på missvisande vetenskap i medierna
+
+Opinionsundersökningar återges rutinmässigt på ett missvisande sätt i massmedierna. Framför allt handlar det om att saknas information för att kunna dra slutsatser, men ibland dras också slutsatser som inte ens stöds av opinionsundersökningen.
+
+Här kommer konkreta exempel på vad som har gått snett i massmedierna med en beskrivning om varför det gått snett, samt hur det kan förbättras i framtiden. 
+
+| Vad medierna skrev | Varför det blev fel | Vad de skulle gjort i stället |
+| ------------------ | ------------------- | ----------------------------- |
+| 3,4 | Skillnaden var så liten (3,5 % i stället för 3,4 %) att den i praktiken inte var betydelsefull för människors vardag. | Man måste förstå att stora urval används för att hitta riktigt små skillnader. Så när en studie är riktigt stor, flera hundratusentals deltagare eller mer, är det inte ett tecken på att studien är extra bra utan att forskarna letar efter små skillnader. |
+
+## Vad forskare och journalister bör göra
+
+Forskare
+
+- Forskare bör inte överdriva sina forskningsresultat.
+
+Journalister
+
+- Journalister bör läsa originalartikeln.

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<title></title>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+</head>
+<body>
+
+<p class="lead">Statistikprogram fungerar ofta som svarata lådor där man inte vet vad som händer. Här visas hela uträkningen.</p>
+
+<form>
+	<fieldset>
+		<div class="form-group">
+			<label for="z">Signifikansnivå:</label>
+			<select id="z">
+				<option value="1.645">90 %</option>
+				<option value="1.96" selected>95 % (vanligast)</option>
+				<option value="2.575">99 %</option>
+			</select>
+		</div>
+		<div class="form-group">
+			<label for="p">Andel:</label>
+			<input id="p" type="number" min="0" max="100" step="0.1" value="50"> %
+		</div>
+		<div class="form-group">
+			<label for="n">Antal svarspersoner totalt:</label>
+			<input id="n" type="number" min="0" step="1" value="1000">
+		</div>
+		<div class="form-group">
+			<label for="chk">Korrigera för populationsstorlek:</label>
+			<label><input id="chk" type="checkbox"> Använd korrekationsfaktor</label>
+		</div>
+		<div class="form-group">
+			<label for="pop_n">Antal personer i populationen:</label>
+			<input id="pop_n" type="number" min="0" step="1" value="10000000">
+		</div>
+	</fieldset>
+</form>
+
+<p><b>Felmarginal:</b> <span id="result_moe" data-text="{moe}"></span> procentenheter</p>
+
+<p><b>Konfidensintervall:</b> <span id="result_ci" data-text="{ci_lower} till {ci_upper} (vid {z_perc} % signifikansnivå)"></span></p>
+
+<p><b>Tolkning:</b> <span id="interpretation" data-text="Om ett parti har fått {perc} % av rösterna och totalt {n} personer har tillfrågats så är felmarginalen plus/minus {moe} procentenheter. Om vi lägger till och drar bort felmarginalen från {perc} får vi fram konfidensintervallet {ci_lower} till {ci_upper}. Det betyder att om man upprepar mätningen så kommer de nya procentvärdena ligga mellan {ci_lower} och {ci_upper} ungefär {z_perc} gånger av 100. Därmed kommer värdet att ligga utanför {z_perc_inverted} gånger av 100."></span></p>
+
+<p><b>Ekvation:</b> $$z \sqrt{p (1 - p) \over n}$$</p>
+
+<p><b>Symboler:</b> <span id="result_symbols" data-text="z = {z}, p = {p}, n = {n}"></span> </p>
+
+<p><b>R-kod:</b> <code id="result_r" data-text="{z} * sqrt({p} * (1 - {p}) / {n})"></code> </p>
+
+<p><b>Referens:</b> Neyman 1937</p>
+
+<script>
+	// Vänsterjustera ekvationer.
+	MathJax.Hub.Config({
+		displayAlign: "left"
+	});
+
+	// Lägg till .formatUnicorn() på strängar.
+	// Tack https://stackoverflow.com/questions/610406/javascript-equivalent-to-printf-string-format
+	String.prototype.formatUnicorn = String.prototype.formatUnicorn ||
+	function () {
+		"use strict";
+		var str = this.toString();
+		if (arguments.length) {
+			var t = typeof arguments[0];
+			var key;
+			var args = ("string" === t || "number" === t) ? Array.prototype.slice.call(arguments) : arguments[0];
+			for (key in args) {
+				str = str.replace(new RegExp("\\{" + key + "\\}", "gi"), args[key]);
+			}
+		}
+		return str;
+	};
+
+	// Fånga förändringar i formuläret.
+	$('#p').on("input change", (function() { update_moe(); }));
+	$('#z').on("input change", (function() { update_moe(); }));
+	$('#n').on("input change", (function() { update_moe(); }));
+
+	// Bind formulär till text vid sidladdning.
+	update_moe();
+
+	// Svenskt decimal-tecken, tusentalsavgränsare m.m.
+	function swedify(i) {
+		return(parseFloat(i).toLocaleString("sv-SE"))
+	}
+
+	// Uppdatera texten.
+	function update_moe() {
+		var p = parseFloat($("#p").val() / 100).toFixed(3);
+		var z = $("#z").val();
+		var n = $("#n").val();
+		
+		// Vid ogiltiga värden, lämna texten som den är.
+		if(p > 1) { return; }
+		if(n <= 0) { return; }
+		if(z <= 0) { return; }
+
+		// z till %.
+		var z_perc = 95;
+		if(z == 1.645) { z_perc = 90; }
+		if(z == 2.575) { z_perc = 99; }
+
+		// Felmarginal (proportion) och konfidensintervall.
+		var moe = (z * Math.sqrt(p * (1 - p) / n)) * 100;
+		var ci_lower = (p * 100) - moe;
+		var ci_upper = (p * 100) + moe;
+
+		// Ekvation (R-kod).
+		$("#result_r")
+			.text($("#result_r")
+					.data("text")
+					.formatUnicorn({z: z,
+									p: p,
+									n: n
+								}));
+
+		// Symboler.
+		$("#result_symbols")
+			.text($("#result_symbols")
+					.data("text")
+					.formatUnicorn({z: z,
+									p: p,
+									n: n
+								}));
+
+		// Felmarginal.
+		$("#result_moe")
+			.text($("#result_moe")
+					.data("text")
+					.formatUnicorn({moe: swedify(moe.toFixed(2))}));
+
+		// Konfidensintervall.
+		$("#result_ci")
+			.text($("#result_ci")
+					.data("text")
+					.formatUnicorn({z_perc: z_perc,
+									ci_lower: swedify(ci_lower.toFixed(2)),
+									ci_upper: swedify(ci_upper.toFixed(2))
+								}));
+
+		// Tolkning.
+		$("#interpretation")
+			.text($("#interpretation")
+					.data("text")
+					.formatUnicorn({z: z,
+									z_perc: z_perc,
+									z_perc_inverted: 100 - z_perc,
+									p: swedify(p),
+									perc: swedify((p * 100).toFixed(1)),
+									n: swedify(n),
+									moe: swedify(moe.toFixed(2)),
+									ci_lower: swedify(ci_lower.toFixed(2)),
+									ci_upper: swedify(ci_upper.toFixed(2))
+								}));
+	}
+</script>
+	
+</body>
+</html>
