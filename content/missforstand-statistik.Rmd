@@ -20,7 +20,7 @@ Nej, det finns faktiskt flera olika typer av sannolikhetsteorier som ligger till
 
 Ibland ligger ett värde inom ett konfidensintervall. Syftet med detta intervall är att säga någonting om osäkerheten.
 
-Låt oss ta ett exempel. En opinionsundersökning säger att 25 % av svenskarna sympatiserar med Socialdemokraterna, med ett 95 % konfidensintervall på 23–27 (%-enheter).
+Låt oss ta ett exempel. En opinionsundersökning säger att 25 % av svenskarna sympatiserar med Socialdemokraterna, med ett 95 % konfidensintervall på 23–25 (%-enheter).
 
 En vanlig tolkning är detta:
 
@@ -34,7 +34,7 @@ Men båda är helt fel.
 
 Konfidensintervall säger ingenting om de *enskilda värden* man får fram, utan om *proceduren* för hur dessa värden har räknats fram [@neyman_outline_1937]. Därför kan man inte tillskriva sannolikheter till enskilda värden med hjälp av konfidensintervall.
 
-Konfidensintervall har sitt ursprung i frekventistisk statistik, vilket är en filosofisk inriktning inom sannolikhetsteori och innebär att man räknar hur många gånger någonting förekommer (frekvenser) och drar slutsatser om sannolikheter utifrån *alla* frekvenser över tid. Det går alltså inte tillskriva en sannolikhet till ett specifikt värde över huvud taget.^[Ironiskt nog kan man vara 100 % säker på att konfidensintervallet kommer att innehålla rätt värde 95 % av gångerna. Den första procenten "100 %" syftar nämligen på individens kunskapsteoretiska övertygelse, medan den andra procenten "95 %" syftar på hur många gånger det sker. Det speglar med andra ord de olika filosofiska sannolikhetsteorierna, nämligen bayesianism och frekventism.]
+Konfidensintervall har sitt ursprung i frekventistisk statistik, vilket är en filosofisk inriktning inom sannolikhetsteori och innebär att man räknar hur många gånger någonting förekommer (frekvenser) och drar slutsatser om sannolikheter utifrån *alla* frekvenser över tid. Det går alltså inte tillskriva en sannolikhet till ett specifikt värde över huvud taget.
 
 En tärning kan illustrera detta. Om du får en trea på en sex-sidig tärning så är sannolikheten att få en trea $\frac{1}{6}$. Men du kan ju omöjligt förutse om tärningen kommer att visa en trea om du bara slår den en gång. Det blir en trea eller inte, punkt slut. Men om du slår tärningen hundra gånger kan du räkna ut sannolikheten för en trea *över tid* genom att jämföra med alla tärningskast tillsammans. Faktum är att ju fler gånger du slår tärningen, desto större sannolikhet att alla kast tillsammans närmar sig $\frac{1}{6}$, vilket är anledningen till att konfidensintervallet krymper när observationerna ökar.^[Konfidensintervallet minskar med ökad sampelstorlek eftersom $n$ är inkluderat i ekvationerna för konfidensintervall, exempelvis i ekvationen för konfidensintervallet för proportioner, det vill säga $p\pm{z}\sqrt{\frac{p\left( 1-p \right)}{n}}$.]
 
@@ -42,17 +42,22 @@ Många tolkar däremot konfidensintervallet som sannolikheten för det enskilda 
 
 Konfidensintervall tolkas så här:
 
-> Över tid kommer 95 % av värdena att ligga inom intervallet 23 till 25 (%-enheter).
+> Över tid kommer 95 % av konfidensintervallen att täcka in det sanna populationsvärdet.
 
 Det innebär:
 
-- Om man gör om samplingen 100 gånger, så kommer (i genomsnitt) 95 värden att ligga inom intervallet 23 till 27 (%-enheter). De övriga värdena kommer att ligga utanför intervallet.^[Väljer man ett konfidensintervall på 99 % så kommer 99 av 100 värden att ligga inom intervallet. De övriga värdena kommer därmed ligga utanför intervallet. Ju högre konfidensnivå, såsom 99 %, desto längre ifrån varandra blir också övre och undre gränsen för konfidensintervallet.]
-- Med andra ord så så finns ett enskilt värde inom intervallet, eller så är det utanför. Det är antingen eller.
-- Det finns ingen sannolikhet kopplad till ett enskilt värde över huvud taget, utan sannolikheten räknas ut genom att titta på andelen av samtliga värden *över tid*.
+- Om man gör om samplingen 100 gånger, så kommer (i genomsnitt) 95 konfidensintervall att täcka in det sanna värdet i populationen. De övriga konfidensintervallen kommer därmed inte innehålla populationsvärdet.^[Väljer man en konfidensnivå på 99 % så kommer 99 av 100 konfidensintervall att innehålla det sanna populationsvärdet. Ju högre konfidensnivå, desto längre ifrån varandra blir också övre och undre gränsen för konfidensintervallet. Det sanna populationsvärdet är det man försöker uppskatta, och det vet man förstås oftast inte (då hade man ju inte behövt göra undersökningen).]
+- Med andra ord innehåller konfidensintervall det sanna värdet i populationen, eller så är det utanför. Det är antingen eller.
+- Det finns ingen sannolikhet kopplad till ett enskilt värde över huvud taget, utan sannolikheten räknas ut genom att titta på andelen av samtliga konfidensintervall *över tid*.
 
-Eftersom man normalt sett endast gör en (1) undersökning så får man ju fram ett enskilt värde tillsammans med ett konfidensintervall. Men konfidensintervall handlar ju om samplingar över tid! Så man har med andra ord ingen som helst aning om värdet 25 % i praktiken ligger innanför eller utanför konfidensintervallet 23 till 25 (%-enheter). Det kan man bara veta om man gör upprepade mätningar. Och upprepade mätningar på människor är svårt med tanke på att de också kan förändra sina partisympatier. Med andra ord, även om teorin bakom konfidensintervall skulle vara fullständigt felfri, så beror resultaten i en opinionsundersökning också på hur frågor formuleras, i vilket sammanhang de frågas med mera.
+Eftersom man normalt sett endast gör en (1) undersökning så får man ju fram ett enskilt punktestimat tillsammans med ett konfidensintervall. Men konfidensintervall handlar ju om samplingar över tid! Så man har med andra ord ingen som helst aning om konfidensintervallet man får fram i praktiken innehåller det sanna populationsvärdet. Det kan man bara veta om man gör upprepade mätningar. Då kommer (i genomsnitt) 95 av 100 konfidensintervall att innehålla det sanna populationsvärdet.
+
+Upprepade mätningar på människor för dock med sig en mängd andra problem eftersom människor kan förändra sina partisympatier eller ändra sina partisympatier på grund av mätningen. Med andra ord, även om teorin bakom konfidensintervall skulle vara fullständigt felfri, så beror resultaten i en opinionsundersökning också på hur frågor formuleras och i vilket sammanhang de ställs.
+
+Läs mer:
 
 - På [Interpreting Confidence Intervals: an interactive visualization](http://rpsychologist.com/d3/CI/) kan du se hur konfidensintervall uppför sig i praktiken. Antingen så är ett enskilt värde inom konfidensintervallet, eller så är det utanför. Men 95 % av gångerna kommer värdena att vara inom intervallet.
+- [Den mytomspunna felmarginalen](https://politologerna.wordpress.com/2013/01/30/den-mytomspunna-felmarginalen/)
 - <https://en.wikipedia.org/wiki/Confidence_interval>
 
 ## Missförstånd: "P-värdet visar sannolikheten att nollhypotesen är sann"
