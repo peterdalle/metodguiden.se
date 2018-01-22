@@ -21,7 +21,7 @@
 	<div class="py-5 text-center">
 		<a href="http://metodguiden.se/"><img class="d-block mx-auto mb-4" src="images/metodguiden-logo.svg" alt="Metodguiden.se" width="166" height="40"></a>
 		<h1>Vad blir felmarginalen?</h1>
-		<p class="lead">Räkna ut felmarginalen från en partiundersökning, innehållsanalys eller annan typ av undersökning med slumpmässigt urval. Se hur hela uträkningen går till, inklusive hur du tolkar resultatet.</p>
+		<p class="lead">Räkna ut felmarginalen från en partiundersökning, innehållsanalys eller annan typ av undersökning med obundet slumpmässigt urval. Se hur hela uträkningen går till, inklusive hur du tolkar resultatet.</p>
 	</div>
 
 	<div class="row">
@@ -67,19 +67,53 @@
 		<div class="col-md-7">
 			<div id="message"></div>
 
-			<p><b>Felmarginal:</b> <span id="result_moe" data-text="{moe}"></span> procentenheter</p>
+			<ul class="nav nav-tabs" id="tab" role="tablist">
+				<li class="nav-item"><a class="nav-link active" id="moe-tab" data-toggle="tab" href="#moe" role="tab" aria-controls="moe" aria-selected="true">Felmarginal</a></li>
+				<li class="nav-item"><a class="nav-link" id="assumptions-tab" data-toggle="tab" href="#assumptions" role="tab" aria-controls="assumptions" aria-selected="false">Antaganden</a></li>
+				<li class="nav-item"><a class="nav-link" id="readmore-tab" data-toggle="tab" href="#readmore" role="tab" aria-controls="readmore" aria-selected="false">Läs mer</a></li>
+				<li class="nav-item"><a class="nav-link" id="thanks-tab" data-toggle="tab" href="#thanks" role="tab" aria-controls="thanks" aria-selected="false">Tack</a></li>
+			</ul>
+			<div class="tab-content" id="tab-content" style="margin-top: 20px">
+				<div class="tab-pane show active" id="moe" role="tabpanel" aria-labelledby="moe-tab">
+					<p><b>Felmarginal:</b> <span id="result_moe" data-text="{moe}"></span> procentenheter</p>
 
-			<p><b>Konfidensintervall:</b> <span id="result_ci" data-text="{ci_lower} till {ci_upper} procentenheter (vid {z_perc} % signifikansnivå)"></span></p>
+					<p><b>Konfidensintervall:</b> <span id="result_ci" data-text="{ci_lower} till {ci_upper} procentenheter (vid {z_perc} % signifikansnivå)"></span></p>
 
-			<p><b>Tolkning:</b> <span id="interpretation" data-text="Om ett parti har fått {perc} % av rösterna och totalt {n} personer har tillfrågats så är felmarginalen plus/minus {moe} procentenheter. Om vi lägger till och drar bort felmarginalen från {perc} får vi fram konfidensintervallet {ci_lower} till {ci_upper}. Det betyder att om man upprepar mätningen flera gånger kommer de nya procentvärdena ligga mellan {ci_lower} och {ci_upper} ungefär {z_perc} gånger av 100. Därmed kommer också värdet att ligga utanför {z_perc_inverted} gånger av 100. (Vilken av gångerna de faktiskt ligger innanför eller utanför konfidensintervallet kan man dock inte veta i praktiken.)"></span></p>
+					<p><b>Tolkning:</b> <span id="interpretation" data-text="Om ett parti har fått {perc} % av rösterna och totalt {n} personer har tillfrågats så är felmarginalen plus/minus {moe} procentenheter. Om vi lägger till och drar bort felmarginalen från {perc} får vi fram konfidensintervallet {ci_lower} till {ci_upper}. Det betyder att om man upprepar mätningen flera gånger kommer de nya procentvärdena ligga mellan {ci_lower} och {ci_upper} ungefär {z_perc} gånger av 100. Därmed kommer också värdet att ligga utanför {z_perc_inverted} gånger av 100. (Vilken av gångerna de faktiskt ligger innanför eller utanför konfidensintervallet kan man dock inte veta i praktiken.)"></span></p>
 
-			<p><b>Ekvation:</b> <div id="liveformula" data-text="$$z \sqrt{p (1 - p) \over n}$$" data-text-corr="$$z \sqrt{{p (1 - p) \over n} (1 - {n \over N})}$$"></div></p>
+					<p><b>Ekvation:</b> <div id="liveformula" data-text="$$z \sqrt{p (1 - p) \over n}$$" data-text-corr="$$z \sqrt{{p (1 - p) \over n} (1 - {n \over N})}$$"></div></p>
 
-			<p><b>Symboler:</b> <span id="result_symbols" data-text="z = {z}, p = {p}, n = {n}" data-text-corr="z = {z}, p = {p}, n = {n}, N = {pop}"></span> </p>
+					<p><b>Symboler:</b> <span id="result_symbols" data-text="z = {z}, p = {p}, n = {n}" data-text-corr="z = {z}, p = {p}, n = {n}, N = {pop}"></span> </p>
 
-			<p><b>R-kod:</b> <pre id="result_r" data-text="{z} * sqrt({p} * (1 - {p}) / {n})" data-text-corr="{z} * sqrt(({p} * (1 - {p}) / {n}) * (1 - ({n} / {pop})))"></pre></p>
+					<p><b>R-kod:</b> <pre id="result_r" data-text="{z} * sqrt({p} * (1 - {p}) / {n})" data-text-corr="{z} * sqrt(({p} * (1 - {p}) / {n}) * (1 - ({n} / {pop})))"></pre></p>
 
-			<p><b>Referens:</b> Neyman (1937), Holmberg &amp; Petersson (1980)</p>
+					<p><b>Referens:</b> Neyman (1937), Holmberg &amp; Petersson (1980)</p>
+				</div>
+				<div class="tab-pane" id="assumptions" role="tabpanel" aria-labelledby="assumptions-tab">
+					<p>Alla statistiska tester bygger på antaganden, och felmarginalen är inget undantag.</p>
+					<p>Tänk på:</p>
+					<ul>
+						<li><b>Felmarginalen gäller obundet slumpmässigt urval</b>. Föreställ dig en urna med bollar. Om du plockar upp en boll i taget helt slumpmässigt har varje boll lika stor sannolikhet att bli upplockad. Det är den enklaste formen av slumpmässigt urval. Men ibland används mer komplicerade urval i flera steg, eller så viktas resultatet i efterhand. Ibland är inte ens svarspersonerna slumpmässigt utvalda utan söker själva upp undersökningen. Då kan denna felmarginal inte användas.</li>
+						<li><b>Frågor är inte alltid neutrala</b>. Människor är inte bollar i en urna. Vi påverkas av vilka frågor som ställs, hur de ställs och i vilket sammanhang de ställs. Därför kan felmarginalen vara väldigt exakt, men ändå helt irrelevant. En liten felmarginal kan nämligen aldrig kompensera en dåligt ställd fråga.</li>
+					</ul>
+					<p>Se också <a href="http://metodguiden.se/missforstand-statistik.html">Missförstånd om statistik</a>.</p>
+				</div>
+				<div class="tab-pane" id="readmore" role="tabpanel" aria-labelledby="readmore-tab">
+					<p>Läs mer om hur opinionsundersökningar används, tolkas och kan användas i påverkanssyfte:</p>
+					<ul>
+						<li>Järvå, H., &amp; Dahlgren, P. M. (2013). <i>Påverkan och manipulation</i>. Lund: Studentlitteratur.</li>
+						<li>Tryggvason, P. O., &amp; Strömbäck, J. (2017). Fact or Fiction? Investigating the quality of opinion poll coverage and its antecedents. <i>Journalism Studies</i>, 1–20. <a href="https://doi.org/10.1080/1461670X.2017.1330665">doi:10.1080/1461670X.2017.1330665</a></li>
+					</ul>
+					<p>Se också <a href="http://metodguiden.se/missforstand-statistik.html">Missförstånd om statistik</a>.</p>
+				</div>
+				<div class="tab-pane" id="thanks" role="tabpanel" aria-labelledby="thanks-tab">
+					<p>Stort tack för <a href="https://twitter.com/peterdalle/status/955371201714622464">feedback</a>:</p>
+					<ul>
+						<li>Max Berggren</li>
+						<li>Richard Öhrvall‏</li>
+					</ul>
+				</div>
+			</div>
 		</div>
 	</div>
 
