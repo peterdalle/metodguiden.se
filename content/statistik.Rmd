@@ -55,7 +55,7 @@ Vi kan ta ett exempel på hur p-värdet fungerarar.
 
 Det enda p-värdet gör är alltså att se om bollarna har placerats slumpmässigt i korgarna, eller inte. I vetenskap hjälper p-värdet att se om ett samband kan ha uppstått slumpmässigt eller inte.
 
-Här är några exempel på vad p-värdet blir när man flyttar runt bollarna i korgarna:[^Uträknat med exakt binomialt test, exempelvis `binom.test(50, 100, 0.5)`.]
+Här är några exempel på vad p-värdet blir när man flyttar runt bollarna i korgarna:^[Uträknat med exakt binomialt test, R-kod: `binom.test(50, 100, 0.5)`.]
 
 - Om bollarna är fördelade 50/50 blir p = 1. Tolkning: Det observerade resultatet är väldigt sannolikt givet slumpen. Det observerade resultatet (50/50) är inte extremt i förhållande till slumpen (50/50) eftersom de är identiska.
 - Om bollarna är fördelade 51/49 blir p = 0,920. Tolkning: Det är väldigt sannolikt givet slumpen.

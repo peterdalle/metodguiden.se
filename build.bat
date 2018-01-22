@@ -12,28 +12,28 @@ IF "%1" == "--help" GOTO Help
 
 :CompileHtml
 echo Building HTML...
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::gitbook')"
 GOTO End
 
 :CompilePdf
 echo Building PDF...
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::pdf_book')"
 GOTO End
 
 :CompileEpub
 echo Building EPUB...
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::epub_book')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::epub_book')"
 GOTO End
 
 :CompileAll
 echo Building HTML PDF EPUB...
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::gitbook')"
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::pdf_book')"
-"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('index.Rmd', 'bookdown::epub_book')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::gitbook')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::pdf_book')"
+"C:\Program Files\R\R-3.4.2\bin\Rscript.exe" -e "bookdown::render_book('content/index.Rmd', 'bookdown::epub_book')"
 GOTO End
 
 :Help
-echo Usage: build [pdf] [html] [all]
+echo Usage: build [pdf] [html] [epub] [all]
 echo   html ..... Build HTML (default when no argument is passed)
 echo   pdf ...... Build PDF
 echo   epub ..... Build EPUB

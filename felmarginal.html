@@ -1,63 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<title>Räkna ut felmarginal</title>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title></title>
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML"></script>
+	<meta name="HandheldFriendly" content="true">
+	<meta name="viewport" content="width=device-width,height=device-height,user-scalable=yes">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js" integrity="sha384-xBuQ/xzmlsLoJpyjoggmTEz8OWUFM0/RC5BsqQBDX2v5cMvDHcMakNTNrHIW2I5f" crossorigin="anonymous"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_CHTML" integrity="sha384-ekJxthwrl3ID8DzHP2myRUdIPhTdEgNJ1xKhDsMKDT3+kBlZ4Zwk5zH960SnLZR8" crossorigin="anonymous"></script>
+	<!-- 
+	Revideringar
+	============
+	2018-01-22 Första release
+	-->
 </head>
-<body>
+<body class="bg-light">
 
-<p class="lead">Statistikprogram fungerar ofta som svarata lådor där man inte vet vad som händer. Här visas hela uträkningen.</p>
+<div class="container">
+	<div class="py-5 text-center">
+		<a href="http://metodguiden.se/"><img class="d-block mx-auto mb-4" src="images/metodguiden-logo.svg" alt="Metodguiden.se" width="166" height="40"></a>
+		<h1>Vad blir felmarginalen?</h1>
+		<p class="lead">Räkna ut felmarginalen från en partiundersökning, innehållsanalys eller annan typ av undersökning med slumpmässigt urval. Se hur hela uträkningen går till, inklusive hur du tolkar resultatet.</p>
+	</div>
 
-<form>
-	<fieldset>
-		<div class="form-group">
-			<label for="z">Signifikansnivå:</label>
-			<select id="z">
-				<option value="1.645">90 %</option>
-				<option value="1.96" selected>95 % (vanligast)</option>
-				<option value="2.575">99 %</option>
-			</select>
+	<div class="row">
+		<div class="col-md-5">
+			<form>
+				<fieldset>
+					<div class="form-group">
+						<label for="p">Procentandel:</label>
+						<input id="p" type="number" min="0" max="100" step="0.1" value="50" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="n">Svarspersoner totalt:</label>
+						<input id="n" type="number" min="0" step="1" value="1000" class="form-control">
+					</div>
+					<div class="form-group">
+						<label for="z">Signifikansnivå:</label>
+						<select id="z" class="form-control">
+							<option value="1.645">90 %</option>
+							<option value="1.96" selected>95 % (vanligast)</option>
+							<option value="2.575">99 %</option>
+						</select>
+					</div>
+					<div class="form-group">
+						<div class="form-check form-check-inline">
+							<input id="chk-live" checked type="checkbox" class="form-check-input" data-state="live">
+							<label for="chk-live" class="form-check-label">Live-ekvation</label>
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="form-check form-check-inline">
+							<input id="chk-corr" type="checkbox" class="form-check-input">
+							<label for="chk-corr" class="form-check-label">Korrigera för populationsstorlek</label>
+						</div>
+					</div>
+					<div id="korrpop" class="form-group" style="display: none">
+						<label for="pop_n">Antal personer i populationen:</label>
+						<input id="pop_n" type="number" min="0" step="1" value="10112669" class="form-control">
+						<div class="d-block text-muted">Ta hänsyn till storleken på populationen när felmarginalen beräknas. Detta ändrar inte felmarginalen nämnvärt, men när urvalstorleken närmar sig populationensstorleken kan man se att felmarginalen minskar något. Sveriges folkmängd var 10 112 669 personer november 2017 enligt <a href="http://www.scb.se/hitta-statistik/nyckeltal-for-sverige/">SCB</a>.</div>
+					</div>
+				</fieldset>
+			</form>
 		</div>
-		<div class="form-group">
-			<label for="p">Andel:</label>
-			<input id="p" type="number" min="0" max="100" step="0.1" value="50"> %
+		<div class="col-md-7">
+			<div id="message"></div>
+
+			<p><b>Felmarginal:</b> <span id="result_moe" data-text="{moe}"></span> procentenheter</p>
+
+			<p><b>Konfidensintervall:</b> <span id="result_ci" data-text="{ci_lower} till {ci_upper} procentenheter (vid {z_perc} % signifikansnivå)"></span></p>
+
+			<p><b>Tolkning:</b> <span id="interpretation" data-text="Om ett parti har fått {perc} % av rösterna och totalt {n} personer har tillfrågats så är felmarginalen plus/minus {moe} procentenheter. Om vi lägger till och drar bort felmarginalen från {perc} får vi fram konfidensintervallet {ci_lower} till {ci_upper}. Det betyder att om man upprepar mätningen flera gånger kommer de nya procentvärdena ligga mellan {ci_lower} och {ci_upper} ungefär {z_perc} gånger av 100. Därmed kommer också värdet att ligga utanför {z_perc_inverted} gånger av 100. (Vilken av gångerna de faktiskt ligger innanför eller utanför konfidensintervallet kan man dock inte veta i praktiken.)"></span></p>
+
+			<p><b>Ekvation:</b> <div id="liveformula" data-text="$$z \sqrt{p (1 - p) \over n}$$" data-text-corr="$$z \sqrt{{p (1 - p) \over n} (1 - {n \over N})}$$"></div></p>
+
+			<p><b>Symboler:</b> <span id="result_symbols" data-text="z = {z}, p = {p}, n = {n}" data-text-corr="z = {z}, p = {p}, n = {n}, N = {pop}"></span> </p>
+
+			<p><b>R-kod:</b> <pre id="result_r" data-text="{z} * sqrt({p} * (1 - {p}) / {n})" data-text-corr="{z} * sqrt(({p} * (1 - {p}) / {n}) * (1 - ({n} / {pop})))"></pre></p>
+
+			<p><b>Referens:</b> Neyman (1937), Holmberg &amp; Petersson (1980)</p>
 		</div>
-		<div class="form-group">
-			<label for="n">Antal svarspersoner totalt:</label>
-			<input id="n" type="number" min="0" step="1" value="1000">
+	</div>
+
+	<div class="row">
+		<div class="col-md-12 text-center">
+			<hr>
+			<small>En tjänst från <a href="http://metodguiden.se/">Metodguiden.se</a> / <a href="http://peterdahlgren.com/">Peter M. Dahlgren</a></small>
 		</div>
-		<div class="form-group">
-			<label for="chk">Korrigera för populationsstorlek:</label>
-			<label><input id="chk" type="checkbox"> Använd korrekationsfaktor</label>
-		</div>
-		<div class="form-group">
-			<label for="pop_n">Antal personer i populationen:</label>
-			<input id="pop_n" type="number" min="0" step="1" value="10000000">
-		</div>
-	</fieldset>
-</form>
+	</div>
+</div>
 
-<p><b>Felmarginal:</b> <span id="result_moe" data-text="{moe}"></span> procentenheter</p>
-
-<p><b>Konfidensintervall:</b> <span id="result_ci" data-text="{ci_lower} till {ci_upper} (vid {z_perc} % signifikansnivå)"></span></p>
-
-<p><b>Tolkning:</b> <span id="interpretation" data-text="Om ett parti har fått {perc} % av rösterna och totalt {n} personer har tillfrågats så är felmarginalen plus/minus {moe} procentenheter. Om vi lägger till och drar bort felmarginalen från {perc} får vi fram konfidensintervallet {ci_lower} till {ci_upper}. Det betyder att om man upprepar mätningen så kommer de nya procentvärdena ligga mellan {ci_lower} och {ci_upper} ungefär {z_perc} gånger av 100. Därmed kommer värdet att ligga utanför {z_perc_inverted} gånger av 100."></span></p>
-
-<p><b>Ekvation:</b> $$z \sqrt{p (1 - p) \over n}$$</p>
-
-<p><b>Symboler:</b> <span id="result_symbols" data-text="z = {z}, p = {p}, n = {n}"></span> </p>
-
-<p><b>R-kod:</b> <code id="result_r" data-text="{z} * sqrt({p} * (1 - {p}) / {n})"></code> </p>
-
-<p><b>Referens:</b> Neyman 1937</p>
-
-<script>
-	// Vänsterjustera ekvationer.
+<script type="text/javascript">
+	// Vänsterjustera ekvationer, visa inte renderings-meddelande.
 	MathJax.Hub.Config({
-		displayAlign: "left"
+		displayAlign: "left",
+		messageStyle: "none",
+		tex2jax: {preview: "none"}
 	});
 
 	// Lägg till .formatUnicorn() på strängar.
@@ -77,10 +116,55 @@
 		return str;
 	};
 
+	// Visa/dölj korrekationsfaktor.
+	$('#chk-corr').click(function(){ $('#korrpop').toggle(); });
+
+	// Skapa TeX för live-ekvation.
+	var liveformula = {
+		formula: document.getElementById("liveformula"),
+		update: function () {
+			var p = parseFloat($("#p").val() / 100).toFixed(3);
+			var z = parseFloat($("#z").val());
+			var n = parseInt($("#n").val());
+			var pop = parseInt($("#pop_n").val());
+			var populationcorrection = Boolean($("#chk-corr:checked").length);
+			var liveformula = Boolean($("#chk-live:checked").length);
+
+			// Felmarginal med respektive utan korrektionsfaktor.
+			if(populationcorrection) {
+				var moe = (z * Math.sqrt(p * (1 - p) / n) * (1 - (n / pop))).toFixed(4);
+			} else {
+				var moe = (z * Math.sqrt(p * (1 - p) / n)).toFixed(4);
+			}
+
+			if(liveformula) {
+				if(populationcorrection) {
+					// Live med korrektion.
+					this.formula.innerHTML = "$$" + z + " \\sqrt{{" + p + " (1 - " + p + ") \\over " + n + "} (1 - {" + n + " \\over " + pop + "})} = " + moe + "$$";
+				} else {
+					// Live utan korrektion.
+					this.formula.innerHTML = "$$" + z + " \\sqrt{" + p + " (1 - " + p + ") \\over " + n + "} = " + moe + "$$";
+				}
+			} else {
+				if(populationcorrection) {
+					// Statisk med korrektion.
+					this.formula.innerHTML = $("#liveformula").data("text-corr");
+				} else {
+					// Statisk utan korrektion.
+					this.formula.innerHTML = $("#liveformula").data("text");
+				}
+			}
+			MathJax.Hub.Queue(["Typeset", MathJax.Hub, this.formula]);
+		}
+	};
+
 	// Fånga förändringar i formuläret.
 	$('#p').on("input change", (function() { update_moe(); }));
 	$('#z').on("input change", (function() { update_moe(); }));
 	$('#n').on("input change", (function() { update_moe(); }));
+	$('#pop_n').on("input change", (function() { update_moe(); }));
+	$('#chk-corr').on("input change", (function() { update_moe(); liveformula.update(); }));
+	$('#chk-live').on("input change", (function() { update_moe(); }));
 
 	// Bind formulär till text vid sidladdning.
 	update_moe();
@@ -92,74 +176,111 @@
 
 	// Uppdatera texten.
 	function update_moe() {
+		var decimals = 1;
 		var p = parseFloat($("#p").val() / 100).toFixed(3);
-		var z = $("#z").val();
-		var n = $("#n").val();
+		var z = parseFloat($("#z").val());
+		var n = parseInt($("#n").val());
+		var pop = parseInt($("#pop_n").val());
+		var use_correction = Boolean($("#chk-corr:checked").length);
+		var use_live_formula = Boolean($("#chk-live:checked").length);
 		
 		// Vid ogiltiga värden, lämna texten som den är.
 		if(p > 1) { return; }
 		if(n <= 0) { return; }
 		if(z <= 0) { return; }
+		if((n > pop) && use_correction) {
+			$("#message").html("<div class='alert alert-danger'>Antalet svarspersoner kan inte vara större än populationen.</div>");
+			return;
+		} else {
+			$("#message").html("");
+		}
 
 		// z till %.
 		var z_perc = 95;
 		if(z == 1.645) { z_perc = 90; }
 		if(z == 2.575) { z_perc = 99; }
 
-		// Felmarginal (proportion) och konfidensintervall.
-		var moe = (z * Math.sqrt(p * (1 - p) / n)) * 100;
+		// Felmarginal (proportion) och konfidensintervall, med respektive utan korrektionsfaktor.
+		if(use_correction) {
+			var moe = (z * Math.sqrt(p * (1 - p) / n) * (1 - (n / pop))) * 100;
+		} else {
+			var moe = (z * Math.sqrt(p * (1 - p) / n)) * 100;
+		}
 		var ci_lower = (p * 100) - moe;
 		var ci_upper = (p * 100) + moe;
 
-		// Ekvation (R-kod).
-		$("#result_r")
-			.text($("#result_r")
-					.data("text")
-					.formatUnicorn({z: z,
-									p: p,
-									n: n
-								}));
+		// Ekvation (R-kod) med respektive utan korrektionsfaktor.
+		if(use_correction) {
+			$("#result_r").html($("#result_r").data("text-corr")
+				.formatUnicorn({z: z,
+								p: p,
+								n: n,
+								pop: pop
+							}));			
+		} else {
+			$("#result_r").html($("#result_r").data("text")
+				.formatUnicorn({z: z,
+								p: p,
+								n: n,
+								pop: pop
+							}));
+		}
 
-		// Symboler.
-		$("#result_symbols")
-			.text($("#result_symbols")
-					.data("text")
-					.formatUnicorn({z: z,
-									p: p,
-									n: n
-								}));
+		// Symboler med respektive utan korrektionsfaktor.
+		if(use_correction) {
+			$("#result_symbols").html($("#result_symbols").data("text-corr")
+				.formatUnicorn({z: z,
+								p: p,
+								n: n,
+								pop: pop
+							}));
+		} else {
+			$("#result_symbols").html($("#result_symbols").data("text")
+				.formatUnicorn({z: z,
+								p: p,
+								n: n,
+								pop: pop
+							}));
+		}
 
 		// Felmarginal.
-		$("#result_moe")
-			.text($("#result_moe")
-					.data("text")
-					.formatUnicorn({moe: swedify(moe.toFixed(2))}));
+		$("#result_moe").html($("#result_moe").data("text")
+			.formatUnicorn({moe: swedify(moe.toFixed(decimals))}));
 
 		// Konfidensintervall.
-		$("#result_ci")
-			.text($("#result_ci")
-					.data("text")
-					.formatUnicorn({z_perc: z_perc,
-									ci_lower: swedify(ci_lower.toFixed(2)),
-									ci_upper: swedify(ci_upper.toFixed(2))
-								}));
+		$("#result_ci").html($("#result_ci").data("text")
+			.formatUnicorn({z_perc: z_perc,
+							ci_lower: swedify(ci_lower.toFixed(decimals)),
+							ci_upper: swedify(ci_upper.toFixed(decimals))
+						}));
 
 		// Tolkning.
-		$("#interpretation")
-			.text($("#interpretation")
-					.data("text")
-					.formatUnicorn({z: z,
-									z_perc: z_perc,
-									z_perc_inverted: 100 - z_perc,
-									p: swedify(p),
-									perc: swedify((p * 100).toFixed(1)),
-									n: swedify(n),
-									moe: swedify(moe.toFixed(2)),
-									ci_lower: swedify(ci_lower.toFixed(2)),
-									ci_upper: swedify(ci_upper.toFixed(2))
-								}));
+		$("#interpretation").html($("#interpretation").data("text")
+			.formatUnicorn({z: z,
+							z_perc: z_perc,
+							z_perc_inverted: 100 - z_perc,
+							p: swedify(p),
+							pop: swedify(pop),
+							perc: swedify((p * 100).toFixed(decimals)),
+							n: swedify(n),
+							moe: swedify(moe.toFixed(decimals)),
+							ci_lower: swedify(ci_lower.toFixed(decimals)),
+							ci_upper: swedify(ci_upper.toFixed(decimals))
+						}));
+
+		// Uppdatera live-ekvation, eller låt vara om ekvationen inte är live.
+		if(use_live_formula) {
+			liveformula.update();
+			$("#chk-live").data("state", "live");
+		} else {
+			if($("#chk-live").data("state") == "live") {
+				liveformula.update();
+				$("#chk-live").data("state", "");
+			}
+		}
 	}
 </script>
-	
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>	
 </body>
 </html>

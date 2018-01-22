@@ -4,8 +4,8 @@ description: "Metod speciellt för medie- och kommunikationsvetenskap och journa
 author: "Peter M. Dahlgren"
 institute: "Institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet"
 date: "`r Sys.Date()`"
-bibliography: ["ref.bib"]
-biblio-style: "apalike"
+bibliography: ["content/ref.bib"]
+csl: "apa6.csl"
 link-citations: true
 ---
 
@@ -15,7 +15,7 @@ library(ggplot2)
 theme_set(theme_minimal())
 ```
 
-![](images/cover.png)
+![](images/metodguiden-logo.png)
 
 # Om Metodguiden {-}
 
@@ -67,6 +67,7 @@ Senaste versionen skapades automatiskt `r Sys.Date()`.
 
 | När        | Vad |
 | :---------- | :------------------------------------------------------------ |
+| 2018-01-22 | Lagt till [Vad blir felmarginalen?](/felmarginal.html)|
 | 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till egen domän metodguiden.se. |
 | 2017-11-29 | Lagt till [forskningsetik](#ethics). |
 | 2017-08-22 | Byggt om till bookdown. |

@@ -41,7 +41,6 @@ cover-image: "images/cover.png"
 #apple-touch-icon: "touch-icon.png"
 #apple-touch-icon-size: 120
 site: bookdown::bookdown_site
-csl: apa6.csl
 header-includes:
   - \usepackage[swedish]{babel}
 colorlinks: yes
