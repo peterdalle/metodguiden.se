@@ -39,7 +39,7 @@ Varför är det viktigt att lära sig metod egentligen? Titta på videoklippet [
 
 Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden. Men med hjälp av en ny metod, där en person håller i handen när det autistiska barnet skriver, har gjort att barnet plötsligt kan skriva ned alla sina innersta tankar. Metoden kallas faciliterad kommunikation. Men det finns de som hävdar att det är personen som håller handen som egentligen styr vad barnen skriver. Så hur tar man reda på vem som har rätt? Det är där metoderna kommer in i bilden.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/CzCGux7qD1c?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/CzCGux7qD1c?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 ## Kontakta {-}
 

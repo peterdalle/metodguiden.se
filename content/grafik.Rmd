@@ -276,13 +276,13 @@ Skriv alltid ut det fullständiga p-värdet med tre decimaler, till exempel p=0,
 
 An introduction to the practice of data visualization, with theory, examples, and good humor. Studio rerecording of a presentation at McGill University graduate students.
 
-<iframe class="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/XIgjTuDGXYY" frameborder="0" allowfullscreen></iframe>
+<iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/XIgjTuDGXYY" frameborder="0" allowfullscreen></iframe>
 
 **[Data Visualization Best Practices](https://www.youtube.com/watch?v=w1Ts0vT5Pf0)**
 
 Learn how to get the most out of your business intelligence platform including how to choose the right chart type, and how to optimise your charts to make them easier to understand and more attractive.
 
-<iframe class="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/w1Ts0vT5Pf0" frameborder="0" allowfullscreen></iframe>
+<iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/w1Ts0vT5Pf0" frameborder="0" allowfullscreen></iframe>
 
 ### Böcker
 

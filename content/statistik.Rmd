@@ -129,7 +129,7 @@ Notera att Cramérs V går från 0 till 1 och därmed inte har någon riktning. 
 
 Anders Sundell (Statsvetenskapliga institutionen) förklarar signifikans och p-värden i denna video.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/8qiJLwxifY4" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/8qiJLwxifY4" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 Fler videor om p-värden:
 
@@ -139,7 +139,7 @@ Fler videor om p-värden:
 
 Khan Academy har en mängd YouTube-videor med grundläggande statistik till mer avancerad statistik. Titta på spellistan nedan med grundläggande deskriptiv statistik:
 
-<iframe class="videoplayer" width="560" height="315" src="https://www.youtube.com/embed/uhxtUt_-GyM?list=PL1328115D3D8A2566" frameborder="0" allowfullscreen></iframe>
+<iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/uhxtUt_-GyM?list=PL1328115D3D8A2566" frameborder="0" allowfullscreen></iframe>
 
 Se också [Videos for teaching and learning statistics](https://learnandteachstatistics.wordpress.com/2018/01/09/videos-for-teaching-and-learning-statistics/).
 

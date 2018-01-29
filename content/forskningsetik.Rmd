@@ -18,7 +18,7 @@ Här hittar du:
 
 Ljudklipp:
 
-<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/65245" frameborder="0"></iframe>
+<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/65245" frameborder="0" class="mediaplayer soundplayer"></iframe>
 
 > 1942 har 99,9 procent av Sveriges mönstrande värnpliktiga hål i tänderna. Stora hål. Ända in till pulpan. En lagning innebär två månaders sjukskrivning i värsta fall. Svenskarnas tandhälsa är usel. Och det kostar pengar att laga. Regeringen ber därför medicinalstyrelsen att utreda orsaken till karies och hur man bäst förebygger hål i tänderna. Det kommer att bli det största människoexperimentet i Sverige. Och svaret på frågorna kommer att innebära en kränkning av de mänskliga rättigheterna.
 
@@ -29,7 +29,7 @@ Ljudklipp:
 
 Ljudklipp:
 
-<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/627369" frameborder="0"></iframe>
+<iframe width="100%" height="150" src="https://sverigesradio.se/embed/episode/627369" frameborder="0" class="mediaplayer soundplayer"></iframe>
 
 > 15 000 svenskar fick under 20 år sina liv registrerade i hemlighet. När Projekt Metropolit avslöjades på 80-talet uppkom en våldsam debatt om övervakning: Var det viktig samhällsforskning eller ett hot mot demokratin?
 
@@ -40,11 +40,11 @@ Ljudklipp:
 
 Videoklipp (42 min): Christopher Kullenberg vid Göteborgs universitet i [Föreläsning om found data, made data, informerat samtycke och dataminimering](https://www.youtube.com/watch?v=GRoKpNfX-7A).
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/GRoKpNfX-7A?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/GRoKpNfX-7A?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 Videoklipp (10 min): [The Anonymisation Problem - Computerphile](https://www.youtube.com/watch?v=puQvpyf0W-M). Keeping data anonymous seems easy, but keeping identities separate is a big problem. Professor Derek McAuley explains.
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/puQvpyf0W-M?rel=0" frameborder="0" allowfullscreen></iframe>
+<iframe src="https://www.youtube.com/embed/puQvpyf0W-M?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 ## Se även
 

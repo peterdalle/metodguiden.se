@@ -30,7 +30,7 @@ Missa inte heller [videoklippet om statistisk signifikans](#signifikans-sundell)
 
 Lunds universitets har svenska SPSS-videor på deras YouTube-kanal:
 
-<iframe class="videoplayer" width="630" height="472" src="https://www.youtube.com/embed/zvYNscF-BEM" frameborder="0" allowfullscreen></iframe>
+<iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/zvYNscF-BEM" frameborder="0" allowfullscreen></iframe>
 
 Samtliga videor från Lunds universitet:
 
