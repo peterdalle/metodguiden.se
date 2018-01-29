@@ -4,6 +4,20 @@
 
 Alla texter är skrivna i [RMarkdown](http://rmarkdown.rstudio.com/) och kompileras automatiskt med [bookdown](https://bookdown.org/) till HTML och EPUB. Grafik och analyser är skrivna i R. 
 
+## Bygg
+
+Bygg HTML:
+
+```cmd
+> build
+```
+
+Bygg HTML och EPUB:
+
+```cmd
+> build-all
+```
+
 ## LaTeX
 
 Följande LaTeX-paket behövs för att kompilera till PDF:
@@ -12,9 +26,9 @@ Följande LaTeX-paket behövs för att kompilera till PDF:
 
 Använd följande kod
 
-`md
+```tex
 header-includes:
   - \usepackage[swedish]{babel}
-`
+```
 
 Notera att det finns GIF-animationer och dessa måste plockas bort innan kompilering till PDF.
