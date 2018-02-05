@@ -26,6 +26,8 @@ Det finns flera kriterier för att bedöma om ett orsakssamband existerar. Här 
 - *Utesluta andra förklaringar*. Det bör inte finnas några andra förklaringar som kan ge upphov till förändringen i den andra variabeln.
 - *Orsaken måste föregå effekten*. Förändringen i den ena variabeln måste ske före den andra variabeln förändras. 
 
+Alla kriterier är inte nödvändigtvis relevanta. Exempelvis, en händelse som bara händer en enda gång kan ju aldrig ha en regelbundenhet. 
+
 ## Uttala sig om datan eller bortom datan
 
 En annan viktig skillnad att komma ihåg är att studier kan antingen utforska observerade data (**deskriptiv statistik**) eller använda observerade data för att förutsäga vad som är sant *bortom* den observerade datan (**inferentiell statistik**).
