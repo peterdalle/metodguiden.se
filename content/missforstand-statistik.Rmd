@@ -156,11 +156,19 @@ Här kommer ett klassiskt citat om att Gud minsann älskar 0,06 lika mycket som 
 
 > We are not interested in the logic itself, nor will we argue for replacing the .05 alpha with another level of alpha, but at this point in our discussion we only wish to emphasize that dichotomous significance testing has no ontological basis. That is, we want to underscore that, surely, God loves the .06 nearly as much as the .05. Can there be any doubt that God views the strength of evidence for or against the null as a fairly continuous function of the magnitude of p? [@rosnow_statistical_1989, 1277]
 
-## Missförstånd: "Om resultatet inte är statistiskt signifikant, hittades ingen skillnad (eller samband)"
+## Missförstånd: "Om resultatet inte är statistiskt signifikant, finns ingen skillnad (eller samband)"
 
-Det är delvis felaktigt eftersom man själv kan välja när resultatet ska vara signifikant, se missförståndet ovan. Traditionellt sett har signifikansnivån satts på 5 % (det vill säga när p < 0,05). Men denna gräns är fullständigt godtycklig.
+Det är delvis felaktigt av två skäl. 
 
-Däremot måste man sätta gränsen *före* man gör analysen. Det är ingen idé att sätta gränsen efter man har analyserat datan, för då kan man få vad som helst att vara signifikant. I vissa artiklar kan man läsa att resultatet ibland är p < 0,05 för att i nästa stycke se att ett annat resultat är p < 0,01. Men i stället för att blanda signifikansnivåer bör man skriva ut det fullständiga p-värdet.
+För det första kan man själv välja när resultatet ska vara statistiskt signifikant (se missförståndet ovan). Traditionellt sett har signifikansnivån satts på 5 % (det vill säga när p < 0,05). Men denna gräns är fullständigt godtycklig. Däremot måste man sätta gränsen *före* man gör analysen. Det är ingen idé att sätta gränsen efter man har analyserat datan, för då kan man få vad som helst att vara signifikant. I vissa artiklar kan man läsa att resultatet ibland är p < 0,05 för att i nästa stycke se att ett annat resultat är p < 0,01. Men i stället för att blanda signifikansnivåer bör man skriva ut det fullständiga p-värdet.
+
+För det andra kan det vara så att det finns för få deltagare i studien för att en skillnad ska kunna hittas (det vill säga, det statistiska testet har för låg power). Då stämmer det att man inte *hittade* någon skillnad. Men man kan däremot inte skriva att det inte *fanns* någon skillnad. Det kanske inte låter som någon stor skillnad, men det är det. När man säger att man inte hittade någon skillnad så uttalar man sig om det statistiska testet. Men när man säger att det inte fanns någon skillnad så uttalar man sig om "verkligheten" (det vill säga, det fenomen man undersöker). Det kan ju vara så att man inte *hittade* en skillnad trots att det verkligen *fanns* en skillnad.      
+
+## Missförstånd: "Om ett p-värde är signifikant och ett annat är icke-signifikant, är också skillnaden mellan dem signifikanta"
+
+Nej, man kan inte jämföra två p-värden med varandra och dra slutsatsen att skillnaden mellan dem är statistiskt signifikant eller ej.
+
+Man måste göra ett statistiskt test för att se om skillnaden faktiskt är statistiskt signifikant [@gelman_difference_2006].
 
 <!--
 
@@ -206,6 +214,29 @@ Indelningen av olika metoder i kvantitativ respektive kvalitativ är mer av en p
 Likheterna är ofta större än skillnaderna, och det är dessutom omöjligt att bedriva forskning som *inte* är kvalitativ i något avseende [@allwood_distinction_2012]. Även om man gör den mest triviala undersökningen där man bara räknar något måste man fortfarande definiera vad det är man räknar. Och definitioner är alltid kvalitativa.
 
 Därför är många "listor" på vad som utmärker kvantitativ respektive kvalitativ metod inte speciellt meningsfulla, och speglar inte någon inneboende skillnad mellan de två ansatserna utan snarare vad olika forskare själva tillskriver dessa metoder [@allwood_distinction_2012].
+
+## Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan"
+
+En variant på detta missförstånd är: "Eftersom flera studier visar olika resultat, så kan forskarna inte komma överens (och då kan man välja det som bäst stämmer överens med sina egna övertygelser)"
+
+Inte nödvändigtvis. Det finns många anlednigar till att flera studier kan visa helt olika resultat, som till exempel:
+
+- **De har inte definierat fenomenet lika**. En spade är en spade. En spade är med andra ord inte speciellt svårt att definiera eller identifiera när man ser den. Men vad är avundsjuka? Eller desinformation och propaganda? Dessa är mycket svårare att definiera och följaktligen finns det många definitioner. 
+- **De har inte undersökt samma sak**. Även om båda säger att de har undersökt samma fenomen kan de mycket väl ha operationaliserat detta fenomen på olika sätt. Det vill säga, de har valt att mäta fenomenet på olika sätt. Det finns inget "rätt" sätt att operationalisera ett fenomen. Däremot finns det bra och mindre bra sätt.
+- **De har använt olika metoder**. Den förmodligen vanligaste orsaken till olika resultat är att man använder olika metoder. Det är inte något dåligt, utan eftersträvansvärt, eftersom användandet av olika metoder visar hur väl fenomenet ifråga kan generaliseras [@shadish_experimental_2001].
+- **De har genomfört olika analyser**. Resultatet av en statistisk analys påverkas av vilket statistiskt test man väljer. Och vilken man väljer beror delvis på vad man vill åstadkomma, delvis på hur datan ser ut, och delvis på antaganden man gör som forskare liksom de antaganden som finns hos varje statistiskt test. 
+- **De tittar på olika omständigheter**. Man forskar därför att det finns något man ännu inte känner till. Det kan handla om att identifiera en så kallad *modererande faktor*, vilket är under vilka omständigheter något händer. Det kan handla om att en viss effekt bara uppkommer bland vissa människor, i vissa situationer eller på vissa platser. Det krävs därför mycket forskning för att dels ta reda på vilka faktorer som är viktiga, och dels hur och när faktorerna varierar, samt hur de påverkas av *andra* faktorer. Det finns därför väldigt många kombinationer av modererade faktorer som går att undersöka, och man vet inte alltid på förhand vilka som är viktiga.
+- **De har ägnat sig åt [tveksamma forskningspraktiker](#misleading-stats)**. Det finns flera sätt man kan få fram de resultat man vill få fram, såsom [p-hacking](#p-hacking), [HARKing](#harking) eller [cherry picking](#cherry-picking). Även om varje enskilt sätt inte nödvändigtvis används ofta eller ens medvetet bland forskare, kan kombinationen av dem ge missvisande resultat.
+
+Därför krävs det omfattande träning (vanligen i form av en forskarutbildning) för att lära sig hur forskning går till och hur forskning kan se så olika ut.
+
+I en uppmärksammad artikel fick 29 forskarlag samma data och samma forsknigsfråga [@silberzahn_many_2017], men det var få forskarlag som fick samma resultat. Även om resultatet pekade i samma riktning för de flesta, så var det väldigt stor variation mellan forskarlagen.
+
+Forskning måste därför utvärderas över tid, och enskilda resultat kan spreta i en mängd olika riktningar. Man bör därför nästan aldrig bygga politik eller utforma riktlinjer och råd utifrån helt nya forskningsresultat. Nya forskningsresultat kommer med all säkerhet att revideras med tiden. 
+
+Läs mer:
+
+- <https://journalistsresource.org/tip-sheets/research/reproducibility-disparities-research-cancer-reporting>
 
 <!--
 
