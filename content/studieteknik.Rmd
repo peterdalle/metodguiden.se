@@ -96,6 +96,10 @@ Videoklipp (8 min) om hur du söker bättre på Google: [How to Get Better Searc
 
 Se också: [Google: Alla tips och knep](http://www.google.com/intl/sv_se/insidesearch/tipstricks/all.html).
 
+## Skriva litteraturöversikter
+
+- [How to undertake a literature review](http://www.raulpacheco.org/2017/04/how-to-undertake-a-literature-review/)
+
 ## Referenser
 
 - Carter, S. P., Greenberg, K., & Walker, M. S. (2017). [The impact of computer usage on academic performance: Evidence from a randomized trial at the United States Military Academy](https://doi.org/10.1016/j.econedurev.2016.12.005). *Economics of Education Review, 56*(Supplement C), 118–132.
