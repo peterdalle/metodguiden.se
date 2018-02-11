@@ -6,6 +6,38 @@ Här hittar du:
 - Tveksamma forskningspraktiker
 - Råd för hur du undviker misstagen
 
+## Undersöka andra än de man uttalar sig om {#inference-to-population}
+
+Vill man prata om vad svenska medborgare över 18 år gör måste man också göra ett urval från dessa. Man kan inte gå till en gymnasieskola och leta upp 18-åringar att intervjua, och därefter uttala sig om svenska medborgare över 18 år. Då kan man endast uttala sig om de personer som man har intervjuat - inga andra.
+
+Detta misstag finns i överflöd, och här följer ett axplock av exempel:
+
+- I en enkät fick svenska bilister svara på en fråga.^[[Felaktiga slutsatser när SVD opinonsundersökte om dieselförbud](http://sverigesradio.se/sida/artikel.aspx?programid=2795&artikel=6865774) SR P1 Medierna 2018-01-19.] När resultatet presenterades framställdes det som om att det var alla svenskar som uttalat sig. Det är vilsledande eftersom man frågar en annan grupp människor än de man sedan uttalar sig om.
+- I en undersökning fick kvinnliga opinionsbildare svara på frågor om hot.^[[Sju av tio kvinnliga opinionsbildare hotas
+](https://www.svt.se/kultur/medier/kvinnliga-opinionsbildare-utsatta-for-hot-och-trakasserier) SVT 2017-04-18, se också [undersökningen från SIFO](http://tu.se/wp-content/uploads/2017/04/PDF-Hot-mot-kvinnliga-opinionsbildare.pdf#page=2) 2017-03-24 med projektnummer 1536739.] När resultatet presenterades framställdes det som att kvinnor var extra utsatta. Det är vilsledande eftersom män inte ens deltog i undersökningen och någon jämförelse mellan män och kvinnor därför inte kunde göras.
+- I en rapport fick Facebookanvändare svara på frågor om polisen i sociala medier.^[[Utvärderinga av Polisens närvaro i sociala medier (RPS Rapport 2013)](https://polisen.se/Global/www%20och%20Intrapolis/Utvärderingar/2013%20utvärderingsrapporter/Utvardering_Polisens_narvaro_i_sociala_medier.pdf).] Respondenterna kallades sedan genomgående "allmänheten". Det är vilsledande dels eftersom allmänheten är ett vagt och oprecist begrepp, dels för att det är oklart vilka det egentligen är som svarat med tanke på att vem som helst fick svara.
+
+Vill man uttala sig om de som har svarat i en enkät eller undersökning kallar man de lämpligen för *respondenter* eller *svarspersoner*.
+
+Läs mer:
+
+- [Lathund för journalister](#journalist)
+
+## Antagandet läggs i slutsatsen {#assumptions-circularity}
+
+Om man lägger antagandet i slutsatsen är det extremt vilseledande eftersom man inte kommer med någon ny information än den man redan hade antagit från början. Det är ett klassiskt fall av cirkelbevisning, fast dolt som en statistisk analys.
+
+The Guardian [analysade 70 miljoner kommentarer](https://www.theguardian.com/technology/2016/apr/12/the-dark-side-of-guardian-comments) de hade fått till sina nyhetsartiklar. De kom fram till att majoriteten av de kommentarer som redaktörerna tagit bort bestod av hot och glåpord mot journalisterna.
+
+Men vid närmare granskning är denna slutsats inte ett resultat av den statistiska analysen. Det var ett *antagande* de gjorde eftersom de inte klassificerade kommentarerna över huvud taget. I [metodbeskrivningen](https://www.theguardian.com/technology/2016/apr/12/how-we-analysed-70m-comments-guardian-website) står det "we took blocked comments as an indicator of abuse and/or disruption". Med andra ord, de kommentarer som tagits bort från The Guardian antogs vara hot eller glåpord mot journalisterna. Det var alltså inget de undersökte.
+
+Detta är vilseledande eftersom The Guardian ger intrycket av att de mycket exakt klassificerat hur många av deras kommentarer som var hot och glåpord mot journalisterna. Men detta antagande blev i stället deras slutsats, och det är ett cirkelbevis.
+
+Läs mer:
+
+- [Uppmaning till journalister att sansa er förtjusning för big data](http://www.backendmedia.se/2016/04/24/journalister-big-data/)
+- <https://en.wikipedia.org/wiki/Circular_reasoning>
+
 ## Förväxla korrelation och kausalitet
 
 ## Confounding
@@ -18,10 +50,24 @@ Här hittar du:
 
 ## Selection bias, cherry picking {#cherry-picking}
 
+Detta är förmodligen det absolut vanligaste sättet att vilseleda. Om det görs 100 studier inom ett område så kommer resultaten att spreta åt olika håll. Då kan man enkelt vilseleda genom att:
+
+- välja ut den studie som stödjer den slutsats man vill föra fram
+- välja ut studier från *båda* sidor och sedan säga att forskningen inte kan bestämma sig
+
+![Bilden visar den relativa risken att få cancer och varje punkt är en enskild studie. Punkterna till vänster visar studier med minskad cancerrisk och punkterna till höger visar studier med ökad cancerrisk [@schoenfeld_is_2012].](images/cancer-relativ-risk.png)
+
+Genom att debattera en studie i taget kan man få intrycket av att forskningen svänger fram och tillbaka för varje ny studie. Men då tar man inte hänsyn till skillnader mellan studierna. För att bedöma skillnader mellan studier behöver man därför kunskap om hur forskning går till.
+
+Läs mer:
+
+- [Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan"](#inbetween)
 - <https://en.wikipedia.org/wiki/Selection_bias>
 - <https://en.wikipedia.org/wiki/Cherry_picking>
 
 ## Concept creep
+
+Se Haslam 2016.
 
 ## Relativa och absoluta förändringar
 

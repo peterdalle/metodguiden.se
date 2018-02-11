@@ -9,6 +9,10 @@ Vid bedömning av akademiska studier konfronteras journalister inte bara av siff
 
 Statistikkurser finns på alla universitet, men dessvärre är det något som man snabbt går igenom och sedan lika snabbt glömmer bort. Men för både journalister och kommunikatörer är det nödvändigt att göra mer än att bara läsa forskningsstudiens sammanfattning. Man bör förstå de metoder och begrepp som ligger till grund för akademiska studier för att kunna bedöma forskning. Även om man inte behärskar statistik fullt ut, är det ändå viktigt att ha grundläggande kunskaper för att åtminstone kunna formulera bättre och mer kritiska frågor till experter, men även för att förhålla sig skeptisk till resultaten i studierna.
 
+Se videoklippet nedan för en 15 minuter kortkurs i statistik.
+
+<iframe src="https://www.youtube.com/embed/sxQaBpKfDRk?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
 ## Samband och orsakssamband
 
 De flesta studier försöka upprätta ett **samband** mellan två saker (så kallade **variabler**), till exempel hur läraren kan ha ett *samband* med studenternas betyg. Eller hur vikten på en bil har ett *samband* med dödsolyckor.

@@ -6,6 +6,7 @@ Här hittar du:
 - [Program](#program) du kan ladda ned och använda
 - [Filer](#files) för färdiga diagram i Excel
 - [Länkar](#links) till tips, råd och artiklar om forskning
+- [Böcker](#books) för vidare läsning och fördjupning
 
 ## Dataset {#dataset}
 
@@ -221,3 +222,26 @@ Det finns flera databaser som samlar [frågebatterier inom samhällsvetenskapen]
 ### Hantera data
 
 - [How to share data with a statistician](https://github.com/jtleek/datasharing). This is a guide for anyone who needs to share data with a statistician.
+
+## Böcker {#books}
+
+### Nybörjare
+
+- Djurfeldt, G., Larsson, R. & Stjärnhagen, O. (2010). *Statistisk verktygslåda 1: samhällsvetenskaplig orsaksanalys med kvantitativa metoder (2. uppl.)*. Lund: Studentlitteratur.
+- Esaiasson, P., Gilljam, M., Oscarsson, H., Towns, A.E. & Wängnerud, L. (2017). *Metodpraktikan: konsten att studera samhälle, individ och marknad (5 uppl.)*. Stockholm: Wolters Kluwer.
+- Field, A. P. (2013). *Discovering statistics using IBM SPSS statistics: and sex and drugs and rock “n” roll (4th edition)*. Los Angeles: Sage.
+
+### Avancerad
+
+Frekventism:
+
+- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences (2nd ed.)*. Hillsdale, N.J: Routledge.
+- Mayo, D.G. (1996). *Error and the growth of experimental knowledge*. Chicago: Univ. of Chicago Press.
+
+Bayesiansk statistik:
+
+- Gelman, A. (red.) (2014). *Bayesian data analysis (3rd ed.)*. Boca Raton, Fla.: Chapman & Hall/CRC.
+
+Likelihood:
+
+- Royall, R. M. (1997). *Statistical evidence: A likelihood paradigm (1st ed.)*. London, New York: Chapman & Hall.

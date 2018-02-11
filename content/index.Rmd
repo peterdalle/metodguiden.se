@@ -69,6 +69,7 @@ Senaste versionen skapades automatiskt `r Sys.Date()`.
 
 | När        | Vad |
 | :---------- | :------------------------------------------------------------ |
+| 2018-02-11 | Lagt till [Missförstånd: “Om två studier visar olika resultat ligger sanningen någonstans mittemellan”](#inbetween), [Antagandet läggs i slutsatsen](#assumptions-circularity), [Undersöka andra än de man uttalar sig om](#inference-to-population), [Böcker](#books).
 | 2018-01-22 | Lagt till [Vad blir felmarginalen?](/felmarginal.html)|
 | 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till egen domän metodguiden.se. |
 | 2017-11-29 | Lagt till [forskningsetik](#ethics). |

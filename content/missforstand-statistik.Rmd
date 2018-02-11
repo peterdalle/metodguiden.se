@@ -215,7 +215,7 @@ Likheterna är ofta större än skillnaderna, och det är dessutom omöjligt att
 
 Därför är många "listor" på vad som utmärker kvantitativ respektive kvalitativ metod inte speciellt meningsfulla, och speglar inte någon inneboende skillnad mellan de två ansatserna utan snarare vad olika forskare själva tillskriver dessa metoder [@allwood_distinction_2012].
 
-## Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan"
+## Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan" {#inbetween}
 
 En variant på detta missförstånd är: "Eftersom flera studier visar olika resultat, så kan forskarna inte komma överens (och då kan man välja det som bäst stämmer överens med sina egna övertygelser)"
 
@@ -236,6 +236,7 @@ Forskning måste därför utvärderas över tid, och enskilda resultat kan spret
 
 Läs mer:
 
+- [Selection bias, cherry picking](#cherry-picking)
 - <https://journalistsresource.org/tip-sheets/research/reproducibility-disparities-research-cancer-reporting>
 
 <!--
