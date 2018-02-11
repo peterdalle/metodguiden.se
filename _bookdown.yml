@@ -1,7 +1,7 @@
 book_filename: "metodguiden"
 delete_merged_file: yes
 output_dir: _book
-rmd_files: ["content/index.Rmd","content/studieteknik.Rmd","content/kreativitet.Rmd","content/surveys.Rmd","content/statistik.Rmd","content/missforstand-statistik.Rmd","content/spss.Rmd","content/grafik.Rmd","content/checklista.Rmd","content/lathund-journalister.Rmd","content/forskningsetik.Rmd","content/vilseledande-statistik.Rmd","content/vilseledande-grafik.Rmd","content/faq.Rmd","content/resurser.Rmd"]
+rmd_files: ["content/index.Rmd","content/studieteknik.Rmd","content/kreativitet.Rmd","content/surveys.Rmd","content/statistik.Rmd","content/missforstand-statistik.Rmd","content/spss.Rmd","content/grafik.Rmd","content/checklista.Rmd","content/lathund-journalister.Rmd","content/forskningsetik.Rmd","content/vilseledande-statistik.Rmd","content/vilseledande-grafik.Rmd","content/faq.Rmd","content/resurser.Rmd","content/referenser.Rmd"]
 language:
   label:
     fig: 'Figur '
