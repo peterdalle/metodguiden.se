@@ -252,7 +252,7 @@ En vanlig föreställning är att deduktion innebär att man härleder från det
 |                            | 2. Sokrates och Platon är filosofer            | 2. Sokrates och Platon är filosofer                                    |
 |                            | 3. Alltså är alla i rummet filosofer           | 3. Alltså är förmodligen alla i rummet filosofer                       |
 +----------------------------+------------------------------------------------+------------------------------------------------------------------------+
-| **Generel-till-specifik**  | 1. Alla människor är filosofer                 | 1. Filosofer är i regel snälla                                         |
+| **Generell-till-specifik** | 1. Alla människor är filosofer                 | 1. Filosofer är i regel snälla                                         |
 |                            | 2. Sokrates är en människa                     | 2. Sokrates är en filosof                                              |
 |                            | 3. Alltså är Sokrates filosof	              | 3. Alltså är Sokrates förmodligen snäll                                |
 +----------------------------+------------------------------------------------+------------------------------------------------------------------------+
