@@ -239,6 +239,35 @@ Läs mer:
 - [Selection bias, cherry picking](#cherry-picking)
 - <https://journalistsresource.org/tip-sheets/research/reproducibility-disparities-research-cancer-reporting>
 
+## Missförstånd: "Deduktion är generell-till-specifik medan induktion är specifik-till-generell" {#specific-to-general}
+
+Deduktion och induktion är två olika metoder för logiska slutledningar (eller härledningar som det också kallas).
+
+En vanlig föreställning är att deduktion innebär att man härleder från det generella till det specifika, medan induktion är att härleder från det specifika till det generella. Det är dock felaktigt eftersom de är oberoende av varandra. Det går att demonstrera med några enkla exempel:
+
++----------------------------+------------------------------------------------+------------------------------------------------------------------------+
+|                            | **Deduktion**                                  | **Induktion**                                                          |
++============================+:===============================================+:=======================================================================+
+| **Specifik-till-generell** | 1. Bara Sokrates och Platon är i rummet        | 1. Sokrates och Platon är slumpvis utvalda i ett rum med fem personer  |
+|                            | 2. Sokrates och Platon är filosofer            | 2. Sokrates och Platon är filosofer                                    |
+|                            | 3. Alltså är alla i rummet filosofer           | 3. Alltså är förmodligen alla i rummet filosofer                       |
++----------------------------+------------------------------------------------+------------------------------------------------------------------------+
+| **Generel-till-specifik**  | 1. Alla människor är filosofer                 | 1. Filosofer är i regel snälla                                         |
+|                            | 2. Sokrates är en människa                     | 2. Sokrates är en filosof                                              |
+|                            | 3. Alltså är Sokrates filosof	              | 3. Alltså är Sokrates förmodligen snäll                                |
++----------------------------+------------------------------------------------+------------------------------------------------------------------------+
+
+Mängder med läroböcker i både samhällsvetenskap och naturvetenskap fortsätter sprida föreställningen om generell-till-specifik respektive specifik-till-generell.
+
+Men vad är induktion och deduktion då?
+
+- **Induktion** innebär att vi får veta något nytt utöver det som redan finns i premisserna, och slutsatsen följer med en viss osäkerhet. Exempelvis observerar man tusen vita svanar och drar sedan slutsatsen att även nästa svan (som ännu inte observerats) sannolikt kommer att vara vit. Kallas också generalisering.
+- **Deduktion** innebär att vi inte får veta något nytt utöver det som redan finns i premisserna, och slutsatsen följer med absolut säkerhet. Vi kan observera tusen vita svanar och drar sedan slutsatsen att alla observerade svanar är vita. Vi säger alltså ingenting om icke observerade svanar, för då skulle vi säga något utöver det som redan finns i premisserna.
+
+Läs mer:
+
+- http://opponent.se/2017/11/deduktion/
+
 <!--
 
 ## Vad P-värdet faktiskt visar
