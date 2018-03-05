@@ -85,31 +85,26 @@ Se Haslam 2016.
 
 Sannolikhetsteori är inte det lättaste. Därför utgår vi från ett vardagligt exempel:
 
-1. Om du träffar en kvinna, vad är sannolikheten att hon är gravid? Du tycker förmodligen sannolikheten är låg. Bara för att någon är kvinna vet vi inte huruvida hon är gravid. Några kvinnor är gravida, men de flesta är det inte.
+1. Om du träffar en kvinna, vad är sannolikheten att hon är gravid? 
 
-2. Om du träffar en gravid person, vad är sannolikheten att personen är en kvinna? Du tycker förmodligen sannolikheten är hög. Det är bara kvinnor som blir gravida, och därför kan vi vara väldigt säkra på att en gravid person är kvinna.
+2. Om du träffar en gravid person, vad är sannolikheten att personen är en kvinna?
 
-Detta säger oss att det är två olika sannolikheter, trots att vi utgår från samma händelser (kvinna respektive gravid) i båda exemplen. Vi kan skriva denna skillnad i formella termer på följande sätt:
+
+Du tycker förmodligen sannolikheten för båda dessa är olika. Bara för att någon är kvinna vet vi inte huruvida hon är gravid (låg sannolikhet för graviditet). Men det är bara kvinnor som blir gravida och därför kan vi vara väldigt säkra på att en gravid person är kvinna (hög sannolikhet att vara kvinna).
+
+Detta säger oss att det är två olika sannolikheter som därmed svarar på två helt olika frågor, trots att de fakta vi utgår från (kvinna respektive gravid) är densamma i båda exemplen. Vi kan skriva denna skillnad i formella termer på följande sätt:
 
 1. $P(gravid\mid kvinna)$
 
 1. $P(kvinna\mid gravid)$
 
-Man läser $P(gravid\mid kvinna)$ som "sannolikheten att vara gravid, givet kvinna". Symbolen $P$ betyder sannolikhet eller mer precist probabilitet (från franskans probabilité, eller engelskans probability). På samma sätt läser man $P(kvinna\mid gravid)$ som om "sannolikheten att vara kvinna, givet graviditet". 
+Man läser $P(gravid\mid kvinna)$ som "sannolikheten att vara gravid, givet kvinna".^[Detta exmepel kan göras ännu mer abstrakt genom attt skriva $P(A\mid B)$ samt $P(B\mid A)$, och dessa två sannolikheter är inte samma!] Symbolen $P$ betyder sannolikhet eller mer precist probabilitet (från franskans probabilité, eller engelskans probability). På samma sätt läser man $P(kvinna\mid gravid)$ som om "sannolikheten att vara kvinna, givet graviditet".
 
-Vad är poängen med att känna till detta? Dessa två sannolikheter är olika saker, men förväxlas regelbundet. Att förväxla sannolikheter kan man ofta göra i DNA-undersökningar, vilket har gett namn åt [Prosecutor's fallacy](https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy).
+Vad är poängen med att känna till detta? Dessa två sannolikheter är olika saker och ger svar på olika frågor, men förväxlas regelbundet. Det innebär att man kan räkna ut den ena sannolikheten men kommunicera den andra. Det är även en av orsaken varför Socialstyrelsen räknade fel när de skulle bedöma asylsökares ålder (läs [Professorer: ”Stort misstag – de har räknat fel”](https://www.svd.se/professorer-om-siffror-bakom-alderstester-de-har-raknat-fel?utm_content=buffer81206)).
 
-Att förväxla sannolikheter sker också vid hypotesstestning, vilket jag ska beskriva nu. Exemplet med gravid kvinna var bara uppvärmning. I formella termer säger man så här:
+Att förväxla dessa sannolikheter är särskilt vanligt när man håller på med signifikanstest. Signifikanstest visar sannolikheten att erhålla datan givet nollhypotesen, eller $P(data\mid nollhypotes)$. Det innebär att man får fram sannolikheten för resultatet under antagandet att nollhypotesen är sann. Men en vanlig missuppfattning är att man får reda på sannolikheten för nollhypotesen med hjälp av signifikanstest, alltså $P(nollhypotes\mid data)$. Men det får man inte och det är en annan sannolikhet som är helt okänd vid signifikanstestning!
 
-Givet två händelser, A och B, förväxlas sannolikheten att A händer givet att B har hänt med sannolikheten att B händer givet att B har hänt. Detta kan göras ännu mer abstrakt genom attt skriva $P(A\mid B)$ samt $P(B\mid A)$.
-
-Att förväxla dessa sannolikheter är särskilt vanligt när man håller på med signifikanstest. Signifikanstest visar sannolikheten att erhålla datan givet nollhypotesen, eller $P(data\mid nollhypotes)$. Det innebär att man får fram sannolikheten för resultatet under antagandet att nollhypotesen är sann.
-
-Men en vanlig missuppfattningn är att man får reda på om nollhypotesen är sann med hjälp av signifikanstest, alltså $P(nollhypotes\mid data)$. Men det får man inte! Det är en annan sannolikhet.
-
-Återigen, det man får fram med signifikanstest är hur osannolikt resultatet är (uttryckt som p-värde), under antagandet att nollhypotesen är sann. Ett lågt p-värde visar att resultatet är osannolikt givet nollhypotesen. Ett högt p-värde visar att resultatet är sannolikt givet nollhypotesen.
-
-Kallas också att *förväxla betingade sannolikheter*, *prosecutor's fallacy*, *fallacy of the transposed conditional*, *confusion of the inverse*, *conditional probability fallacy* eller bara *inverse fallacy*. 
+Kallas också att *förväxla betingade sannolikheter*, *fallacy of the transposed conditional*, *confusion of the inverse*, *conditional probability fallacy* eller bara *inverse fallacy*. 
 
 - <https://en.wikipedia.org/wiki/Confusion_of_the_inverse>
 - <https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy>
