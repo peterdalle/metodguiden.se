@@ -33,7 +33,7 @@ Om du har variablerna kön (man/kvinna) och inkomst (i kronor) har kön den mins
 
 ### Hur tolkar jag sambandsmått?
 
-Det är ämneskunskap som framför allt bör guida tolkningen av sambandsmått. Om du saknar ämneskunskap har Cohen (1988) gett  riktlinjer för Pearsons r och Cramérs V:
+Det är ämneskunskap som framför allt bör guida tolkningen av sambandsmått. Om du saknar ämneskunskap har @cohen_statistical_1988 gett riktlinjer för Pearsons r, Cramérs V med flera:
 
 - 0,10 = litet samband
 - 0,30 = medelstort samband
@@ -41,21 +41,31 @@ Det är ämneskunskap som framför allt bör guida tolkningen av sambandsmått. 
 
 Pearsons r varierar från -1 till +1. Cramérs V kan bara variera från 0 till 1 eftersom det är på nominalskalenivå.
 
-Sambandsmått i samhällsvetenskap är oftast ganska små. Se bilden nedan. Den visar att det genomsnittliga samabandsmåttet är r = 0,21 och är baserad på 25 000 studier med 8 miljoner människor över 100 år ([Richard, Bond, & Stokes-Zoota, 2003)](https://doi.org/10.1037/1089-2680.7.4.331).
+Sambandsmått i samhällsvetenskap är oftast ganska små, vilket framgår av graferna nedan. De visar att det genomsnittliga samabandsmåttet inom socialpsykologi är r = 0,21 och är baserad på 25 000 studier med 8 miljoner människor över 100 år [@richard_one_2003]. Samma sak syns i 60 år av kommunikationsforskning som bygger på över 9 500 studier och 8,7 miljoner människor där medelvärdet också är r = 0,21 [@rains_sixty_2018].
 
-```{r effect-sizes-social-psych}
+```{r effect-sizes, fig.height=8}
 df <- read.csv("data/soc-psych.tsv", header=TRUE, sep="\t", stringsAsFactors=FALSE)
+df2 <- read.csv("data/effectsizes-comm.csv", header=TRUE, sep=",", stringsAsFactors=FALSE)
 
-library(dplyr)
-library(ggplot2)
+library(tidyverse)
+library(gridExtra)
 
 # Reproduce graph in Richard et al. (2003), but use density instead.
-df %>% ggplot(aes(r)) +
+gg1 <- df %>% ggplot(aes(r)) +
   geom_density(fill="grey") + 
   scale_x_continuous(limits=c(0, 1), breaks=seq(0, 1, 0.1)) +
-  labs(title="Sambandsmått från hundra år av socialpsykologi",
+  labs(title="Sambandsmått från 100 år av socialpsykologi",
        x="Genomsnittlig korrelation",
        y="Densitet")
+
+gg2 <- df2 %>% ggplot(aes(r)) +
+  geom_density(fill="grey") + 
+  scale_x_continuous(limits=c(0, 1), breaks=seq(0, 1, 0.1)) +
+  labs(title="Sambandsmått från 60 år av kommunikationsforskning",
+       x="Genomsnittlig korrelation",
+       y="Densitet")
+
+grid.arrange(gg1, gg2, nrow=2)
 ```
 
 ### Vad är skillnaden mellan Phi och Cramérs V?
@@ -130,8 +140,3 @@ I SPSS kan du använda verktyget `Analyze` > `Tables` > `Custom Tables`. Du kan 
 |validitet||
 |variabel||
 |variationsvidd||
-
-## Referenser
-
-- Cohen, J. (1988). *Statistical Power Analysis for the Behavioral Sciences (2 edition)*. Hillsdale, N.J: Routledge.
-- Richard, F. D., Bond, C. F., & Stokes-Zoota, J. J. (2003). [One Hundred Years of Social Psychology Quantitatively Described](https://doi.org/10.1037/1089-2680.7.4.331). *Review of General Psychology, 7*(4), 331–363.
