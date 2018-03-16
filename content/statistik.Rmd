@@ -20,7 +20,7 @@ All inferentiell statistik kan egentligen kokas ned till en enkel formel: `Data 
 
 ## P-värden {#p-values}
 
-P-värdet är förmodligen det absolut krångliaste att förstå. Det beror på att det är ett krångligt koncept, och feltolkningar är dessutom vanliga.
+P-värdet är förmodligen det absolut krångligaste att förstå. Det beror på att det är ett krångligt koncept, och feltolkningar är dessutom vanliga.
 
 Här gör jag några pedagogiska försök att skapa en intuitv förståelse för p-värdet. P-värden används vid inferentiell statistik. Syftet med p-värdet är att skilja signalen från bruset. Signalen är exempelvis ett samband, och bruset är slumpmässigheter som alltid uppstår vid slumpmässiga urval. P-värdet ger därför en indikation på hur väl man lyckats skilja en signal från bruset, och i statistikprogrammet dyker p-värdet ofta upp tillsammans med ett sambandsmått. Då ser man hur pass väl det här sambandsmåttet kunde skiljas från bruset (om sambandsmåttet skiljer sig från ett nollsamband).
 
