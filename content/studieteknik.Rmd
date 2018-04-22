@@ -29,11 +29,11 @@ Det är i regel bättre att repetera och testa det du lärt dig än att bara fö
 
 Skriv ut och läs på papper. Papper är bättre än att läsa på skärm, även om du föredrar skärm ([Singer & Alexander, 2017](https://doi.org/10.1080/00220973.2016.1143794)).
 
-Ta inte med datorn till klassrummet. De som tar med sig datorn får sämre betyg ([Mueller & Oppenheimer, 2014](https://doi.org/10.1177/0956797614524581); [Patterson & Patterson, in press](https://doi.org/10.1016/j.econedurev.2017.02.004)) och presterar sämre ([Ravizza, Uitvlugt, & Fenn, 2017](https://doi.org/10.1177/0956797616677314); [Sana, Weston, & Cepeda, 2013](https://doi.org/10.1016/j.compedu.2012.10.003); [Carter, Greenberg, & Walker, 2017](https://doi.org/10.1016/j.econedurev.2016.12.005)). Lägg mobilen i ett annat rum för bättre studiero ([Ward, Duke, Gneezy, & Bos, 2017](https://doi.org/10.1086/691462)).
+Lägg mobilen i ett annat rum för bättre studiero ([Ward, Duke, Gneezy, & Bos, 2017](https://doi.org/10.1086/691462)).
 
 Håll en dialog med dig själv, föreställ dig någon som ger motargument och besvara dem. Det leder till djupare förståelse och kunskap ([Zavala & Kuhn, 2017](https://doi.org/10.1177/0956797616689248)).
 
-Videoklipp (1 timme) om hur du studerar mindre, men mer effektivt: [Marty Lobdell - Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0).
+Videoklipp (1 timme) om hur du studerar mindre, men mer effektivt: [Marty Lobdell - Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0). Du kan också se en [kort version på tio minuter](https://www.youtube.com/watch?v=AL08YZCYShc) med de viktigaste.
 
 <iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
@@ -43,17 +43,35 @@ Tabellen ovan visar enkla saker du kan börja med redan nu. Framför allt bör d
 
 En dag kan exempelvis se ut så här:
 
-1. Hårt fokuserat studerande 1-2 timmar, utan internet
-2. Paus
-3. Återigen 1-2 timmar studerande
-4. Paus
-5. Studier om 1-2 timmar igen
+1. Studera 45-60 minuter
+2. Paus 5 min, belöna dig själv med något roligt
+3. Studera 45-60 minuter igen
+4. Paus 5 min, belöna dig själv med något roligt
+5. Studera 45-60 minuter igen
+6. Belöna dig själv med något roligt
 
 Sedan är du färdig. Du bör med andra ord studera *mindre* än de 40 timmar per vecka som ofta är riktlinjen vid heltidsstudier. Du bör däremot studera *hårdare* under de timmar du faktiskt studerar.
 
 Därefter bör du inte tänka på studierna alls efter arbetsdagens slut eftersom vila är viktigt. Du minns bättre om du har vila mellan två pass av pluggande ([Mazza et al., 2016](http://doi.org/10.1177/0956797616659930)). Börja sedan morgondagen på samma sätt.
 
 Resultatet av studerandet kan sammanfattas i en formel: <code>kvalitet = tid × intensitet</code>. Åtminstone om vi får tro Newport (2016).
+
+### När du går på föreläsning
+
+Ta inte med datorn till klassrummet. De som tar med sig datorn får sämre betyg ([Mueller & Oppenheimer, 2014](https://doi.org/10.1177/0956797614524581); [Patterson & Patterson, in press](https://doi.org/10.1016/j.econedurev.2017.02.004)) och presterar sämre ([Ravizza, Uitvlugt, & Fenn, 2017](https://doi.org/10.1177/0956797616677314); [Sana, Weston, & Cepeda, 2013](https://doi.org/10.1016/j.compedu.2012.10.003); [Carter, Greenberg, & Walker, 2017](https://doi.org/10.1016/j.econedurev.2016.12.005)).
+
+Ta anteckningar med papper och penna.
+
+Direkt efter föreläsningen, renskriv och utveckla dina anteckningar med dina egna ord. Om det är något du inte förstår, fråga någon kurskamrat eller fråga läraren om han eller hon kan ge ett exempel vid nästa föreläsning.
+
+### När du läser kurslitteraturen
+
+Använd [SQ3R](https://en.wikipedia.org/wiki/SQ3R):
+
+1. Skumma igenom hela kapitlet på 2-3 minuter. Titta på bilder, lägg märke till koncept, ställ frågor om saker du stöter på och behåll dem i bakhuvudet (exempelvis: Vad är det här? Vad betyder den bilden?).
+2. Läs igenom kapitlet. Försök finna svar på de frågor du har i bakhuvudet.
+3. När du lärt dig något nytt, stanna upp och låtsas förklara för en vän vad du precis har läst.
+4. Inför en tenta, gå igenom kapitlet och se över om det är något viktigt du har missat.
 
 ### När du skriver tenta
 
