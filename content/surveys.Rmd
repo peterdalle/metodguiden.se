@@ -15,6 +15,12 @@ Detta är godtyckliga urval av litteratur. Testa att söka efter [survey method 
 - Enkätmetodik, nybörjarbok som tar upp det mesta om att göra enkäter, från ax till limpa (Berntsson et al., 2016).
 - Sampling, vanliga svarsfrekvenser, och hur du designar frågor ([Krosnick, 1999](https://doi.org/10.1146/annurev.psych.50.1.537)).
 
+### Skriva frågor
+
+Se videoklipp från Pew Research Center om att [konstruera enkätfrågor](http://www.pewresearch.org/fact-tank/2018/03/21/how-do-you-write-survey-questions-that-accurately-measure-public-opinion/):
+
+<iframe src="https://www.youtube.com/embed/eFzGdQrr2K8?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
 ### Hur folk svarar på enkäter
 
 - Om kognitiva svarsstilar och hur kontext och svarsskalor påverkar svaren, läs Schwarz (1999).
