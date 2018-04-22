@@ -9,7 +9,7 @@ Studietiden består av en mängd läsande och lärande. Konstigt nog lärs säll
 
 Är du inte motiverad till att lära dig detta? Tänk då på att de som har högst betyg också tenderar att spendera *mindre* tid på att plugga (Newport, 2016).
 
-## Bästa studieteknikerna
+## Tips för att studera mer effektivt
 
 [Dunlosky et al. (2013)](http://doi.org/10.1177/1529100612453266) har sammanfattat litteraturen och rangordnat ett antal studietekniker för att lära sig ny kunskap. De återges i tabellen nedan.
 
@@ -32,6 +32,10 @@ Skriv ut och läs på papper. Papper är bättre än att läsa på skärm, även
 Ta inte med datorn till klassrummet. De som tar med sig datorn får sämre betyg ([Mueller & Oppenheimer, 2014](https://doi.org/10.1177/0956797614524581); [Patterson & Patterson, in press](https://doi.org/10.1016/j.econedurev.2017.02.004)) och presterar sämre ([Ravizza, Uitvlugt, & Fenn, 2017](https://doi.org/10.1177/0956797616677314); [Sana, Weston, & Cepeda, 2013](https://doi.org/10.1016/j.compedu.2012.10.003); [Carter, Greenberg, & Walker, 2017](https://doi.org/10.1016/j.econedurev.2016.12.005)). Lägg mobilen i ett annat rum för bättre studiero ([Ward, Duke, Gneezy, & Bos, 2017](https://doi.org/10.1086/691462)).
 
 Håll en dialog med dig själv, föreställ dig någon som ger motargument och besvara dem. Det leder till djupare förståelse och kunskap ([Zavala & Kuhn, 2017](https://doi.org/10.1177/0956797616689248)).
+
+Videoklipp (1 timme) om hur du studerar mindre, men mer effektivt: [Marty Lobdell - Study Less Study Smart](https://www.youtube.com/watch?v=IlU-zDU6aQ0).
+
+<iframe src="https://www.youtube.com/embed/IlU-zDU6aQ0?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 ### Så kan du lägga upp dagen
 
