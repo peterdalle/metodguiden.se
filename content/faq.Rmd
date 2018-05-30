@@ -101,6 +101,18 @@ I SPSS kan du använda verktyget `Analyze` > `Tables` > `Custom Tables`. Du kan 
 - [Analysis Multiple response question (dichotomies)](http://helpdeskspssabs.femplaza.nl/analysis/analysis_multiple_response_dich.htm)
 - [Analysis Multiple response question (categories)](http://helpdeskspssabs.femplaza.nl/analysis/analysis_multiple_response_cat.htm)
 
+### Hur summerar jag en rad?
+
+Du har exempelvis kodat hur många gånger ett ord förekommer i en artikel. Analysenheten är artikel och det finns en variabel för hur många gånger ordet förekommer i varje artikel. Nu vill du veta hur många gånger ordet förekommer totalt, beroende på vad det är för artikel (om den förekommer i morgontidning eller kvällstidning). Du har alltså två variabler: (1) antal förekomster av ordet samt (2) typ av tidning.
+
+Gör så här:
+
+1. I SPSS-menyn, välj `Analyze` > `Reports` > `Report Summaries in Columns`.
+
+2. Lägg variabeln du vill summera (variabeln med antal ord) i `Data Column Variables`.
+
+3. Lägg variabeln du vill gruppera analysenheterna efter (variabeln med typ av tidning) i kolumnen `Break Column Variables`.
+
 ## Vilka viktiga begrepp bör jag känna till?
 
 |Begrepp|Beskrivning|
