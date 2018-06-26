@@ -170,11 +170,11 @@ HARKing betyder Hypothesizing after the results are known.
 
 Ett vanligt uttryck i massmedierna, och i viss mån vetenskapliga rapporter, är uttrycket att resultatet är *statistiskt säkerställt*. Ofta betyder det samma sak som statistiskt signifikant.
 
-Men det är bättre att använda uttrycket statistiskt signifikant i stället, av två skäl:
+Men det är bättre att använda uttrycket "statistiskt signifikant" i stället, av två skäl:
 
-1. Statistik handlar om hur man hanterar *osäkerhet*, och utgångspunkten är att all inferentiell statistik är osäker (eftersom den bygger på induktiv logik). Därför är det missvisande att säga att man nått en slags säkerhet.
+1. Statistik handlar om hur man hanterar *osäkerhet*, och utgångspunkten är att all inferentiell statistik är osäker (eftersom den bygger på induktiv logik). Därför är det missvisande att säga att man nått en slags säkerhet. Vad man gör är att minimera osäkerheten, men osäkerhet kan aldrig elimineras med induktiv logik.
 
-2. Statistisk signifikans handlar om sannolikheten att erhålla resultatet. Det innebär att det går att manipulera fram ett statistiskt signifikant resultat genom att [göra många statistiska tester](#p-hacking). Men trots att statistisk signifikans handlar om sannolikheten att erhålla resultatet, förväxlas det ofta som styrkan på bevisningen. Det är dock två olika saker [@dienes_understanding_2008, 122; @royall_statistical_1997]. Att kalla resultatet statistiskt säkerställt under sådana omständigheter är därför gravt missvisande.
+2. Statistisk signifikans handlar om sannolikheten att få ett resultat (eller mer extremt resultat), givet ett antagande om en nollhypotes. Det innebär att det går att manipulera fram ett statistiskt signifikant resultat genom att [göra många statistiska tester](#p-hacking), vilket *minskar* sannolikheten att resultaten är sanna men *ökar* sannolikheten att få statistiskt signifikant resultat. Men trots att statistisk signifikans handlar om sannolikheten att erhålla resultatet, förväxlas det ofta som styrkan på bevisningen. Det är dock två olika saker [@dienes_understanding_2008, 122; @royall_statistical_1997]. Att kalla resultatet statistiskt säkerställt under sådana omständigheter är därför gravt missvisande.
 
 ## Base rate fallacy
 
@@ -182,9 +182,9 @@ Men det är bättre att använda uttrycket statistiskt signifikant i stället, a
 
 ## Ecological fallacy
 
-Den ekologiska fallasin innebär att man analyserar data på gruppnivå och sedan felaktigt drar slutsatser om individer.
+Den ekologiska fallasin (en variant av *divisionsfelslutet*) innebär att man analyserar data på gruppnivå och sedan felaktigt drar slutsatser om enskilda individer som tillhör den gruppen.
 
-Fallasin uppstår därför att man förväxlar analysnivåer. Om man analyserar könsskillnader, länder eller företag så gäller också slutsatserna könsskillnader, länder eller företag - inte de enskilda personerna.
+Fallasin uppstår därför att man förväxlar analysnivåer. Om man analyserar skillnader mellan kön, länder eller företag så gäller också slutsatserna skillnader mellan gruppen män respektive kvinnor, mellan länder samt mellan företag. Slutsatsen gäller *inte* inte de enskilda personerna, de enskilda länderna eller de enskilda företagen.
 
 Det finns fyra olika typer av ekologiska fallasier, och en av dem är [Simpsons paradox](#simpsons-paradox) so beskrivs närmre nedan.
 
@@ -194,7 +194,7 @@ Det finns fyra olika typer av ekologiska fallasier, och en av dem är [Simpsons 
 
 Låt säga att universitetet ska anställa nya forskare. De anställer 54 % av männen som söker, men bara 46 % av kvinnorna som söker. Alla sökande är dock lika kvalificerade. Är det belägg för könsdiskriminering?
 
-Du kanske svarar ja, siffrorna visar tydligt att män anställs i högre utsträckning än kvinnor. Men låt oss gräva djupare än den ytliga presentationen av procent.
+Du kanske svarar ja, siffrorna visar tydligt att män anställs i högre utsträckning än kvinnor. Men låt oss gräva djupare.
 
 |           |  Män   |  Kvinnor  |
 |-----------|:------:|:---------:|
@@ -202,9 +202,9 @@ Du kanske svarar ja, siffrorna visar tydligt att män anställs i högre utsträ
 |Geografi   | 6 / 8  |   4 / 5   |
 |Universitet| 7 / 13 |   6 / 13  |
 
-Läs tabellen ovan som att 1 man har anställts till historia, av totalt 5 manliga sökanden. Likaså har 2 kvinnor anställts av totalt 8 kvinnliga sökanden, och så vidare.
+Läs tabellen ovan som att 1 man har anställts till historia av totalt 5 manliga sökanden. Likaså har 2 kvinnor anställts av totalt 8 kvinnliga sökanden, och så vidare.
 
-Totalt har alltså 7 manliga av totalt 13 manliga sökanden anställts på universitet som helhet (54 %), och 6 kvinnliga av totalt 13 kvinnliga sökanden (46 %). För enkelhetens skull kan vi göra om tabellen ovan med fraktioner till tabellen nedan med procent i stället.
+Totalt har alltså 7 manliga av totalt 13 manliga sökanden anställts på universitet som helhet (54 %), och 6 kvinnliga av totalt 13 kvinnliga sökanden (46 %). För enkelhetens skull kan vi göra om tabellen ovan till tabellen nedan med procent i stället.
 
 |           |  Män   |  Kvinnor  |
 |-----------|:------:|:---------:|
@@ -217,7 +217,7 @@ Med andra ord kan vi se att en högre andel kvinnor har anställts i både histo
 Det finns flera förklaringar vi kan avfärda direkt:
 
 - Det beror inte på att fler män eller kvinnor har sökt. Det är lika många sökanden totalt (13 kvinnor och 13 män).
-- Det beror inte på att detta exempel handlar om få personer (26 stycken). Om vi multiplicerar alla siffror med 1 000 förblir resultatet detsamma.
+- Det beror inte på att detta exempel handlar om få personer (26 stycken). Om vi multiplicerar alla siffror med tusen förblir resultatet detsamma.
 
 Vad som däremot kan förklara denna paradox är att *fler kvinnor sökte tjänster som är svårare att få*.
 
@@ -225,15 +225,14 @@ Historia anställde 3 av 13 sökanden, medan geografi anställde 10 av 13 sökan
 
 Vi får därför olika resultat beroende på om vi väljer att analysera datan på aggregerad nivå (universitetet som helhet) jämfört med om vi väljer att analysera varje institution (historia eller geografi) för sig.
 
-Det är detta som kallas Simpsons paradox. Det är *hierarkin* i datan som påverkar slutsatsen, och slutsatsen påverkas av vilken nivå i denna hierarki man väljer att analysera. I det här fallet har hierarkin två nivåer: institutioner respektive universitet. Ett annat exempel på hierarki är elever inom klasser inom en skola inom en kommun (fyra nivåer). 
+Det är detta som kallas Simpsons paradox. Det är *hierarkin* i datan som påverkar slutsatsen, och slutsatsen påverkas av vilken nivå i denna hierarki man väljer att analysera. I det här fallet har hierarkin två nivåer: institutioner respektive universitet. Ett annat exempel på en hierarki med fyra nivåer: elever inom klasser inom en skola inom en kommun. 
 
 ![Animation av Simpsons paradox där datan antingen analyseras tillsammans eller gruppvis. När all data analyseras tillsammans är korrelationen negativ (linjen pekar nedåt). När datan analyseras gruppvis är varje korrelation positiv (alla linjer pekar uppåt).](images/simpsons-paradox.gif)
-
 
 Vad ska du göra för att undvika Simpsons paradox? 
 
 1. Kontrollera om din data innehåller hierarkier eller grupper av något slag.
-2. Fråga dig på om hierarkierna eller grupperna har analyserats var för sig eller tillsammans.
+2. Kontrollera om hierarkierna eller grupperna har analyserats var för sig eller tillsammans.
 3. Kontrollera om du får olika resultat när du analyserar varje grupp för sig, jämfört med om du analyserar alla grupper tillsammans.
 
 - [Interaktiv visualisering av Simpsons paradox](http://vudlab.com/simpsons/)
