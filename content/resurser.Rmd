@@ -8,6 +8,7 @@ Här hittar du:
 - [Länkar](#links) till tips, råd och artiklar om forskning
 - [Böcker](#books) för vidare läsning och fördjupning
 
+
 ## Dataset {#dataset}
 
 ### Forskningsdata
@@ -42,6 +43,22 @@ Psykologi
 
 - [Öppna Data](https://oppnadata.se/) - katalog från Riksarkivet som hjälper dig hitta öppna data från Sverige
 - [Awesome Public Datasets](https://github.com/caesar0301/awesome-public-datasets)
+
+### Statistik över medieanvändning
+
+- TV: [MMS](http://mms.se) mäter TV-tittande sedan 1993 med panel av 3 000 hushåll.
+- Tidningsupplagor och tidningsstatistik: [TS](https://ts.se/)
+- Radio/webb: [Kantar Sifo](https://www.kantarsifo.se/) mäter radiolyssnande, webbplatstrafik.
+- Webb: [internetstatistik.se](http://internetstatistik.se/)
+- Mediestruktur och medievanor: [Nordicom vid Göteborgs universitet](http://nordicom.gu.se/)
+- Telekommunikation, bredband med mera: [Post- och telestyrelsen](http://pts.se/)
+
+### Allmän statistik
+
+- [Statistiska Centralbyrån](http://scb.se/). Se speciellt Statistikdatabasen.
+- Handel/konsumtion: [Centrum för konsumtionsvetenskap](http://cfk.gu.se), [Handelns utredningsinstitut](http://hui.se/)
+- Svenska myndigheter: [Statskontoret](http://statskontoret.se/)
+- Nationella dataportalen för öppna data från offentliga sektorn: [Öppna data](https://oppnadata.se/)
 
 ### Välfärdsstatistik
 
@@ -179,7 +196,7 @@ Excel-filer är i formatet Excel 2016. Använd filerna precis som du vill, utan 
 - [How to (seriously) read a scientific paper](http://www.sciencemag.org/careers/2016/03/how-seriously-read-scientific-paper)
 - [How to keep up with the scientific literature](http://www.sciencemag.org/careers/2016/11/how-keep-scientific-literature)
 
-### Frågebatterier
+### Frågebatterier till enkätundersökningar
 
 Det finns flera databaser som samlar [frågebatterier inom samhällsvetenskapen](#scales).
 
@@ -188,7 +205,7 @@ Det finns flera databaser som samlar [frågebatterier inom samhällsvetenskapen]
 - [Research Methods Knowledge Base](https://www.socialresearchmethods.net/)
 - Videoklipp (2 tim): [Kan medierna hantera statistiska undersökningar?](https://www.youtube.com/watch?v=9YVMwlE6s9A)
 
-### Statistik
+### Lära sig statistik
 
 - [onlinestatbook.com](http://onlinestatbook.com/). Online Statistics Education: An Interactive Multimedia Course of Study. Developed by Rice University, University of Houston Clear Lake, and Tufts University.
 - [Andy Fields statisticshell.com](http://www.statisticshell.com/html/limbo.html). Here you can uncover the searing agony of SPSS, the stomach churning fear of central tendency and the rancid bile of z-scores.
@@ -219,7 +236,7 @@ Det finns flera databaser som samlar [frågebatterier inom samhällsvetenskapen]
 - [Equivalent Statistics](http://psych.purdue.edu/~gfrancis/EquivalentStatistics/). Konverterar från en teststatistika till en annan.
 - [Practical Meta-Analysis Effect Size Calculator](https://www.campbellcollaboration.org/escalc/html/EffectSizeCalculator-SMD-main.php). Beräkna effektstorlekar för metaanalys utifrån N, M och SD (med flera).
 
-### Hantera data
+### Hantera, lagra och organisera data
 
 - [How to share data with a statistician](https://github.com/jtleek/datasharing). This is a guide for anyone who needs to share data with a statistician.
 
