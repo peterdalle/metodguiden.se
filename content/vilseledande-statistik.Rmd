@@ -239,6 +239,15 @@ Vad ska du göra för att undvika Simpsons paradox?
 - <https://en.wikipedia.org/wiki/Simpson%27s_paradox>
 - <https://plato.stanford.edu/entries/paradox-simpson/>
 
+## Berksons paradox {#berksons-paradox}
+
+Videoklippet [Does Hollywood ruin books? - Numberphile](https://www.youtube.com/watch?v=FUD8h9JpEVQ) beskriver Berksons paradox som även :
+
+<iframe src="https://www.youtube.com/embed/FUD8h9JpEVQ?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
+- <https://en.wikipedia.org/wiki/Berkson%27s_paradox>
+- Berkson (2014) [Limitations of the Application of Fourfold Table Analysis to Hospital Data](https://doi.org/10.1093/ije/dyu022)
+
 ## Se även
 
 - [Missförstånd om statistik](#misconceptions-stats)
