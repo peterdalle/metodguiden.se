@@ -1,12 +1,12 @@
 bookdown::gitbook:
-  lot: yes
-  lof: yes
+  lot: no
+  lof: no
   highlight: default
-  split_by: rmd
+  split_by: section
   split_bib: yes
   css: ["style.css"]
   config:
-    theme: united
+    theme: white
     toc:
       collapse: section
       scroll_highlight: yes
@@ -31,15 +31,12 @@ bookdown::pdf_book:
   citation_package: natbib
   keep_tex: no
 bookdown::epub_book: default
-#  bookdown::gitbook:
-#    toc_depth: 1
-#    fig_caption: yes
 documentclass: book
 cover-image: "images/cover.png"
 url: "http://metodguiden.se/"
 #apple-touch-icon: "touch-icon.png"
 #apple-touch-icon-size: 120
-site: bookdown::bookdown_site
+#site: bookdown::bookdown_site
 header-includes:
   - \usepackage[swedish]{babel}
 colorlinks: yes

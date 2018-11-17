@@ -14,7 +14,7 @@ Här hittar du:
 
 4. När du tar fram sambandsmått (såsom Cramérs V eller Kendatalls tau), notera både sambandsmåttet och tillhörande p-värdet.
 
-5. Skriv ned både sambandsmåttet och p-värdet, exempelvis "Det finns ett svagt samband mellan X och Y (r = 0,123; p < 0,001)"
+5. Skriv ned både sambandsmåttet och p-värdet, exempelvis "Det finns ett medelsvagt samband mellan politiskt intresse och tidningsläsning (r = 0,23; p < 0,001)"
 
 ## Korstabell med tre variabler
 
@@ -29,3 +29,7 @@ Här hittar du:
 5. När du tar fram sambandsmått (såsom Cramérs V eller Kendatalls tau), notera både sambandsmåttet och tillhörande p-värdet *för varje nivå av kontrollvariabeln*. Exempelvis, om du lägger till låg/hög utbildning som kontrollvariabel kommer det att finnas tre sambandsmått: (1) ett sambandsmått för låg utbildning, (2) ett sambandsmått för hög utbildning, (3) samt ett sambandsmått som inte tar hänsyn till utbildning. Du vill veta sambandsmåttet när kontrollvariabeln är med, och därmed vill du veta sambandsmåttet för låg respektive hö utbilndning (1 och 2).
 
 6. Skriv ned både sambandsmåttet och p-värdet för respektive nivå av kontrollvariabeln, exempelvis "Sambandet mellan X och Y är svagt bland lågutbilde (r = 0,123; p < 0,001), men högt bland högutbildade (r = 0,321; p < 0,001)."
+
+## Se också
+
+- [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent)
