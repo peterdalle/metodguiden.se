@@ -106,9 +106,13 @@ Psykologifabriken ger [sju tips](http://www.psykologifabriken.se/boosta-din-moti
 
 Ett program för referenshantering hjälper dig att hålla reda på artiklar, nyhetsartiklar och andra typer av dokument du samlar på dig.
 
-Jag rekommenderar [Zotero](https://www.zotero.org/). Det är gratis, fungerar tillsammans med Word och har smarta funktioner för import av artiklar.
+Jag rekommenderar [Zotero](https://www.zotero.org/). Det är gratis, fungerar på Mac, Windows och Linux och kan användas tillsammans med Word samt importera artiklar direkt från nätet.
 
-Det finns dock [fler referenshanteringsprogram](#refprograms).
+[![Zotero.](images/program/zotero.png "Zotero")](images/program/zotero.png)
+
+Behöver du hålla reda på bilder kan du använda [Tropy](https://tropy.org/). Det är också gratis och fungerar på Mac, Windows och Linux.
+
+[![Tropy.](images/program/tropy.jpg "Tropy")](images/program/tropy.jpg)
 
 ## Gör bättre sökningar på Google
 

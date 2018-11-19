@@ -3,7 +3,7 @@ bookdown::gitbook:
   lof: no
   highlight: default
   split_by: section
-  split_bib: yes
+  split_bib: no
   css: ["style.css"]
   config:
     theme: white
@@ -12,8 +12,8 @@ bookdown::gitbook:
       scroll_highlight: yes
       before: |
         <li><a href="/">Metodguiden</a></li>
-      #after: |
-      #  <li><a href="http://peterdahlgren.com/" target="blank">Peter M. Dahlgren</a></li>
+      after: |
+        <li><a href="http://peterdahlgren.com/" style="opacity:.6">Av Peter M. Dahlgren</a></li>
     edit: https://github.com/peterdalle/metodguiden.se/blob/master/%s
     toolbar:
       position: fixed

@@ -6,26 +6,10 @@ Här hittar du:
 - Problem som kan uppstå när människor besvarar enkäter
 - Databaser med frågebatterier du kan använda
 
-## Lästips
-
-Detta är godtyckliga urval av litteratur. Testa att söka efter [survey method review](https://scholar.google.se/scholar?q=survey+method+review&btnG=&hl=sv&as_sdt=0%2C5) på Google Scholar också.
-
-### Hur du gör enkäter
+## Hur du gör enkäter
 
 - Enkätmetodik, nybörjarbok som tar upp det mesta om att göra enkäter, från ax till limpa (Berntsson et al., 2016).
 - Sampling, vanliga svarsfrekvenser, och hur du designar frågor ([Krosnick, 1999](https://doi.org/10.1146/annurev.psych.50.1.537)).
-
-### Skriva frågor
-
-Se videoklipp från Pew Research Center om att [konstruera enkätfrågor](http://www.pewresearch.org/fact-tank/2018/03/21/how-do-you-write-survey-questions-that-accurately-measure-public-opinion/):
-
-<iframe src="https://www.youtube.com/embed/eFzGdQrr2K8?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
-
-### Hur folk svarar på enkäter
-
-- Om kognitiva svarsstilar och hur kontext och svarsskalor påverkar svaren, läs Schwarz (1999).
-- Konkret exempel på hur primingeffekten påverkar studenternas svar på hur mycket sprit de drycker beroende på om man frågar efter religion före eller efter ([Rodriguez, Neighbors, & Foster, 2014](https://doi.org/10.1037/a0031828)).
-- Mittenalternativet i Likert-skala verkar användas mer av intelligenta personer ([Minkov, 2017](https://doi.org/10.1016/j.paid.2017.03.041)).
 
 ### Enkäter på nätet
 
@@ -33,6 +17,18 @@ Se videoklipp från Pew Research Center om att [konstruera enkätfrågor](http:/
 - Onlinepaneler: problem och möjligheterna med dem ([Baker et al., 2010](https://doi.org/10.1093/poq/nfq048)).
 - Mechanical Turk inte nödvändigtvis dåligt: bättre än studenter men sämre än sannolikhetsurval ([Berinsky, Huber, & Lenz, 2012](https://doi.org/10.1093/pan/mpr057)).
 - Datakvaliteten på mobilenkäter verkar inte vara sämre än webbenkäter ([Sommer, Diedenhofen, & Musch, 2016](https://doi.org/10.1177/0894439316633452)).
+
+### Qualtrics -- webbtjänst för enkäter
+
+GU har licens på [Qualtrics](https://www.qualtrics.com/) som kan användas för att skicka ut enkäter. Både studenter och lärare kan använda Qualtrics.
+
+Kontakta den som är ansvarig för Qualtrics för att få tillgång till Qualtrics. Det står längst ned på Qualtrics inloggningssida: <http://samgu.eu.qualtrics.com/>
+
+## Skriva frågor
+
+Se videoklipp från Pew Research Center om att [konstruera enkätfrågor](http://www.pewresearch.org/fact-tank/2018/03/21/how-do-you-write-survey-questions-that-accurately-measure-public-opinion/):
+
+<iframe src="https://www.youtube.com/embed/eFzGdQrr2K8?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
 ### Hitta frågebatteri {#scales}
 
@@ -43,13 +39,17 @@ Det finns flera databaser som samlar frågebatterier inom samhällsvetenskapen.
 - [Decision Making Individual Differences Inventory (DMIDI)](http://www.sjdm.org/dmidi/)
 - [PsycTESTS - psychological measures, scales, and instrumentation tools](http://www.apa.org/pubs/databases/psyctests/)
 
-## Qualtrics: webbtjänst för enkäter
+### Hur folk svarar på enkäter
 
-GU har licens på [Qualtrics](https://www.qualtrics.com/) som kan användas för att skicka ut enkäter. Både studenter och lärare kan använda Qualtrics.
+- Om kognitiva svarsstilar och hur kontext och svarsskalor påverkar svaren, läs Schwarz (1999).
+- Konkret exempel på hur primingeffekten påverkar studenternas svar på hur mycket sprit de drycker beroende på om man frågar efter religion före eller efter ([Rodriguez, Neighbors, & Foster, 2014](https://doi.org/10.1037/a0031828)).
+- Mittenalternativet i Likert-skala verkar användas mer av intelligenta personer ([Minkov, 2017](https://doi.org/10.1016/j.paid.2017.03.041)).
 
-Kontakta den som är ansvarig för Qualtrics för att få tillgång till Qualtrics. Det står längst ned på Qualtrics inloggningssida: <http://samgu.eu.qualtrics.com/>
+## Se även
 
-## Referenser och vidare läsning
+Detta är godtyckliga urval av litteratur. Testa att söka efter [survey method review](https://scholar.google.se/scholar?q=survey+method+review&btnG=&hl=sv&as_sdt=0%2C5) på Google Scholar också.
+
+### Referenser och vidare läsning
 
 - Baker, R., Blumberg, S. J., Brick, J. M., Couper, M. P., Courtright, M., Dennis, J. M., … Zahs, D. (2010). [Research Synthesis: AAPOR Report on Online Panels](https://doi.org/10.1093/poq/nfq048). *Public Opinion Quarterly, 74*(4), 711–781.
 - Berinsky, A. J., Huber, G. A., & Lenz, G. S. (2012). [Evaluating Online Labor Markets for Experimental Research: Amazon.com’s Mechanical Turk](https://doi.org/10.1093/pan/mpr057). *Political Analysis, 20*(3), 351–368.
@@ -62,3 +62,4 @@ Minkov, M. (2017). [Middle responding: An unobtrusive measure of national cognit
 - Schwarz, N. (1999). Self-Reports: How the Questions Shape the Answers. *American Psychologist, 54*(2), 93–105.
 - Sniderman, P. M., & Grob, D. B. (1996). [Innovations in Experimental Design in Attitude Surveys](https://doi.org/10.1146/annurev.soc.22.1.377). *Annual Review of Sociology, 22*(1), 377–399.
 - Sommer, J., Diedenhofen, B., & Musch, J. (2016). [Not to Be Considered Harmful: Mobile-Device Users Do Not Spoil Data Quality in Web Surveys](https://doi.org/10.1177/0894439316633452). *Social Science Computer Review*. 
+

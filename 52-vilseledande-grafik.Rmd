@@ -5,8 +5,8 @@ Här hittar du:
 - Hur diagram kan användas vilseledande
 - Råd för hur du undviker misstagen
 
-## Grafik och grafer
+Att skriva om:
 
-### Truncate Y-axis
-
-### Right censoring
+- Grafik och grafer
+- Truncate Y-axis
+- Right censoring

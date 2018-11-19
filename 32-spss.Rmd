@@ -5,18 +5,20 @@ Här hittar du:
 - Hjälp med att installera och komma igång med SPSS
 - Alternativ till SPSS
 
-Statistikprogrammet vi använder heter [SPSS](https://www-01.ibm.com/software/se/analytics/spss/m) (Statistical Package for the Social Science). SPSS finns på universitetets datorer, men du kan också ladda ned det till din privata dator (rekommenderas).
+## Installera SPSS
 
-![SPSS användargränssnitt efter att du väntat en halvtimme på det att starta.](images/spss.png "SPSS")
+![SPSS användargränssnitt.](images/program/spss.png "SPSS")
 
-## Installera SPSS på din egen dator
+Statistikprogrammet [SPSS](https://www-01.ibm.com/software/se/analytics/spss/m) (Statistical Package for the Social Science) finns på universitetets datorer, men du kan också ladda ned det till din privata dator och installera (rekommenderas).
 
 1. Gå till [studentportalen.gu.se/it/programvaror](http://studentportalen.gu.se/it/programvaror/).
 2. Ladda ned senaste SPSS för Windows eller Mac.
 3. Kopiera licenskoden för SPSS.
 4. Starta installationsfilen (Windows) eller dra appen till din programkatalog (Mac).
 
-## SPSS-Akuten hjälper dig
+## Få hjälp
+
+### SPSS-Akuten
 
 För att få hjälp med vanliga saker i SPSS rekommenderas [SPSS-Akuten](https://spssakuten.wordpress.com/). Där kan du exempelvis få hjälp med:
 
@@ -26,9 +28,9 @@ För att få hjälp med vanliga saker i SPSS rekommenderas [SPSS-Akuten](https:/
 
 Missa inte heller [videoklippet om statistisk signifikans](#signifikans-sundell) med Anders Sundell, som gjort SPSS-Akuten.
 
-## Videoguider från Lunds universitet
+### Videor från Lunds universitet
 
-Lunds universitets har svenska SPSS-videor på deras YouTube-kanal:
+Lunds universitets har svenska SPSS-videor på deras YouTube-kanal som beskriver vanliga kommandon i programmet.
 
 <iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/zvYNscF-BEM" frameborder="0" allowfullscreen></iframe>
 

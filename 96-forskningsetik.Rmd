@@ -5,6 +5,19 @@ Här hittar du:
 - Dokumentärer om etik vid forskningsstudier
 - Vidare läsning om forskningsetik
 
+## God forskningssed
+
+Sammanfattning av de allmänna reglerna från Vetenskapsrådets publikation [God forskningssed (2017)](https://www.vr.se/analys-och-uppdrag/vi-analyserar-och-utvarderar/alla-publikationer/publikationer/2017-08-29-god-forskningssed.html):
+
+1. Du ska tala sanning om din forskning. 
+2. Du ska medvetet granska och redovisa utgångspunkterna för dina studier. 
+3. Du ska öppet redovisa metoder och resultat. 
+4. Du ska öppet redovisa kommersiella intressen och andra bindningar. 
+5. Du ska inte stjäla forskningsresultat från andra. 
+6. Du ska hålla god ordning i din forskning, bland annat genom dokumentation och arkivering. 
+7. Du ska sträva efter att bedriva din forskning utan att skada människor, djur eller miljö. 
+8. Du ska vara rättvis i din bedömning av andras forskning. 
+
 ## Dokumentärer
 
 ### SVT Dokument inifrån: Experimenten - Stjärnkirurgen
@@ -50,8 +63,5 @@ Videoklipp (10 min): [The Anonymisation Problem - Computerphile](https://www.you
 
 - [Vilseledande statistik](#misleading-stats)
 - [Vilseledande diagram](#misleading-dataviz)
-
-## Läs mer
-
 - [Vetenskapsrådet: Etik](https://www.vr.se/etik.4.3840dc7d108b8d5ad5280004294.html)
 - [Codex: regler och riktlinjer för forskning](http://www.codex.vr.se/forskningsetik.shtml)

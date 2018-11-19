@@ -4,7 +4,7 @@ description: "Metod speciellt för medie- och kommunikationsvetenskap och journa
 author: "Peter M. Dahlgren"
 institute: "Institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet"
 date: "`r Sys.Date()`"
-bibliography: ["content/ref.bib"]
+bibliography: ["ref.bib"]
 csl: "apa6.csl"
 link-citations: true
 ---
@@ -15,43 +15,45 @@ library(ggplot2)
 theme_set(theme_minimal())
 ```
 
-![](images/metodguiden-logo.png)
-
 # Om Metodguiden {-}
+
+![](images/metodguiden-logo.png)
 
 Metodguiden har skapats för att
 
 - ge svar på [vanliga frågor](#faq) från studenter
 - förbättra studenternas kunskaper i [statistik](#stats) och [datavisualisering](#dataviz)
 - samla bra [program](#program), [dataset](#dataset) och [länkar](#links) som finns på nätet
-- ta upp ämnen som saknas i metodböcker: [tveksamma forskningspraktiker](#misleading-stats), [missförstånd om statistik](#misconceptions-stats), och hur människor psykologiskt bearbetar information
+- ta upp saker som saknas i metodböcker: 
+	- [tveksamma forskningspraktiker](#misleading-stats)
+	- [missförstånd om statistik](#misconceptions-stats)
+	- hur människor psykologiskt bearbetar information
+	- animationer, videoklipp, nedladdningsbara filer
 - skapa förståelse för [replikeringskrisen](https://en.wikipedia.org/wiki/Replication_crisis)
 
 Guiden är inriktad mot samhällsvetenskap, och framför allt medie- och kommunikationsvetenskap samt journalistik. Det finns också en bias mot enkäter och experimentell metod.
 
-Detta är inte en ersättning till kurslitteratur, utan ett komplement. Texterna är inte färdiga utan byggs på efterhand.
+Detta är inte en ersättning till kurslitteratur, utan ett komplement. Texterna är inte färdiga utan byggs på efterhand. Det finns med all säkerhet fel här, kontakta mig i så fall!
 
 <em>Kom ihåg: det viktiga är inte att alltid ha rätt, utan att alltid ändra sig när man upptäcker att man har fel!</em>
 
-## Varför metod är viktigt {-}
+### Varför metod är viktigt {-}
 
 Varför är det viktigt att lära sig metod egentligen? Titta på videoklippet [Frontline: Prisoners of Silence](https://www.youtube.com/watch?v=CzCGux7qD1c) nedan.
 
-Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden. Men med hjälp av en ny metod, där en person håller i handen när det autistiska barnet skriver, har gjort att barnet plötsligt kan skriva ned alla sina innersta tankar. Metoden kallas faciliterad kommunikation. Men det finns de som hävdar att det är personen som håller handen som egentligen styr vad barnen skriver. Så hur tar man reda på vem som har rätt? Det är där metoderna kommer in i bilden.
+Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden. Men med hjälp av en ny metod, *faciliterad kommunikation*, kan de plötsligt kommunicera. En person håller i handen när det autistiska barnet skriver och barnet kan därmed skriva ned alla sina innersta tankar och komponera musikaliska mästerverk. Men det finns de som hävdar att det är personen som håller handen som egentligen styr vad barnen skriver. Hur tar man reda på vem som har rätt? Med vetenskapliga metoder.
 
 <iframe src="https://www.youtube.com/embed/CzCGux7qD1c?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
-## Kontakta {-}
+### Kontakta {-}
 
 Har du synpunkter, idéer eller hittat något fel, hör av dig till [Peter M. Dahlgren](http://peterdahlgren.com/contact/), institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet. Jag är doktorand i medie- och kommunikationsvetenskap och undervisar i bland annat statistik och programmering.
 
-## Källkod {-}
+### Källkod {-}
 
-Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>.
+Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>. Hemsidan är gjord i [bookdown](https://bookdown.org/).
 
-Hemsidan är gjord i [bookdown](https://bookdown.org/).
-
-## Upphovsrätt {-}
+### Upphovsrätt {-}
 
 Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavsett medium eller format på följande villkor:
 
@@ -59,22 +61,20 @@ Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavs
 - distribuera inte modifierat material
 - använd inte kommersiellt
 
-Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/).
+Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/). Notera dock att inbäddat material (som videoklipp från YouTube) inte faller under Creative Commons.
 
-Notera dock att inbäddat material (som videoklipp från YouTube) inte faller under denna licens.
-
-## Större ändringar {-}
+### Större ändringar {-}
 
 Senaste versionen skapades automatiskt `r Sys.Date()`.
 
 | När        | Vad |
 | :---------- | :------------------------------------------------------------ |
-| 2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). |
+| 2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). Strukturen helt omgjord, vilket bryter gamla länkar. |
 | 2018-03-26 | Lagt till videor om att [konstruera enkätfrågor](#surveys). |
 | 2018-02-16 | Lagt till [Missförstånd: "Deduktion är generell-till-specifik medan induktion är specifik-till-generell"](#specific-to-general) |
 | 2018-02-11 | Lagt till [Missförstånd: “Om två studier visar olika resultat ligger sanningen någonstans mittemellan”](#inbetween), [Antagandet läggs i slutsatsen](#assumptions-circularity), [Undersöka andra än de man uttalar sig om](#inference-to-population), [Böcker](#books). |
 | 2018-01-22 | Lagt till [Vad blir felmarginalen?](/felmarginal.html)|
-| 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till egen domän metodguiden.se. |
+| 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till domänen metodguiden.se. |
 | 2017-11-29 | Lagt till [forskningsetik](#ethics). |
 | 2017-08-22 | Byggt om till bookdown. |
 | 2017-08-17 | Lagt till [vilseledande statistik](#misleading-stats) och [checklista med kritiska frågor](#checklist). |

@@ -1,0 +1,39 @@
+# (PART) Statistik {-}
+
+# Statistik {#stats}
+
+Här hittar du:
+
+- Deskriptiv och inferentiell statistik
+- Videoklipp om statistik
+
+## Två typer av statistik
+
+Man brukar skilja på två typer av statistik: deskriptiv och inferentiell statistik och de utmärker sig framför allt vad gäller osäkerheten. Inferentiell statistik innehåller *alltid* en osäkerhet, medan deskriptiv statistik inte behöver göra det.
+
+### Deskriptiv statistik
+
+Deskriptiv statistik är ett annat namn för *beskrivande* statistik. Det är inte svårare än att man beskriver data på olika sätt. I en enkätundersökning kan det handla om hur många som svarat, vilken medelålder respondenterna har, var de flesta bor, och så vidare. Man uttalar sig alltså endast om datamängden och inte något utanför datamängden. Det finns heller ingen större osäkerhet i statistiken. Om medelåldern är 50 år i datamängden så gäller detta endast de som har svarat, inga andra.
+
+### Inferentiell statistik
+
+Inferentiell statistik innebär att man uttalar sig om en population utifrån ett stickprov (även kallat sampel). Då beskriver man stickprovet (precis som vid den deskriptiva statistiken), men man går ett steg längre och säger dessutom något *utöver* de observationer man undersöker. Det innebär att slutsatsen inte bara gäller datan man analyserar, utan faksitk också hela populationen. Denna typ av statistik är därför *alltid* behäftad men en viss osäkerhet eftersom man undersöker ett stickprov, och inte hela populationen. Osäkerheten uttrycks ofta med hjälp av felmarginal, konfidensintervall och p-värden.
+
+## Se även
+
+Se videoklippet nedan för en 15 minuter kortkurs i statistik.
+
+<iframe src="https://www.youtube.com/embed/sxQaBpKfDRk?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
+Khan Academy har en mängd YouTube-videor med grundläggande statistik till mer avancerad statistik. Titta på spellistan nedan med grundläggande deskriptiv statistik:
+
+<iframe class="mediaplayer videoplayer" src="https://www.youtube.com/embed/uhxtUt_-GyM?list=PL1328115D3D8A2566" frameborder="0" allowfullscreen></iframe>
+
+Se också [Videos for teaching and learning statistics](https://learnandteachstatistics.wordpress.com/2018/01/09/videos-for-teaching-and-learning-statistics/).
+
+### Böcker
+
+- Djurfeldt, G., Larsson, R. & Stjärnhagen, O. (2010). *Statistisk verktygslåda 1: samhällsvetenskaplig orsaksanalys med kvantitativa metoder (2. uppl.)*. Lund: Studentlitteratur.
+- Field, A. P. (2013). *Discovering statistics using IBM SPSS statistics: and sex and drugs and rock “n” roll (4th edition)*. Los Angeles: Sage.
+- Miles, J. & Shevlin, M. (2001). *Applying regression & correlation: a guide for students and researchers*. London: SAGE.
+- Yu, C.H. (2006). *Philosophical foundations of quantitative research methodology*. Lanham, Md.: University Press of America.

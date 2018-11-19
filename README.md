@@ -4,27 +4,17 @@
 
 Alla texter är skrivna i [RMarkdown](http://rmarkdown.rstudio.com/) och kompileras automatiskt med [bookdown](https://bookdown.org/) till HTML och EPUB. Grafik och analyser är skrivna i R. 
 
-## Bygg
-
-Bygg HTML:
+## Kompilera till HTML
 
 ```cmd
 > build
 ```
 
-Bygg HTML och EPUB:
-
-```cmd
-> build-all
-```
+Du kan också använda kommandot `build-all` för att kompilera alla tillgängliga format (HTML, PDF, EPUB).
 
 ## LaTeX
 
 Följande LaTeX-paket behövs för att kompilera till PDF:
-
-- swedish
-
-Använd följande kod
 
 ```tex
 header-includes:

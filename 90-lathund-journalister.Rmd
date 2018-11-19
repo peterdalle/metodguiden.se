@@ -1,19 +1,15 @@
-# Lathund för journalister {#journalist}
+# Lathund
 
 Här hittar du:
 
-- Vanliga begrepp som används i forskningsstudier
-- Råd om vilka kritiska frågor du bör ställa
+- [Statistik för journalister](#journalist)
+- [Checklista med kritiska frågor för att analysera enkätundersökningar](#checklist)
+- [Checklista för tabeller](#checklist-crosstabs)
+- [Checklista för diagram](#checklist-diagrams)
 
-Vid bedömning av akademiska studier konfronteras journalister inte bara av siffror, utan också begrepp som "p-värde", "statistisk inferens" och "regression".
+## Statistik för journalister {#journalist}
 
-Statistikkurser finns på alla universitet, men dessvärre är det något som man snabbt går igenom och sedan lika snabbt glömmer bort. Men för både journalister och kommunikatörer är det nödvändigt att göra mer än att bara läsa forskningsstudiens sammanfattning. Man bör förstå de metoder och begrepp som ligger till grund för akademiska studier för att kunna bedöma forskning. Även om man inte behärskar statistik fullt ut, är det ändå viktigt att ha grundläggande kunskaper för att åtminstone kunna formulera bättre och mer kritiska frågor till experter, men även för att förhålla sig skeptisk till resultaten i studierna.
-
-Se videoklippet nedan för en 15 minuter kortkurs i statistik.
-
-<iframe src="https://www.youtube.com/embed/sxQaBpKfDRk?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
-
-## Samband och orsakssamband
+### Samband och orsakssamband
 
 De flesta studier försöka upprätta ett **samband** mellan två saker (så kallade **variabler**), till exempel hur läraren kan ha ett *samband* med studenternas betyg. Eller hur vikten på en bil har ett *samband* med dödsolyckor.
 
@@ -32,7 +28,7 @@ Det finns flera kriterier för att bedöma om ett orsakssamband existerar. Här 
 
 Alla kriterier är inte nödvändigtvis relevanta. Exempelvis, en händelse som bara händer en enda gång kan ju aldrig ha en regelbundenhet. 
 
-## Uttala sig om datan eller bortom datan
+### Uttala sig om datan eller bortom datan
 
 En annan viktig skillnad att komma ihåg är att studier kan antingen utforska observerade data (**deskriptiv statistik**) eller använda observerade data för att förutsäga vad som är sant *bortom* den observerade datan (**inferentiell statistik**).
 
@@ -40,7 +36,7 @@ Uttalandet "Från 2005 till 2015 har antalet anmälda stöldbrott ökat med 70 %
 
 Uttalandet "Om du tar en högskoleexamen ökar din livsinkomst med 50 %" är inferentiell statistik. Denna typ av uttalande är *alltid* förknippat med en osäkerhet eftersom uttalandet inte bara beskriver den data som har undersökts, utan också försöker säga något om människor i allmänhet, i framtiden eller kanske i andra länder.
 
-## Grundläggande statistiska begrepp
+### Grundläggande statistiska begrepp
 
 Här är några andra grundläggande statistiska begrepp som journalister och kommunikatörer bör känna till:
 
@@ -67,12 +63,12 @@ Här är några andra grundläggande statistiska begrepp som journalister och ko
 
 Notera att en förståelse för statistiska termer inte innebär att du bör krydda din text med dem. Skriv på ett enkelt sätt som kan förstås av så många som möjligt, utan statistiskt fackspråk. "Samband" fungerar ofta lika bra som "korrelation". Det underlättar även för forskare!
 
-## Läs mer
+### Referenser
+
+Denna text är inspirerad från [Statistical terms used in research studies: A primer for media](https://journalistsresource.org/tip-sheets/research/statistics-for-journalists). Alla kredd till Leighton Walter Kille som skrev den artikeln, vilken också är licensierad med [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/). I min text har jag dock ändrat de faktafel som fanns i Killes text (bland annat den [vanliga missupfattningen](#p-values) att p-värdet visar att nollhypotesen är sann).
+
+### Se även
 
 * [Statistics and Probability Dictionary](http://stattrek.com/statistics/dictionary.aspx)
 * [Introduction to Statistics: Inference](https://www.edx.org/course/introduction-statistics-inference-uc-berkeleyx-stat2-3x)
 * [How do you know a paper is legit?](http://callingbullshit.org/tools/tools_legit.html)
-
-## Referenser
-
-Denna text är inspirerad från [Statistical terms used in research studies: A primer for media](https://journalistsresource.org/tip-sheets/research/statistics-for-journalists). Alla kredd till Leighton Walter Kille som skrev den artikeln, vilken också är licensierad med [Creative Commons Attribution 3.0 Unported](https://creativecommons.org/licenses/by/3.0/). I min text har jag dock ändrat de faktafel som fanns i Killes text (bland annat den [vanliga missupfattningen](#p-values) att p-värdet visar att nollhypotesen är sann).

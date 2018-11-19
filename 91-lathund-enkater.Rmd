@@ -1,19 +1,14 @@
-# Kritiska frågor {#checklist}
-
-Här hittar du:
-
-- Checklistor med kritiska frågor för att analysera någons undersökning
-- Checklista för opinionsundersökningar
+## Kritiska frågor till vetenskapliga undersökningar {#checklist}
 
 Alla frågor kommer inte vara relevanta för en specifik undersökning, utan frågorna försöker i stället vara så kompletta och varierande som möjligt så att inget viktigt missas.
 
-## Allmänt för alla undersökningar
+### Allmänt för alla undersökningar
 
 1. Vem har gjort undersökningen och varför?
 
 2. Vilket påstående är det statistiken försöker belägga?
 
-## Urval
+### Urval
 
 1. Vilka är det som har tillfrågats?
 
@@ -27,7 +22,7 @@ Alla frågor kommer inte vara relevanta för en specifik undersökning, utan fr�
 
 6. Är urvalet stort nog? Ju större urval, desto mindre felmarginal. En tumregel är att 1 000 personer ger en maximal felmarginal på 3,1 procentenheter.
 
-## Frågor och formuleringar
+### Frågor och formuleringar
 
 1. Är frågorna neutralt ställda?
 
@@ -41,7 +36,7 @@ Alla frågor kommer inte vara relevanta för en specifik undersökning, utan fr�
 
 6. Ställdes frågorna via internet, brev, telefon, ansikte mot ansikte eller på annat sätt?
 
-## Presentation och analys
+### Presentation och analys
 
 1. Är den fråga som presenteras i resultatet densamma som faktiskt ställdes i själva undersökningen?
 
@@ -71,7 +66,7 @@ Alla frågor kommer inte vara relevanta för en specifik undersökning, utan fr�
 
 14. Är undersökningen förregistrerad? Förregistrering innebär att man skriver ned vad man tror kommer att hända innan man gör undersökningen. Förregistreringen görs offentlig innan undersökningen påbörjas. Det förhindrar att forskare skriver hypoteser *efter* att de fått fram ett resultat. Se [HARKing](#harking) och [Preregistration: A Plan, Not a Prison](https://cos.io/blog/preregistration-plan-not-prison/).
 
-## Diagram och grafik
+### Diagram och grafik
 
 1. Kan grafiken läsas fristående från den löpande texten?
 
@@ -91,7 +86,7 @@ Alla frågor kommer inte vara relevanta för en specifik undersökning, utan fr�
 
 9. Har variablerna i diagrammet omkodats? Om man till exempel bara analyserar värdet 10 på en 10-gradig skala blir resultatet mer extremt, se [That viral graph about millennials’ declining support for democracy? It’s very misleading](https://www.washingtonpost.com/news/monkey-cage/wp/2016/12/05/that-viral-graph-about-millennials-declining-support-for-democracy-its-very-misleading/).
 
-## Sammanfattning
+### Sammanfattning
 
 Dessa checklistor får man ta fram när man behöver dem. Däremot finns det två enkla och generella frågor du alltid bör ha i huvudet, oavsett vilken typ av studier eller vetenskap det handlar om:
 
@@ -101,11 +96,11 @@ Dessa checklistor får man ta fram när man behöver dem. Däremot finns det tv�
 
 Den andra frågan formulerade Aristoteles och den ligger också till grund till hans vetenskapliga syn på retorik.
 
-## Se även
+### Se även
 
 - [Sveriges Radio Ekots checklista för enkätundersökningar](http://sverigesradio.se/sida/artikel.aspx?programid=4097&artikel=5432899)
 - [A Journalist’s Guide To Opinion Polls](http://www.britishpollingcouncil.org/a-journalists-guide-to-opinion-polls/)
 
-## Referenser
+### Referenser
 
 - Järvå, H., & Dahlgren, P. M. (2013). *Påverkan och manipulation*. Lund: Studentlitteratur.

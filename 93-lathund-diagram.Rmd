@@ -1,0 +1,26 @@
+## Lathund: diagram {#checklist-diagrams}
+
+### Alla diagram
+
+- Varje diagram ska kunna läsas fristående från texten.
+- Se till att diagrammet har rubrik och eventuell kommentar.
+- Numrera diagrammet (Figur 1, Figur 2, Figur 3 etc.).
+- Avrunda procent till närmsta heltal.
+- Skriv alltid antalet observationer (n) i kommentaren.
+- Undvik 3D-diagram.
+- Undvik pajdiagram om du har fler än fem kategorier.
+
+### Axlar och linjer
+
+- Skriv ut vad axlarna representerar (exempelvis procent).
+- Lägg den oberoende variabeln på den horisontella axeln (X-axeln).
+- Lägg den beroende variabeln på den vertikala axeln (Y-axeln).
+- Låt axeln börja på 0 (exempelvis 0 till 100 procent), om du inte har goda skäl för något annat.
+- Lägg beskrivningar av linjerna jämte linjen, snarare än som en ruta bredvid, för att minska.
+- Om du ska jämföra många diagram, använd samma skala på axlarna. Annars kan det se ut som linjer ökar eller minskar mer än de gör.
+
+### Tillgänglighet
+
+- Använd inte färg som det huvudsakliga sättet att skilja exempelvis linjer åt. Färgdiagram fungerar inte för färgblinda och svartvita utskrifter.
+- Använd olika typer av streckade linjer för att skilja dem åt.
+- Använd hög konstrast.

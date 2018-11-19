@@ -1,0 +1,14 @@
+## Lathund: tabeller {#checklist-crosstabs}
+
+### Alla tabeller
+
+- Varje tabell ska kunna läsas fristående från texten.
+- Kopiera inte tabeller från statistikprogrammet. Gör egna!
+- Se till att tabellen har [tabellhuvud, resultat och tabellkommentar](#tables).
+- Tabellhuvudet bör ha ett nummer (Tabell 1, Tabell 2, Tabell 3 etc.).
+- Avrunda procent till närmsta heltal.
+- Skriv antalet observationer (n).
+
+### Korstabeller (två eller fler variabler)
+
+- Tumregel: lägg den oberoende variabeln i kolumenn och använd [kolumnprocent](#crosstabs-percent).

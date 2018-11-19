@@ -1,4 +1,4 @@
-# Hur gör jag... {#faq}
+# Frågor om statistik {#faq}
 
 Här hittar du:
 
@@ -21,12 +21,17 @@ Videor om korrelation:
 
 Det är variabelns skalnivå som avgör vilket sambandsmått du ska använda.
 
-- Om båda variablerna är på nominalskalenivå: Cramérs V.
-- Om båda variablerna är på ordinalskalenivå: Spearmans rho, Kendalls tau-b/tau-c.
-- Om båda variablerna är på intervallskalenivå: Pearsons r.
-- Om variablerna har olika skalnivåer: Utgå från den minsta skalnivån.
+Sambandsmått | När ska du välja detta mått?
+:--------- | :------------------------------------------------------------
+Cramérs V | Om båda variablerna är nominalskalor (ingen rangordning)
+Spearmans rho | Om båda variablerna är ordinalskalor (rangordnade)
+Kendalls tau-b | Om båda variablerna är ordinalskalor och tabellen är symmetrisk såsom 2x2 (rangordnade)
+Kendalls tau-c | Om båda variablerna är ordinalskalor och tabellen är asymmetrisk såsom 2x3 (rangordnade)
+Pearsons r | Om båda variablerna är intervallskalor (kontinuerliga)
 
-Om du har variablerna kön (man/kvinna) och inkomst (i kronor) har kön den minsta skalnivån. Kön är då på nominalskalenivå och inkomst på intervallskalenivå. Därmed bör du välja Cramérs V.
+Table: Välja sambandsmått.
+
+Vilken variabel ska man välja om de båda variablerna har olika skalnivåer? Utgå från den minsta skalnivån. Om du har variablerna kön (man/kvinna) och inkomst (kronor), är kön på nominalskalenivå och inkomst på intervallskalenivå. Kön har därmed den minsta skalnivån. Därmed bör du välja Cramérs V.
 
 [![Vilket sambandsmått ska jag välja? Ett flödesschema som underlättar valet och tolkningen av olika sambandsmått.
 ](images/valja-sambandsmatt.png)](images/valja-sambandsmatt.png)
@@ -35,44 +40,48 @@ Om du har variablerna kön (man/kvinna) och inkomst (i kronor) har kön den mins
 
 Det är ämneskunskap som framför allt bör guida tolkningen av sambandsmått. Om du saknar ämneskunskap har @cohen_statistical_1988 gett riktlinjer för Pearsons r, Cramérs V med flera:
 
-- 0,10 = litet samband
-- 0,30 = medelstort samband
-- 0,50 = stort samband
+Storlek | Tolkning
+:----- | :---------------------------
+0,10 | Litet samband
+0,30 | Medelstort samband
+0,50 | Stort samband
+
+Table: Sambandsmått.
 
 Pearsons r varierar från -1 till +1. Cramérs V kan bara variera från 0 till 1 eftersom det är på nominalskalenivå.
 
-Sambandsmått i samhällsvetenskap är oftast ganska små, vilket framgår av graferna nedan. De visar att det genomsnittliga samabandsmåttet inom socialpsykologi är r = 0,21 och är baserad på 25 000 studier med 8 miljoner människor över 100 år [@richard_one_2003]. Samma sak syns i 60 år av kommunikationsforskning som bygger på över 9 500 studier och 8,7 miljoner människor där medelvärdet också är r = 0,21 [@rains_sixty_2018].
+Sambandsmått i samhällsvetenskap är oftast ganska små, vilket framgår av diagrammen nedan. De visar att det genomsnittliga samabandsmåttet inom socialpsykologi är r = 0,21 och är baserad på 25 000 studier med 8 miljoner människor över 100 år [@richard_one_2003]. 
 
-```{r effect-sizes, fig.height=8}
-df <- read.csv("data/soc-psych.tsv", header=TRUE, sep="\t", stringsAsFactors=FALSE)
-df2 <- read.csv("data/effectsizes-comm.csv", header=TRUE, sep=",", stringsAsFactors=FALSE)
-
+```{r effect-sizes, fig.height=4}
 library(tidyverse)
-library(gridExtra)
+
+df <- read.csv("data/soc-psych.tsv", header=TRUE, sep="\t", stringsAsFactors=FALSE)
 
 # Reproduce graph in Richard et al. (2003), but use density instead.
-gg1 <- df %>% ggplot(aes(r)) +
+df %>% ggplot(aes(r)) +
   geom_density(fill="grey") + 
   scale_x_continuous(limits=c(0, 1), breaks=seq(0, 1, 0.1)) +
   labs(title="Sambandsmått från 100 år av socialpsykologi",
        x="Genomsnittlig korrelation",
        y="Densitet")
+```
+Samma sak syns i kommunikationsforskning. Där ligger medelvärdet också på r = 0,21 [@rains_sixty_2018], och detta bygger på data från 9 500 studier och 8,7 miljoner människor från 60 år.
 
-gg2 <- df2 %>% ggplot(aes(r)) +
+```{r effect-sizes-comm, fig.height=4}
+df2 <- read.csv("data/effectsizes-comm.csv", header=TRUE, sep=",", stringsAsFactors=FALSE)
+
+df2 %>% ggplot(aes(r)) +
   geom_density(fill="grey") + 
   scale_x_continuous(limits=c(0, 1), breaks=seq(0, 1, 0.1)) +
   labs(title="Sambandsmått från 60 år av kommunikationsforskning",
        x="Genomsnittlig korrelation",
        y="Densitet")
-
-grid.arrange(gg1, gg2, nrow=2)
 ```
 
 ### Vad är skillnaden mellan Phi och Cramérs V?
 
-Phi kan du ignorera helt och hållet. Titta bara på Cramérs V.
-
-Phi är ett sambandsmått som endast fungerar för korstabeller med storleken 2 x 2 med två binära variabler. Cramérs V fungerar däremot på alla storlekar av korstabeller.
+- Phi är ett sambandsmått som endast fungerar för korstabeller med storleken 2 x 2 med två binära variabler.
+- Cramérs V fungerar däremot på alla storlekar av korstabeller. Därför bör du alltid välja Cramérs V.
 
 ### Vad är p-värden och statistisk signifikans?
 
@@ -84,7 +93,7 @@ Läs mer: **[P-värden och hur man tolkar dem](#p-values)**
 
 ### Var hittar jag p-värdet i SPSS?
 
-Titta i kolumnen *Approximate Significance* (*Approx. Sig.*) eller bara *Sig*.
+Titta i kolumnen *Approximate Significance* (*Approx. Sig.*) eller bara *Sig*. Ibland står det att p-värdet är `0,000`. Det beror på avrundning. Skriv då att värdet är under 0,001, det vill säga `p < 0,001`.
 
 ### Hur analyserar jag en fråga som är kodad på flera variabler?
 
@@ -112,43 +121,3 @@ Gör så här:
 2. Lägg variabeln du vill summera (variabeln med antal ord) i `Data Column Variables`.
 
 3. Lägg variabeln du vill gruppera analysenheterna efter (variabeln med typ av tidning) i kolumnen `Break Column Variables`.
-
-## Vilka viktiga begrepp bör jag känna till?
-
-|Begrepp|Beskrivning|
-|-------|---------------------------------|
-|begreppsvaliditet||
-|Chi^2^||
-|Cramérs V||
-|deskriptiv statistik||
-|extern validitet||
-|felmarginal||
-|hypotes||
-|intern validitet||
-|kausalitet||
-|Kendalls tau-b/tau-c||
-|korrelation||
-|korstabell||
-|kvartil||
-|medelvärde||
-|median||
-|modalprocent||
-|normaldistribution||
-|operationalisering||
-|operationell definition||
-|p-värde||
-|Pearsons r||
-|population||
-|reliabilitet||
-|resultatvaliditet (eller *statistisk inferensvaliditet*)||
-|sambandsmått||
-|sampel||
-|skalnivå||
-|Spearmans rho||
-|standardavvikelse||
-|statistisk signifikans||
-|teoretisk definition||
-|typvärde||
-|validitet||
-|variabel||
-|variationsvidd||

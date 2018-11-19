@@ -23,7 +23,7 @@ Läs mer:
 
 - [Lathund för journalister](#journalist)
 
-## Antagandet läggs i slutsatsen {#assumptions-circularity}
+## Cirkelresonemang {#assumptions-circularity}
 
 Om man lägger antagandet i slutsatsen är det extremt vilseledande eftersom man inte kommer med någon ny information än den man redan hade antagit från början. Det är ett klassiskt fall av cirkelbevisning, fast dolt som en statistisk analys.
 

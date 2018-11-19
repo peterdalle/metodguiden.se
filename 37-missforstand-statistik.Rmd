@@ -60,24 +60,6 @@ Läs mer:
 - [Den mytomspunna felmarginalen](https://politologerna.wordpress.com/2013/01/30/den-mytomspunna-felmarginalen/)
 - <https://en.wikipedia.org/wiki/Confidence_interval>
 
-## Missförstånd: "P-värdet visar sannolikheten att nollhypotesen är sann"
-
-Nej, p-värdet visar sannolikheten för resultatet man fått, givet antagandet att nollhypotesen *är* sann.
-
-Man utgår med andra ord från att nollhypotesen är sann, och givet denna utgångspunkt får man reda på hur sannolikt resultatet är (det vill säga, resultatet av det statistiska testet).
-
-Man kan aldrig få fram sannolikheten för nollhypotesen med hjälp av p-värdet. Man kan endast ta reda på om man kan *förkasta* nollhypotesen eller ej.
-
-Låt säga att vi antar en gräns på 0,05. Om resultatet då är p < 0,05 så kan man förkasta nollhypotesen. Om p är högre, så kan man inte förkasta nollhypotesen.
-
-## Missförstånd: "P-värdet visar sannolikheten att resultatet beror på slumpen"
-
-Nej, precis som missförståndet ovan så är nollhypotesen antagandet som utgör *utgångspunkten*. Det vill säga, man *antar* att slumpen råder och jämför sedan hur mycket resultatet skiljer sig från detta antagande. Om resultatet skiljer sig tillräckligt mycket från antagandet, så förkastar man antagandet att slumpen råder (man förkastar nollhypotesen).
-
-Man antar med andra ord att nollhypotesen är sann, och givet detta antagande får man reda på hur sannolikt resultatet är.
-
-Om man får fram sannolikheten för resultatet givet nollhypotesen (exempelvis p = 0,01 eller 1 % på ren svenska) så betyder det alltså inte att 1 % av resultatet beror på slumpen. Den tolkningen är inte bara fel, den är till och med meningslös eftersom slumpen är själva antagandet.
-
 ## Missförstånd: "Om två konfidensintervall överlappar är skillnaden inte statistiskt signifikant"
 
 Nej, två konfidensintervall kan faktiskt överlappa ganska mycket även om de är statistiskt signifikanta på 0,05-nivån.
@@ -148,7 +130,25 @@ grid.arrange(gg1, gg2, gg3,
              ncol = 3)
 ```
 
-## Missförstånd: "P-värdet 0,049 är bättre än p-värdet 0,051"
+## Missförstånd: "P-värdet visar sannolikheten att resultatet beror på slumpen" {#pvalue-chance}
+
+Nej, precis som missförståndet tidigare så är nollhypotesen antagandet som utgör *utgångspunkten*. Det vill säga, man *antar* att slumpen råder och jämför sedan hur mycket resultatet skiljer sig från detta antagande. Om resultatet skiljer sig tillräckligt mycket från antagandet, så förkastar man antagandet att slumpen råder (man förkastar nollhypotesen).
+
+Man antar med andra ord att nollhypotesen är sann, och givet detta antagande får man reda på hur sannolikt resultatet är.
+
+Om man får fram sannolikheten för resultatet givet nollhypotesen (exempelvis p = 0,01 eller 1 % på ren svenska) så betyder det alltså inte att 1 % av resultatet beror på slumpen. Den tolkningen är inte bara fel, den är till och med meningslös eftersom slumpen är själva antagandet.
+
+## Missförstånd: "P-värdet visar sannolikheten att nollhypotesen är sann" {#pvalue-null}
+
+Nej, p-värdet visar sannolikheten för resultatet man fått, givet antagandet att nollhypotesen *är* sann.
+
+Man utgår med andra ord från att nollhypotesen är sann, och givet denna utgångspunkt får man reda på hur sannolikt resultatet är (det vill säga, resultatet av det statistiska testet).
+
+Man kan aldrig få fram sannolikheten för nollhypotesen med hjälp av p-värdet. Man kan endast ta reda på om man kan *förkasta* nollhypotesen eller ej.
+
+Låt säga att vi antar en gräns på 0,05. Om resultatet då är p < 0,05 så kan man förkasta nollhypotesen. Om p är högre, så kan man inte förkasta nollhypotesen.
+
+## Missförstånd: "P-värdet 0,049 är bättre än p-värdet 0,051" {#pvalue-god}
 
 P-värdet bör inte betraktas svartvit. Ett p-värde på 0,049 är inte bättre än ett p-värde på 0,051. Det är snarare en skala, där lägre p-värde kan göra oss mer säkra på att ett samband finns, *givet vissa antaganden* (till exempel att [p-hacking](#p-hacking) inte ägt rum).
 
@@ -160,26 +160,25 @@ Här kommer ett klassiskt citat om att Gud minsann älskar 0,06 lika mycket som 
 
 Det är delvis felaktigt av två skäl. 
 
-För det första kan man själv välja när resultatet ska vara statistiskt signifikant (se missförståndet ovan). Traditionellt sett har signifikansnivån satts på 5 % (det vill säga när p < 0,05). Men denna gräns är fullständigt godtycklig. Däremot måste man sätta gränsen *före* man gör analysen. Det är ingen idé att sätta gränsen efter man har analyserat datan, för då kan man få vad som helst att vara signifikant. I vissa artiklar kan man läsa att resultatet ibland är p < 0,05 för att i nästa stycke se att ett annat resultat är p < 0,01. Men i stället för att blanda signifikansnivåer bör man skriva ut det fullständiga p-värdet.
+För det första kan man själv välja när resultatet ska vara statistiskt signifikant. Traditionellt sett har signifikansnivån satts på 5 % (det vill säga när p < 0,05). Men denna gräns är fullständigt godtycklig. Däremot måste man sätta gränsen *före* man gör analysen. Det är ingen idé att sätta gränsen efter man har analyserat datan, för då kan man få vad som helst att vara signifikant. I vissa artiklar kan man läsa att resultatet ibland är p < 0,05 för att i nästa stycke se att ett annat resultat är p < 0,01. Men i stället för att blanda signifikansnivåer bör man skriva ut det fullständiga p-värdet.
 
 För det andra kan det vara så att det finns för få deltagare i studien för att en skillnad ska kunna hittas (det vill säga, det statistiska testet har för låg power). Då stämmer det att man inte *hittade* någon skillnad. Men man kan däremot inte skriva att det inte *fanns* någon skillnad. Det kanske inte låter som någon stor skillnad, men det är det. När man säger att man inte hittade någon skillnad så uttalar man sig om det statistiska testet. Men när man säger att det inte fanns någon skillnad så uttalar man sig om "verkligheten" (det vill säga, det fenomen man undersöker). Det kan ju vara så att man inte *hittade* en skillnad trots att det verkligen *fanns* en skillnad.      
 
 ## Missförstånd: "Om ett p-värde är signifikant och ett annat är icke-signifikant, är också skillnaden mellan dem signifikanta"
 
-Nej, man kan inte jämföra två p-värden med varandra och dra slutsatsen att skillnaden mellan dem är statistiskt signifikant eller ej.
+Nej, man kan inte jämföra två p-värden med varandra (som båda är statistiskt signifikanta) och dra slutsatsen att skillnaden mellan dem är statistiskt signifikant.
 
 Man måste göra ett statistiskt test för att se om skillnaden faktiskt är statistiskt signifikant [@gelman_difference_2006].
-
-<!--
 
 ## Missförstånd: "P-värdet är en betingad sannolikhet"
 
 Detta är filosofiskt snårigt.
 
-P-värdet är formellt sett är P(z > Z|H~0~), där *z* är teststatistikan och *Z* är det kritiska värdet, samt *H~0~* är nollhypotesen. Här betyder *z > Z* ett ensidigt test.^[För ett tvåsidigt test måste man använda de absoluta värdena för teststatistikan och det kritiska värdet i stället, det vill säga *|z| > |Z|*.]
+P-värdet är formellt sett P(z > Z|H~0~), där *z* är teststatistikan, *Z* är det kritiska värdet, och *H~0~* är nollhypotesen. Här betyder *z > Z* ett ensidigt test.^[För ett tvåsidigt test måste man använda de absoluta värdena för teststatistikan och det kritiska värdet i stället, det vill säga $P(\lvert{z} < \lvert Z\rvert \bigg\vert H_0)$.]
 
-På ren svenska säger man att p-värdet visar sannolikheten att få teststatistikan, eller mer extremt, givet att nollhypotesen är sann. Men då H~0~ inte kan variera, är det ingen betingad sannolikhet. Man bör kanske säga att p-värdet är en kontingent sannolikhet i stället. Filosofen Deborah Mayo.
--->
+På ren svenska säger man att p-värdet visar sannolikheten att få teststatistikan, eller mer extremt, givet att nollhypotesen är sann. Men då H~0~ inte kan variera, är det ingen betingad sannolikhet.
+
+(Hänvisa till filosofen Deborah Mayos utläggning om detta.)
 
 ## Missförstånd: "Kvantitativ metod är positivism"
 
