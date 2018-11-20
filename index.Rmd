@@ -49,10 +49,6 @@ Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden.
 
 Har du synpunkter, idéer eller hittat något fel, hör av dig till [Peter M. Dahlgren](http://peterdahlgren.com/contact/), institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet. Jag är doktorand i medie- och kommunikationsvetenskap och undervisar i bland annat statistik och programmering.
 
-### Källkod {-}
-
-Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>. Hemsidan är gjord i [bookdown](https://bookdown.org/).
-
 ### Upphovsrätt {-}
 
 Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavsett medium eller format på följande villkor:
@@ -64,8 +60,6 @@ Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavs
 Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/). Notera dock att inbäddat material (som videoklipp från YouTube) inte faller under Creative Commons.
 
 ### Större ändringar {-}
-
-Senaste versionen skapades automatiskt `r Sys.Date()`.
 
 | När        | Vad |
 | :---------- | :------------------------------------------------------------ |
@@ -84,3 +78,11 @@ Senaste versionen skapades automatiskt `r Sys.Date()`.
 | 2016-11-24 | Utökat många texter. Lagt till [FAQ](#faq) och [enkätundersökningar](#surveys). |
 | 2016-08-26 | Lade till länktips på [statistik](#stats). Skapade sidan [kreativitet](#creativity). |
 | 2016-08-17 | Första release. |
+
+### Version {-}
+
+Du läser just nu `r if(knitr::is_latex_output()) { "PDF-versionen" } else if(knitr::is_html_output()) { "HTML-versionen" }` skapad automatiskt `r Sys.Date()`.
+
+### Källkod {-}
+
+Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>. Hemsidan är gjord i [bookdown](https://bookdown.org/).
