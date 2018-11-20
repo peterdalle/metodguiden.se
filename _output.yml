@@ -1,3 +1,5 @@
+bookdown::html_book:
+  theme: united
 bookdown::gitbook:
   lot: no
   lof: no
@@ -6,7 +8,7 @@ bookdown::gitbook:
   split_bib: no
   css: ["style.css"]
   config:
-    theme: white
+    theme: united
     toc:
       collapse: section
       scroll_highlight: yes
@@ -17,26 +19,34 @@ bookdown::gitbook:
     edit: https://github.com/peterdalle/metodguiden.se/blob/master/%s
     toolbar:
       position: fixed
-    download: ["epub"]
+    download: ["epub", "pdf"]
     sharing: yes
     search: yes
     fontsettings:
       theme: white
       family: sans
       size: 2
+  cover-image: "images/cover.png"
+  url: "http://metodguiden.se/"
+  #apple-touch-icon: "touch-icon.png"
+  #apple-touch-icon-size: 120
+  site: bookdown::bookdown_site
+  github-repo: peterdalle/metodguiden.se
 bookdown::pdf_book:
   includes:
-    in_header: preamble.tex
+    in_header: latex/preamble.tex
+    #before_body: latex/before_body.tex
+    #after_body: latex/after_body.tex
+  keep_tex: no
+  dev: "cairo_pdf"
   latex_engine: xelatex
   citation_package: natbib
-  keep_tex: no
-bookdown::epub_book: default
-documentclass: book
-cover-image: "images/cover.png"
-url: "http://metodguiden.se/"
-#apple-touch-icon: "touch-icon.png"
-#apple-touch-icon-size: 120
-#site: bookdown::bookdown_site
-header-includes:
-  - \usepackage[swedish]{babel}
+  template: null
+  pandoc_args: --top-level-division=chapter
+  toc_depth: 2
+  toc_unnumbered: no
+  toc_appendix: yes
+  quote_footer: ["\\VA{", "}{}"]
 colorlinks: yes
+bookdown::epub_book:
+  dev: svglite
