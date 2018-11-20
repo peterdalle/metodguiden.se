@@ -19,10 +19,10 @@ Syftet med p-värdet är att skilja signalen från bruset. Signalen är exempelv
 Vad som är konstigt med p-värden är att värdet inte *inte* visar bevisvärdet för en hypotes. P-värdet visar bevisvärdet mot nollhypotesen! Det är en viktig skillnad.
 
 Ord | Förklaring
------------ | ----------------------------------------------------------------------
-**statistisk signifikans** | P-värden som nått under en godtycklig gräns (ofta 0,05).
-**nollhypotes** H~0~ | Antagande att det *inte* finns något samband mellan två variabler. Nollhypotesen är ofta implicit.
-**alternativ hypotes** H~1~ | Antagande att det *finns* en skillnad mellan två variabler. Hypoteser är alltid explicita.
+:----------- | :----------------------------------------------------------------------
+statistisk signifikans | P-värden som nått under en godtycklig gräns (ofta 0,05).
+nollhypotes H~0~ | Antagande att det *inte* finns något samband mellan två variabler. Nollhypotesen är ofta implicit.
+alternativ hypotes H~1~ | Antagande att det *finns* en skillnad mellan två variabler. Hypoteser är alltid explicita.
 
 Table: Ordlista
 
@@ -38,9 +38,9 @@ p-värde | Bevisvärde
 0,01 till 0,001 | Starkt bevisvärde
 under 0,001 | Väldigt starkt bevisvärde
 
-Table: Bevisvärde mot nollhypotesen (H~0~).^[Jag använder begreppet *bevisvärde* som en översättning av *strength of evidence*. Bevisvärde är mer vedertaget i svenskan än evidensgrad. Tolkningen är baserad på Annu. Rev. Stat. Appl. 2018. 5:393–419.]
+Table: Bevisvärde mot nollhypotesen (H~0~).
 
-Ett p-värde på 0,01 betyder att det är 1 procent sannolikhet att få det resultat du fått, eller mer extremt, givet att nollhypotesen är sann. Tittar vi i tabellen ovan så är det "starkt bevisvärde" mot nollhypotesen. Med andra ord är det osannolikt att få det resultatet om slumpen är sann.
+Ett p-värde på 0,01 betyder att det är 1 procent sannolikhet att få det resultat du fått, eller mer extremt, givet att nollhypotesen är sann. Tittar vi i tabellen ovan så är det "starkt bevisvärde" mot nollhypotesen.^[Jag använder begreppet *bevisvärde* som en översättning av *strength of evidence*. Bevisvärde är mer vedertaget i svenskan än evidensgrad. Tolkningen är baserad på Annu. Rev. Stat. Appl. 2018. 5:393–419.] Med andra ord är det osannolikt att få det resultatet om slumpen är sann.
 
 ### Exempel: placera bollar i korgar
 

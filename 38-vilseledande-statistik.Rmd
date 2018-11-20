@@ -227,7 +227,16 @@ Vi får därför olika resultat beroende på om vi väljer att analysera datan p
 
 Det är detta som kallas Simpsons paradox. Det är *hierarkin* i datan som påverkar slutsatsen, och slutsatsen påverkas av vilken nivå i denna hierarki man väljer att analysera. I det här fallet har hierarkin två nivåer: institutioner respektive universitet. Ett annat exempel på en hierarki med fyra nivåer: elever inom klasser inom en skola inom en kommun. 
 
-![Animation av Simpsons paradox där datan antingen analyseras tillsammans eller gruppvis. När all data analyseras tillsammans är korrelationen negativ (linjen pekar nedåt). När datan analyseras gruppvis är varje korrelation positiv (alla linjer pekar uppåt).](images/simpsons-paradox.gif)
+```{r}
+if(knitr::is_html_output()) {
+	# Animation for HTML.
+	"![Animation av Simpsons paradox där datan antingen analyseras tillsammans eller gruppvis. När all data analyseras tillsammans är korrelationen negativ (linjen pekar nedåt). När datan analyseras gruppvis är varje korrelation positiv (alla linjer pekar uppåt).](images/animations/simpsons-paradox.gif)"
+}
+if(knitr::is_latex_output()) {
+	# Static image for PDF.
+	"PDF-bild"
+}
+```
 
 Vad ska du göra för att undvika Simpsons paradox? 
 
