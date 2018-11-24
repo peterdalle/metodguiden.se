@@ -60,7 +60,7 @@ Resultatet av studerandet kan sammanfattas i en formel: <code>kvalitet = tid × 
 
 Ta inte med datorn till klassrummet. De som tar med sig datorn får sämre betyg ([Mueller & Oppenheimer, 2014](https://doi.org/10.1177/0956797614524581); [Patterson & Patterson, in press](https://doi.org/10.1016/j.econedurev.2017.02.004)) och presterar sämre ([Ravizza, Uitvlugt, & Fenn, 2017](https://doi.org/10.1177/0956797616677314); [Sana, Weston, & Cepeda, 2013](https://doi.org/10.1016/j.compedu.2012.10.003); [Carter, Greenberg, & Walker, 2017](https://doi.org/10.1016/j.econedurev.2016.12.005)).
 
-Ta anteckningar med papper och penna.
+Ta anteckningar med papper och penna. Rita även gärna figurer för att bättre komma ihåg [@wammes_drawing_2016].
 
 Direkt efter föreläsningen, renskriv och utveckla dina anteckningar med dina egna ord. Om det är något du inte förstår, fråga någon kurskamrat eller fråga läraren om han eller hon kan ge ett exempel vid nästa föreläsning.
 
