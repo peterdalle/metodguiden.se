@@ -206,13 +206,17 @@ Skillnader och likheter mellan logisk positivism och statistik [@yu_misconceived
 
 Med andra ord, modern statistisk metod accepterar flera former av filosofier och sannolikhetsteorier, inklusive sådan statistik som bygger på subjektiva uppfattningar (även om det finns inomvetenskapliga diskussioner om vilken som är "bäst"). Det finns alltså ingen enhetlig filosofisk skola för statistiska metoder, även om frekventism är överlägset vanligast.
 
-## Missförstånd: "Kvantitativa och kvalitativa metoder är fundamentalt olika"
+## Missförstånd: "Kvantitativa och kvalitativa metoder är fundamentalt olika" {#quant-qual}
 
-Indelningen av olika metoder i kvantitativ respektive kvalitativ är mer av en praktisk indelning på metodkurser snarare än någon kunskapsteoretisk indelning.
+Indelningen av olika metoder i kvantitativ respektive kvalitativ är en märklig indelning som saknar kunskapsteoretisk grund. Indelningen har förmodligen mer att göra med administrativa skäl.
 
 Likheterna är ofta större än skillnaderna, och det är dessutom omöjligt att bedriva forskning som *inte* är kvalitativ i något avseende [@allwood_distinction_2012]. Även om man gör den mest triviala undersökningen där man bara räknar något måste man fortfarande definiera vad det är man räknar. Och definitioner är alltid kvalitativa.
 
-Därför är många "listor" på vad som utmärker kvantitativ respektive kvalitativ metod inte speciellt meningsfulla, och speglar inte någon inneboende skillnad mellan de två ansatserna utan snarare vad olika forskare själva tillskriver dessa metoder [@allwood_distinction_2012].
+Många statistika metoder är dessutom kvalitativa. Faktoranalys och klusteranalys, exempelvis, reducerar stora datamängder till distinkta grupper (faktorer eller kluster), vilket är en vanlig kvalitativ metod.
+
+Därför är många uppräkningar av vad som utmärker kvantitativ respektive kvalitativ metod inte speciellt meningsfulla, och speglar inte någon inneboende skillnad mellan de två ansatserna utan snarare vad olika forskare själva tillskriver dessa metoder [@allwood_distinction_2012].
+
+Man säger ibland också att kvalitativ är tolkande. Naturligtvis kräver också kvantitativa metoder tolkning. Data kan inte tala för sig själv utan är alltid producerade i något sammanhang med ett visst mätinstrument som man måste ha i åtanke när man drar slutsatser. Intressant nog påtalar statistiker ofta att de som använder statistik också tolkar resultaten fel!
 
 ## Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan" {#inbetween}
 
