@@ -45,6 +45,12 @@ Videoklippet handlar om autistiska barn som inte kan kommunicera med omvärlden.
 
 <iframe src="https://www.youtube.com/embed/CzCGux7qD1c?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
 
+### Och varför tveksamma forskningspraktiker är viktigt {-}
+
+Videoklipp från filmen [On Being a Scientist](https://www.youtube.com/watch?v=tCgZSjoxF7c?t=1235) om etiskt tveksamma forskningspraktiker.
+
+<iframe src="https://www.youtube.com/embed/tCgZSjoxF7c?rel=0&amp;t=1235" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
 ### Kontakta {-}
 
 Har du synpunkter, idéer eller hittat något fel, hör av dig till [Peter M. Dahlgren](http://peterdahlgren.com/contact/), institutionen för journalistik, medier och kommunikation (JMG), Göteborgs universitet. Jag är doktorand i medie- och kommunikationsvetenskap och undervisar i bland annat statistik och programmering.
@@ -57,7 +63,7 @@ Du får dela, kopiera och vidaredistribuera allt material på denna hemsida oavs
 - distribuera inte modifierat material
 - använd inte kommersiellt
 
-Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/). Notera dock att inbäddat material (som videoklipp från YouTube) inte faller under Creative Commons.
+Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internationell (CC BY-NC-ND 4.0)](http://creativecommons.org/licenses/by-nc-nd/4.0/). Notera dock att inbäddat material (som videoklipp från YouTube) inte nödvändigtvis faller under denna licens.
 
 ### Större ändringar {-}
 
