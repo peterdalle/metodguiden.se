@@ -151,13 +151,14 @@ Det finns flera databaser som samlar [frågebatterier inom samhällsvetenskapen]
 ### Interaktiva guider om statistik
 
 | Guide | Beskrivning |
-| ----------------------- | ----------------------------------------------- |
+| :----------------------- | :----------------------------------------------- |
 | [Coin Flip Simulator](http://databits.io/bits/coin-flip-simulator) | Om man singlar slant tillräckligt många gånger kommer en binomial distribution att formas. Denna simulering visar hur det ser ut. |
 | [Guess the correlation](http://guessthecorrelation.com/) | Spel där du får testa att gissa korrelationen (Pearons r).
 | [Interpreting Correlations - an interactive visualization](http://rpsychologist.com/d3/correlation/) | Dra i reglaget för att påverka storleken på korrelationen, och hur korrelationen samvarierar (ursäkta ordvitsen) med variansen. |
 | [Rock 'n Polls](http://rocknpoll.graphics/) | Se hur slumpmässigt urval påverkar resultatet av en opinionsundersökning. |
 | [Sampling Distribution](http://onlinestatbook.com/stat_sim/sampling_dist/index.html) | Visar effekten av centrala gränsvärdessatsen, och hur stickprovets medelvärde från en distribution av valfri form bildar en normalfördelning. |
 | [Simpson's Paradox](http://vudlab.com/simpsons/) | Visar hur [Simpsons paradox](#simpsons-paradox) fungerar i mer detalj, där man kan få helt olika resultat om man analysera all data tillsammans eller gruppvis. |
+| [Kernel Density Estimation](https://mathisonian.github.io/kde/) | Visar hur kernel density läggs till datan. |
 
 ### Nyhetsartiklar om forskning
 
