@@ -55,7 +55,7 @@ Tabellen nedan är en korstabell med två variabler (kön och rädd) som båda h
 
 Table: Antalet personer.
 
-#### Kolumnprocent
+### Kolumnprocent
 
 En tabell med kolumnprocent måste läsas kolumnvis. Kolumnprocent svarar på frågan "hur stor andel av *kvinnorna* är rädda?". Svar: 75%. Man ser om en tabell har kolumnprocent om man kan addera alla procenttal i kolumnen så att de blir 100 (75 + 25 = 100 respektive 84 + 16 = 100). Kolumnprocent gör att vi kan jämföra kvinnor med män (för att se vilka som är mest rädda).
 
@@ -67,7 +67,7 @@ En tabell med kolumnprocent måste läsas kolumnvis. Kolumnprocent svarar på fr
 
 Table: Kolumnprocent.
 
-#### Radprocent
+### Radprocent
 
 En tabell med radprocent måste läsas radvis. Radprocent svarar på frågan "hur stor andel av *de rädda* är kvinnor?". Svar: 68%. Man ser om en tabell har radprocent om man kan addera alla procenttal på raden så att de blir 100 (68 + 32 = 100 respektive 78 + 22 = 100). Radprocent gör att vi kan jämföra rädda med orädda (för att se om de är kvinnor eller män).
 
@@ -78,7 +78,7 @@ En tabell med radprocent måste läsas radvis. Radprocent svarar på frågan "hu
 
 Table: Radprocent.
 
-#### Totalprocent
+### Totalprocent
 
 En tabell med totalprocent måste läsas cellvis. Totalprocent svarar på frågan "hur stor andel av *alla* är rädda kvinnor?". Svar: 52%. Man ser om en tabell har totalprocent om man kan addera alla procenttal så att de blir 100 (52 + 18 + 25 + 5 = 100). Totalprocent gör att vi kan jämföra alla fyra grupper med varandra. De fyra grupperna är rädda kvinnor, rädda män, orädda kvinnor samt orädda män.
 
@@ -90,11 +90,11 @@ En tabell med totalprocent måste läsas cellvis. Totalprocent svarar på fråga
 
 Table: Totalprocent.
 
-#### Sammanfattning
+### Sammanfattning
 
 ![Olika sätt korstabeller kan summeras: antal, kolumnprocent, radprocent och totalprocent.](images/korstabell-procent.png "Korstabell")
 
-#### Att tänka på när du skapar tabeller
+### Att tänka på när du skapar tabeller
 
 - Tabeller bör ha ett nummer som identifierar tabellen (Tabell 1, Tabell 2, Tabell 3 etc), en rubrik ovanför tabellen, samt en eventuell kommentar under tabellen.
 - I normalfallet används procent i tabellen. Det gör att man kan jämföra två grupper med varandra trots att de har olika antal observationer.
