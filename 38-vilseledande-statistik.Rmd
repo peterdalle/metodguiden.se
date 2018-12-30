@@ -153,7 +153,7 @@ Här är några exempel när betingade sannolikheter har förväxlats:
 
 Att förväxla betingade sannolikheter kallas också *fallacy of the transposed conditional*, *confusion of the inverse*, *conditional probability fallacy* eller bara *inverse fallacy*. 
 
-### Läs mer
+### Se även
 
 - <https://en.wikipedia.org/wiki/Confusion_of_the_inverse>
 - <https://en.wikipedia.org/wiki/Prosecutor%27s_fallacy>
