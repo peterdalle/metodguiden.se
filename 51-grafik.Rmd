@@ -1,5 +1,3 @@
-# (PART) Grafik {-}
-
 # Diagram {#dataviz}
 
 Här hittar du:

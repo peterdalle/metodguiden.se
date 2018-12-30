@@ -1,3 +1,5 @@
+# (PART) Kommunicera {-}
+
 # Tabeller {#tables}
 
 Här hittar du:
