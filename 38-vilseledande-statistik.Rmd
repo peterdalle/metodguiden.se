@@ -64,6 +64,8 @@ Läs mer:
 - [Missförstånd: "Om två studier visar olika resultat ligger sanningen någonstans mittemellan"](#inbetween)
 - <https://en.wikipedia.org/wiki/Selection_bias>
 - <https://en.wikipedia.org/wiki/Cherry_picking>
+- <https://en.wikipedia.org/wiki/Collider_(epidemiology)>
+- Endogenous Selection Bias: The Problem of Conditioning on a Collider Variable [@elwert_endogenous_2014].
 
 ## Concept creep
 
@@ -195,11 +197,20 @@ Kallas också *garden of forking paths*, *multiple comparison problem* eller *p-
 - <https://en.wikipedia.org/wiki/False_positive_paradox>
 - [This cartoon explains why predicting a mass shooting is impossible](https://www.vox.com/2016/6/15/11934794/cartoon-predicting-a-mass-shooting-mathematically-impossible)
 
-## HARKing {#harking}
+## Efterhandsförklaringar {#harking}
 
-HARKing betyder Hypothesizing after the results are known.
+Efterhandsförklaringar innebär att man försöker förklara något efter att det hänt. Förklaringar är en viktigt del i vetenskapligt arbete och ligger till grund för (nya) teorier och förutsägelser. Men det kan uppstå problem om man inte berättar att man har gjort en förklaring i efterhand utan i stället ger sken av att man har förutsett en händelse eller testat en teori.
+
+Efterhandsförklaringar kan med fördel användas för att skapa nya förutsägelser som sedan kan testas i en ny situation. Om man däremot inte medger att det är en efterhandsförklaring, utan i stället ger sken av att det är en hypotes som testats, uppstår ett cirkelbevis. Det kan exempelvis ske genom att man skriver hypoteser efter (snarare än före) man analyserar datan. Enligt filosofen Deborah Mayo har man inga som helst belägg för ett påstående om ingenting har gjorts för att visa på vilka sätt påståendet kan vara falskt [@mayo_statistical_2018, 5].^[Hon kallar det *BENT* - bad evidence, no test.] Om man skriver en hypotes så att den passar datan har alltså inget hypotestest över huvud taget ägt rum.
+
+Enligt en uppskattning av är det ungefär hälften av forskare som skriver hypoteser efter de analyserat datan, vilket är en anledning till att forskning ofta inte går att återupprepa av oberoende forskare. <!-- XXX Ange källa -->
+
+Efterhandsförklaringar kallas även *HARKing* (hypothesizing after the results are known), *post hoc-förklaringar*, *ex post facto-förklaringar*, eller *post hoc, ergo propter hoc* (latin för "efter detta, därför på grund av detta"). Dessa ska dock inte förväxlas med [post hoc-analys](https://en.wikipedia.org/wiki/Post_hoc_analysis).
+
+### Se även
 
 - <https://en.wikipedia.org/wiki/Testing_hypotheses_suggested_by_the_data>
+- <https://sv.wikipedia.org/wiki/Post_hoc_ergo_propter_hoc>
 
 ## Låg power
 
