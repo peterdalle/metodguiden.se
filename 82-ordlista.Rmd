@@ -1,14 +1,4 @@
 # Ordlista
 
-Se också [statistiskordbok.se](http://www.statistiskordbok.se/ord/).
-
-Ord | Förklaring
-:-------------------- | :----------------------------------------------
-alternativ hypotes | 
-analysenhet | 
-[deskriptiv statistik](#stats) | Statistik som sammanfattar och beskriver. Se också inferentiell statistik.
-hypotes | Se alternativ hypotes.
-[inferentiell statistik](#stats) | Statistik som uppskattar värden hos en population med hjälp av ett stickprov. Exempel: opinionsundersökningar.
-n | Förkortning för antal observationer/analysenheter.
-nollhypotes | 
-[p-värde](#p-values) | Sannolikheten att få ett resultat (eller mer extremt) givet att nollhypotesen är sann.
+- En ordbok för statistik finns på [statistiskordbok.se](http://www.statistiskordbok.se/ord/).
+- Statistikfrämjandet har en [engelsk-svensk ordlista för statistiska termer](http://statistikframjandet.se/etisk-kod/ordlista/).
