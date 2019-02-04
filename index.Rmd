@@ -69,6 +69,7 @@ Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internatione
 
 | När        | Vad |
 | :---------- | :------------------------------------------------------------ |
+| 2019-02-04 | Lagt till [Lathund för källkritik](#checklist-source-criticism).
 | 2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). Strukturen helt omgjord, vilket bryter gamla länkar. |
 | 2018-03-26 | Lagt till videor om att [konstruera enkätfrågor](#surveys). |
 | 2018-02-16 | Lagt till [Missförstånd: "Deduktion är generell-till-specifik medan induktion är specifik-till-generell"](#specific-to-general) |
