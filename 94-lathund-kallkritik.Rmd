@@ -1,0 +1,59 @@
+## Lathund: källkritik {#checklist-source-criticism}
+
+- [Nyhetsvärderaren](http://nyhetsvarderaren.se/) handlar om källkritik i digitala medier. Nyhetsvärderaren är ett samarbete mellan Vetenskap & Allmänhet, Uppsala universitet och RISE Interactive.
+- [Statens medieråd om källkritik](https://statensmedierad.se/larommedier/kallkritikvemvadvarfor/kallkritikenutmaning.422.html).
+- [Källkritik på internet](https://www.iis.se/lar-dig-mer/guider/kallkritik-pa-internet/) är en guide från Internetstiftelsen i Sverige. 
+- [Guide för källkritik för lärare](https://www.skolverket.se/skolutveckling/inspiration-och-stod-i-arbetet/stod-i-arbetet/guide-for-kallkritik-for-larare) från Skolverket. De har en checklista för källkritik och även checklistor specifikt för sociala medier.
+
+### Checklista för källkritik
+
+Följande checklista kommer från [Skolverket](https://www.skolverket.se/skolutveckling/inspiration-och-stod-i-arbetet/stod-i-arbetet/guide-for-kallkritik-for-larare).
+
+**Vem har gjort källan (webbplats, bok, tidning m.m.)?**
+
+- Är det en myndighet? Är det en organisation?
+- Är det ett företag? Är det en privatperson?
+- Är det någon som kan ämnet?
+- Är det någon du litar på?
+
+**Varför är källan gjord?**
+
+- För att informera om något? För att luras?
+- För att sprida en åsikt?
+- För att sälja något? För att underhålla?
+
+**Hur ser källan ut?**
+
+- Har den kontaktinformation?
+- Har den fungerande länkar (webbplatsen)?
+- Har den trovärdiga källhänvisningar?
+- Har den senast granskad-datum (webbplatsen)?
+
+**Kan du få information från andra ställen?**
+
+- Har du jämfört med vad du redan vet?
+- Har du jämfört med andra källor?
+
+## Checklista för källkritik på sociala medier
+
+Följande checklista kommer från [Skolverket](https://www.skolverket.se/skolutveckling/inspiration-och-stod-i-arbetet/stod-i-arbetet/guide-for-kallkritik-for-larare).
+
+**Vem talar?**
+
+- Någon du känner?
+- Någon du litar på?
+
+**Varför talar personen?**
+
+- För att berätta något?
+- För att få dig att tycka något?
+- För att få dig att köpa något?
+- För att roa dig?
+- För att skrämma dig?
+- För att vara dum mot någon?
+
+**Fråga dig innan du delar**
+
+- Är det sant?
+- Är det viktigt för dig? För andra?
+- Är det bra för dig? För andra?
