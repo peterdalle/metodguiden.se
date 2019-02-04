@@ -67,29 +67,27 @@ Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internatione
 
 ### Större ändringar {-}
 
-| När        | Vad |
-| :---------- | :------------------------------------------------------------ |
-| 2019-02-04 | Lagt till [Lathund för källkritik](#checklist-source-criticism).
-| 2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). Strukturen helt omgjord, vilket bryter gamla länkar. |
-| 2018-03-26 | Lagt till videor om att [konstruera enkätfrågor](#surveys). |
-| 2018-02-16 | Lagt till [Missförstånd: "Deduktion är generell-till-specifik medan induktion är specifik-till-generell"](#specific-to-general) |
-| 2018-02-11 | Lagt till [Missförstånd: “Om två studier visar olika resultat ligger sanningen någonstans mittemellan”](#inbetween), [Antagandet läggs i slutsatsen](#assumptions-circularity), [Undersöka andra än de man uttalar sig om](#inference-to-population), [Böcker](#books). |
-| 2018-01-22 | Lagt till [Vad blir felmarginalen?](/felmarginal.html)|
-| 2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till domänen metodguiden.se. |
-| 2017-11-29 | Lagt till [forskningsetik](#ethics). |
-| 2017-08-22 | Byggt om till bookdown. |
-| 2017-08-17 | Lagt till [vilseledande statistik](#misleading-stats) och [checklista med kritiska frågor](#checklist). |
-| 2017-05-31 | Lagt till frågebatterier och onlineenkäter på [enkätundersökningar](#surveys). |
-| 2017-05-08 | Lagt till [program](#program). |
-| 2017-03-15 | Lagt till [lathund för journalister](#journalist) samt [p-värden](#p-values). |
-| 2016-11-24 | Utökat många texter. Lagt till [FAQ](#faq) och [enkätundersökningar](#surveys). |
-| 2016-08-26 | Lade till länktips på [statistik](#stats). Skapade sidan [kreativitet](#creativity). |
-| 2016-08-17 | Första release. |
+När | Vad
+:---------- | :------------------------------------------------------------
+2019-02-04 | Lagt till [Lathund för källkritik](#checklist-source-criticism).
+2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). Strukturen helt omgjord, vilket bryter gamla länkar.
+2018-03-26 | Lagt till videor om att [konstruera enkätfrågor](#surveys).
+2018-02-16 | Lagt till [Missförstånd: "Deduktion är generell-till-specifik medan induktion är specifik-till-generell"](#specific-to-general)
+2018-02-11 | Lagt till [Missförstånd: “Om två studier visar olika resultat ligger sanningen någonstans mittemellan”](#inbetween), [Antagandet läggs i slutsatsen](#assumptions-circularity), [Undersöka andra än de man uttalar sig om](#inference-to-population), [Böcker](#books).
+2018-01-22 | Lagt till [Vad blir felmarginalen?](/felmarginal.html).
+2018-01-16 | Lagt till [missförstånd om statistik](#misconceptions-stats) och flyttat till domänen metodguiden.se. 
+2017-11-29 | Lagt till [forskningsetik](#ethics). 
+2017-08-22 | Byggt om till bookdown. 
+2017-08-17 | Lagt till [vilseledande statistik](#misleading-stats) och [checklista med kritiska frågor](#checklist). 
+2017-05-31 | Lagt till frågebatterier och onlineenkäter på [enkätundersökningar](#surveys). 
+2017-05-08 | Lagt till [program](#program). 
+2017-03-15 | Lagt till [lathund för journalister](#journalist) samt [p-värden](#p-values). 
+2016-11-24 | Utökat många texter. Lagt till [FAQ](#faq) och [enkätundersökningar](#surveys). 
+2016-08-26 | Lade till länktips på [statistik](#stats). Skapade sidan [kreativitet](#creativity). 
+2016-08-17 | Första release. 
 
-### Version {-}
-
-Du läser just nu `r if(knitr::is_latex_output()) { "PDF-versionen" } else if(knitr::is_html_output()) { "HTML-versionen" }` skapad automatiskt `r Sys.Date()`.
+`r if(knitr::is_latex_output()) { "PDF-versionen" } else if(knitr::is_html_output()) { "HTML-versionen" }` uppdaterades senast `r Sys.Date()`.
 
 ### Källkod {-}
 
-Källkoden till hemsidan finns på <https://github.com/peterdalle/metodguiden.se>. Hemsidan är gjord i [bookdown](https://bookdown.org/).
+Källkoden finns på <https://github.com/peterdalle/metodguiden.se> och är gjord i [bookdown](https://bookdown.org/).
