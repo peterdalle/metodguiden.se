@@ -65,3 +65,6 @@ Videoklipp (10 min): [The Anonymisation Problem - Computerphile](https://www.you
 - [Vilseledande diagram](#misleading-dataviz)
 - [Vetenskapsrådet: Etik](https://www.vr.se/etik.4.3840dc7d108b8d5ad5280004294.html)
 - [Codex: regler och riktlinjer för forskning](http://www.codex.vr.se/forskningsetik.shtml)
+- [Svensk nationell datatjänst om datahantering](https://snd.gu.se/sv/datahantering)
+- [Etikprövningsmyndigheten](https://etikprovning.se/)
+- Practical Tips for Ethical Data Sharing [@meyer_practical_2018]
