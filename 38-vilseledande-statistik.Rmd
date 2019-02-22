@@ -203,7 +203,7 @@ Efterhandsförklaringar innebär att man försöker förklara något efter att d
 
 Efterhandsförklaringar kan med fördel användas för att skapa nya förutsägelser som sedan kan testas i en ny situation. Om man däremot inte medger att det är en efterhandsförklaring, utan i stället ger sken av att det är en hypotes som testats, uppstår ett cirkelbevis. Det kan exempelvis ske genom att man skriver hypoteser efter (snarare än före) man analyserar datan. Enligt filosofen Deborah Mayo har man inga som helst belägg för ett påstående om ingenting har gjorts för att visa på vilka sätt påståendet kan vara falskt [@mayo_statistical_2018, 5].^[Hon kallar det *BENT* - bad evidence, no test.] Om man skriver en hypotes så att den passar datan har alltså inget hypotestest över huvud taget ägt rum.
 
-Enligt en uppskattning av är det ungefär hälften av forskare som skriver hypoteser efter de analyserat datan, vilket är en anledning till att forskning ofta inte går att återupprepa av oberoende forskare. <!-- XXX Ange källa -->
+Enligt en uppskattning var det ungefär hälften av de undersökta forskarna som skriver hypoteser efter de analyserat datan [@john_measuring_2012], vilket är en anledning till att forskning ofta inte går att återupprepa av oberoende forskare.
 
 Efterhandsförklaringar kallas även *HARKing* (hypothesizing after the results are known), *post hoc-förklaringar*, *ex post facto-förklaringar*, eller *post hoc, ergo propter hoc* (latin för "efter detta, därför på grund av detta"). Dessa ska dock inte förväxlas med [post hoc-analys](https://en.wikipedia.org/wiki/Post_hoc_analysis).
 
