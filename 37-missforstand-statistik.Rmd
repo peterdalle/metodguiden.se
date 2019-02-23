@@ -180,9 +180,9 @@ På ren svenska säger man att p-värdet visar sannolikheten att få teststatist
 
 (Hänvisa till filosofen Deborah Mayos utläggning om detta.)
 
-## Missförstånd: "Kvantitativ metod är positivism"
+## Missförstånd: "Statistik är positivism"
 
-Slår du upp en metodbok i samhällsvetenskap förekommer många gånger en indelning i olika vetenskaper, och att statistik eller kvantitativ metod bygger på logisk positivsm eftersom man framför allt arbetar med teorier, hypotestestning och falsifikation av kausalsamband. De kvalitativa metoderna, å andra sidan, sägs vara inriktade på förklaring, helhetsförståelse (holism) och att generera teorier.
+Slår du upp en metodbok i samhällsvetenskap förekommer många gånger en indelning i olika vetenskaper, och att statistik eller kvantitativ metod bygger på [logisk positivsm](https://plato.stanford.edu/entries/vienna-circle/) eftersom man framför allt arbetar med teorier, hypotestestning och falsifikation av kausalsamband. De kvalitativa metoderna, å andra sidan, sägs vara inriktade på förklaring, helhetsförståelse (holism) och att generera teorier.
 
 Allt detta är dock missuppfattningar om vad positivism är. Logiska positivister var *emot* teori, kausalitet och falsifikation [@yu_misconceived_2006].
 
