@@ -18,6 +18,10 @@ Här hittar du:
 - Mechanical Turk inte nödvändigtvis dåligt: bättre än studenter men sämre än sannolikhetsurval ([Berinsky, Huber, & Lenz, 2012](https://doi.org/10.1093/pan/mpr057)).
 - Datakvaliteten på mobilenkäter verkar inte vara sämre än webbenkäter ([Sommer, Diedenhofen, & Musch, 2016](https://doi.org/10.1177/0894439316633452)).
 
+Läs även (Phone vs. online surveys: Why do respondents’ answers sometimes differ by mode?)(http://www.pewresearch.org/fact-tank/2019/02/07/phone-vs-online-surveys-why-do-respondents-answers-sometimes-differ-by-mode/) från Pew Research Center, eller se videon nedan.
+
+<iframe src="https://www.youtube.com/embed/eRK_dXay5HY?rel=0" frameborder="0" class="mediaplayer videoplayer" allowfullscreen></iframe>
+
 ### Qualtrics -- webbtjänst för enkäter
 
 GU har licens på [Qualtrics](https://www.qualtrics.com/) som kan användas för att skicka ut enkäter. Både studenter och lärare kan använda Qualtrics.
