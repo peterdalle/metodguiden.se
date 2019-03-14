@@ -132,6 +132,9 @@ Mallen innehåller i dagsläget:
 
 Vilken typ av diagram bör man välja? Det beror på hur många variabler du vill visualisera.
 
+Använd [Interactive Chart Chooser](https://depictdatastudio.com/charts/) och svara på ett par
+frågor för att ta reda på vilken typ av diagram du bör välja.
+
 ### En variabel
 
 | Typ av variabel | Diagram |
