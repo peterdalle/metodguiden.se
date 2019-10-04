@@ -16,19 +16,19 @@ Nej, det finns faktiskt flera olika typer av sannolikhetsteorier som ligger till
 - Likelihood-statistik.
 -->
 
-## Missförstånd: "Konfidensintervall visar med 95 % sannolikhet att värdet ligger inom 23–25 %"
+## Missförstånd: "Konfidensintervall visar med 95 % sannolikhet att värdet ligger inom 20–30 %"
 
 Ibland ligger ett värde inom ett konfidensintervall. Syftet med detta intervall är att säga någonting om osäkerheten.
 
-Låt oss ta ett exempel. En opinionsundersökning säger att 25 % av svenskarna sympatiserar med Socialdemokraterna, med ett 95 % konfidensintervall på 23–25 (%-enheter).
+Låt oss ta ett exempel. En opinionsundersökning säger att 25 % av svenskarna sympatiserar med Socialdemokraterna, med ett 95 % konfidensintervall på 20–30 (%-enheter).
 
 En vanlig tolkning är detta:
 
-> Det är 95 % sannolikhet att värdet ligger inom intervallet 23 till 25 (%-enheter).
+> Det är 95 % sannolikhet att värdet ligger inom intervallet 20 till 30 (%-enheter).
 
 Eller detta:
 
-> Vi kan vara 95 % säkra att värdet ligger inom intervallet 23 till 25 (%-enheter).
+> Vi kan vara 95 % säkra att värdet ligger inom intervallet 20 till 30 (%-enheter).
 
 Men båda är helt fel.
 
@@ -50,7 +50,7 @@ Det innebär:
 - Med andra ord täcker konfidensintervallen in det sanna värdet i populationen, eller så gör de det inte. Det är antingen eller.
 - Det finns ingen sannolikhet kopplad till ett enskilt värde över huvud taget, utan sannolikheten räknas ut genom att titta på andelen av samtliga konfidensintervall *över tid*.
 
-Eftersom man normalt sett endast gör en (1) undersökning så får man ju fram ett enskilt punktestimat (25 % i vårt fall) tillsammans med ett konfidensintervall (23–25 %-enheter). Men konfidensintervall handlar ju om samplingar över tid! Så man har med andra ord ingen som helst aning om just det konfidensintervallet man får fram i praktiken innehåller det sanna populationsvärdet. Det kan man bara veta om man gör upprepade mätningar. Då kommer (i genomsnitt) 95 av 100 konfidensintervall att innehålla det sanna populationsvärdet.
+Eftersom man normalt sett endast gör en (1) undersökning så får man ju fram ett enskilt punktestimat (25 % i vårt fall) tillsammans med ett konfidensintervall (20–30 %-enheter). Men konfidensintervall handlar ju om samplingar över tid! Så man har med andra ord ingen som helst aning om just det konfidensintervallet man får fram i praktiken innehåller det sanna populationsvärdet. Det kan man bara veta om man gör upprepade mätningar. Då kommer (i genomsnitt) 95 av 100 konfidensintervall att innehålla det sanna populationsvärdet.
 
 Upprepade mätningar på människor för dock med sig en mängd andra problem eftersom människor kan förändra sina partisympatier eller ändra sina partisympatier på grund av mätningen. Med andra ord, även om teorin bakom konfidensintervall skulle vara fullständigt felfri, så beror resultaten i en opinionsundersökning också på hur frågor formuleras och i vilket sammanhang de ställs.
 
