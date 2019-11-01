@@ -272,6 +272,100 @@ Läs mer:
 
 - http://opponent.se/2017/11/deduktion/
 
+## Missförstånd: "En medelvärdeskillnad mellan två grupper innebär att skillnaden beror på grupptillhörigheten" {#unvariate-fallacy}
+
+Detta kan vi kalla den *univariata fallasin* [@lessov-schlaggar_fallacy_2016].^[Den unvariata fallasin kan beskrivas som en underkategori till divisonsfelslutet, eller den ekologiska fallasin, vilket innebär att man utgår från antagandet att det som gäller helheten också gäller dess respektive delar.]
+
+Det kan innebära två saker:
+
+1. Att man tror att en medelvärdesskillnad mellan två grupper innebär att skillnaden måste bero på grupptillhörigheten. Till exempel: Män tjänar mer än kvinnor, därmed måste skillnaden bero på att de är män eller kvinnor.
+2. Att man tror att avsaknden av medelvärdesskillnad mellan två grupper innebär det att det inte finns några skillnader mellan grupperna. Till exempel: Alla högutbildade och lågutbildade tjänar lika mycket, därmed tjänar man ingenting mer om man skaffar en högre utbildning.
+
+Låt oss titta på ett exempel med den första innebörden.
+
+### Exempel: Skillnaden mellan män och kvinnors löner
+
+Män och kvinnors löner är ett återkommande tema i massmedierna. Män tjänar mer än kvinnor om man räknar deras genomsnittslöner.^[Ordet "tjänar" är mångtydigt. Det kan syfta på lön, bidrag, kapitalinkomster (såsom aktier), stipendium och så vidare. För enkelhetens skull ignorerar vi sådana skillnader och pratar om lön.] Det innebär att man tar alla löner från män och beräknar ett genomsnitt. Sedan gör man likadant med kvinnornas löner.
+
+Utifrån denna faktabeskrivning görs sedan en normativ värdering som säger att skillnaden därmed är *orättvis*, eftersom arbetsgivare ger lägre lön till kvinnor enbart för att de är kvinnor. Det bygger på antagandet att om arbetsgivare inte gav män och kvinnor olika löner, så skulle båda grupperna tjäna lika mycket i genomsnitt. Eftersom de inte tjänar lika mycket så är det därmed ett tecken på en orättvisa. Men stämmer det antaget? Nej, det är ett exempel på den första innebörden av den univariata fallasin (punkt 1 ovan).
+
+Låt oss anta att det finns en (påhittad) arbetsmarknad med tio personer. Vi utgår från att alla börjar med en lön på 30 000 kronor, plus följande förutsättningar:
+
+- De som har hög utbildning tjänar 5 000 kronor mer än de som har låg utbildning
+- De som jobbar i privat sektor tjänar 10 000 kronor mer än de som jobbar i offentlig sektor
+- De som jobbar halvtid tjänar hälften så mycket som de som jobbar heltid
+
+Notera att ingen av dessa kriterier handlar om kön. Personerna ifråga kan du se i tabellen nedan.
+
+```{r univariate-fallacy-men-women-salary}
+library(tibble)
+library(tidyverse)
+library(furniture)
+
+# Create 10 fictive persons.
+df <- tribble(~person, ~education, ~sector,   ~salary,  ~sex,      ~hours,
+              1,       'Hög',      'Privat',        0,  'Man',     'Heltid',
+              2,       'Hög',      'Offentlig',     0,  'Man',     'Heltid', 
+              3,       'Låg',      'Privat',        0,  'Kvinna',  'Deltid',
+              4,       'Hög',      'Privat',        0,  'Man',     'Deltid',
+              5,       'Hög',      'Privat',        0,  'Man',     'Heltid',
+              6,       'Hög',      'Offentlig',     0,  'Kvinna',  'Deltid',
+              7,       'Låg',      'Privat',        0,  'Man',     'Heltid',
+              8,       'Hög',      'Privat',        0,  'Man',     'Heltid',
+              9,       'Hög',      'Offentlig',     0,  'Kvinna',  'Deltid',
+              10,      'Låg',      'Privat',        0,  'Man',     'Heltid')
+
+
+# Everyone starts with 30,000 in salary.
+df$salary <- 30000
+
+# High education: 5,000 more in salary.
+df$salary[df$education == "Hög"] <- df$salary[df$education == "Hög"] + 5000
+
+# Private sector: 10,000 more in salary.
+df$salary[df$sector == "Privat"] <- df$salary[df$sector == "Privat"] + 10000
+
+# Work part time: half salary.
+df$salary[df$hours == "Deltid"] <- df$salary[df$hours == "Deltid"] * 0.5
+
+men_salary <- df %>% group_by(sex) %>% summarize(salary = mean(salary)) %>% filter(sex == "Man") %>% pull()
+female_salary <- df %>% group_by(sex) %>% summarize(salary = mean(salary)) %>% filter(sex == "Kvinna") %>% pull()
+high_edu_salary <- df %>% group_by(education) %>% summarize(salary = mean(salary)) %>% filter(education == "Hög") %>% pull()
+low_edu_salary <- df %>% group_by(education) %>% summarize(salary = mean(salary)) %>% filter(education == "Låg") %>% pull()
+
+# Rounding options for round/format (using knitr)
+library(pander)
+panderOptions('round', 0)
+panderOptions('keep.trailing.zeros', TRUE)
+
+# Show persons and their salary.
+knitr::kable(df, col.names = c("Person", "Utbildning", "Sektor", "Lön", "Kön", "Arbetstid"),
+             align = c("c", "c", "c", "c", "c", "c"))
+```
+
+Låt oss nu använda tabellen och beräkna medellönen för män respektive kvinnor. 
+
+- Mäns lön är `r as.integer(men_salary)` kronor
+- Kvinnors lön är `r as.integer(female_salary)` kronor
+
+Kvinnor tjänar nästan hälften av vad männen tjänar. Hur kan det komma sig? Svaret är att fler kvinnor jobbar deltid och i offentlig sektor, och där finns de låtbetalda jobben.
+
+Men gör vi fler analyser stöter vi också på andra slutsatser som kan verka paradoxala. Titta vad högutbildade respektive lågutbildade tjänar:
+
+- Högutbildades lön är `r as.integer(high_edu_salary)` kronor
+- Lågutbildades lön är `r as.integer(low_edu_salary)` kronor
+
+Här ser vi att de med låg utbildning tjänar mer än de med hög utbildning. Betyder det att utbildning inte lönar sig? Det är fel slutsats att dra, eftersom vi redan vet att vi gav högutbildade 5 000 kronor mer i lön.
+
+I vår fiktiva arbetsmarknad med tio personer har vi fyra variabler (kön, utbildning, sektor och arbetstid) som logiskt sett har möjlighet att påverka lönen. Om man bara väljer ut en variabel (till exempel kön) och sedan jämför medelvärdena och hittar en skillnad mellan kvinnor och män, kan man alltså förledas att tro att skillnaden måste bero på den variabel man har valt. Det är det som menas med den *univariata* fallasin ("univariat" betyder *en*---i motsats till flera).
+
+Läs mer:
+
+- [Medlingsinstitutet - Löneskillnader mellan kvinnor och män](http://www.mi.se/publicerat/loneskillnader-mellan-kvinnor-och-man/)
+- The Fallacy of Univariate Solutions to Complex Systems Problems [@lessov-schlaggar_fallacy_2016]
+- [Wikipedia - Omitted-variable bias](https://en.wikipedia.org/wiki/Omitted-variable_bias)
+- [Wikipedia - Confounding](https://en.wikipedia.org/wiki/Confounding)
+
 <!--
 
 ## Vad P-värdet faktiskt visar

@@ -72,6 +72,7 @@ Creative Commons [Erkännande-Ickekommersiell-IngaBearbetningar 4.0 Internatione
 
 När | Vad
 :---------- | :------------------------------------------------------------
+2019-11-01 | Lagt till [univariat fallasi](#unvariate-fallacy).
 2019-10-04 | Fixat [felskrivet konfidensintervall](#misconceptions-stats) tack vare Janne Berg, Åbo Akademi, Vasa, Finland.
 2019-02-04 | Lagt till [Lathund för källkritik](#checklist-source-criticism).
 2018-11-19 | Lagt till [Kolumnprocent och radprocent i korstabeller](#crosstabs-percent). Strukturen helt omgjord, vilket bryter gamla länkar.
