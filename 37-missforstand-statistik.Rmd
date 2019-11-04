@@ -338,6 +338,10 @@ low_edu_salary <- df %>% group_by(education) %>% summarize(salary = mean(salary)
 #panderOptions('round', 0)
 #panderOptions('keep.trailing.zeros', TRUE)
 
+swedify_integers <- function(x) {
+  return(format(as.integer(x), big.mark = " "))
+}
+
 # Show persons and their salary.
 knitr::kable(df, col.names = c("Person", "Utbildning", "Sektor", "Lön", "Kön", "Arbetstid"),
              align = c("c", "c", "c", "c", "c", "c"))
@@ -345,17 +349,17 @@ knitr::kable(df, col.names = c("Person", "Utbildning", "Sektor", "Lön", "Kön",
 
 Låt oss nu använda tabellen och beräkna medellönen för män respektive kvinnor. 
 
-- Mäns lön är `r as.integer(men_salary)` kronor
-- Kvinnors lön är `r as.integer(female_salary)` kronor
+- Mäns lön är `r swedify_integers(men_salary)` kronor
+- Kvinnors lön är `r swedify_integers(female_salary)` kronor
 
 Kvinnor tjänar nästan hälften av vad männen tjänar! Hur kan det komma sig? Svaret är att fler kvinnor jobbar deltid och i offentlig sektor, och där finns de lågbetalda jobben.
 
 Men gör vi fler analyser stöter vi också på andra slutsatser som kan verka paradoxala vid en första anblick. Titta vad högutbildade respektive lågutbildade tjänar:
 
-- Högutbildades lön är `r as.integer(high_edu_salary)` kronor
-- Lågutbildades lön är `r as.integer(low_edu_salary)` kronor
+- Högutbildades lön är `r swedify_integers(high_edu_salary)` kronor
+- Lågutbildades lön är `r swedify_integers(low_edu_salary)` kronor
 
-Här ser vi att de med låg utbildning tjänar mer än de med hög utbildning. Betyder det att utbildning inte lönar sig, eller till och med att utbildning är *meningslös* för vilken lön man får? Det är fel slutsats att dra, eftersom vi redan vet att vi gav högutbildade personer 5 000 kronor mer i lön.
+Här ser vi att de med låg utbildning tjänar mer än de med hög utbildning. Betyder det att högre utbildning inte lönar sig, eller till och med att högre utbildning *minskar* lönen man får? Det är fel slutsats att dra, eftersom vi redan vet att vi gav högutbildade personer 5 000 kronor mer i lön.
 
 I vår fiktiva arbetsmarknad med tio personer har vi fyra variabler (kön, utbildning, sektor och arbetstid) som logiskt sett har möjlighet att påverka lönen. Om man bara väljer ut en variabel (till exempel kön), jämför medellönerna, och därmed hittar en skillnad mellan kvinnor och män, kan man alltså förledas att tro att skillnaden måste bero på den variabel man har valt att analysera. Det är det som menas med den *univariata* fallasin ("univariat" betyder *en*---i motsats till flera).
 
